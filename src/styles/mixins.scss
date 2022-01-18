@@ -1,0 +1,57 @@
+@function pxToRem($pxsize, $rembase: 16) {
+    @return ($pxsize / $rembase)+rem;
+}
+
+@mixin boxShadow($arg) {
+    -webkit-box-shadow: $arg;
+    box-shadow: $arg;
+}
+
+@mixin myFlex() {
+    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+
+    @each $prefix in $prefixes {
+        display: $prefix;
+    }
+}
+
+@mixin createFlex($flexDirection:false, $boxD:false, $boxO:false) {
+
+    @if $flexDirection {
+        -webkit-box-orient: $boxO;
+        -webkit-box-direction: $boxD;
+        -ms-flex-direction: $flexDirection;
+        flex-direction: $flexDirection;
+    }
+}
+
+@mixin createCol() {
+    @each $size in $sizes {
+        $index: index($sizes, $size);
+
+        .col-#{$index} {
+            width: $size;
+
+        }
+
+    }
+}
+
+// @include createCol();
+
+// $elements:
+// "red" red 20px orange,
+// "orange" orange 30px blue,
+// "blue" blue 20px red;
+
+// @each $name, $color, $fontSize, $bcolor in $elements {
+// 	.test-#{$name}{
+// 	color: $color;
+// 	font-size: $fontSize;
+// 	background-color: $bcolor;
+// 	}
+// }
+.main-info{
+	background-color: $c-cloudy;
+	color: scale-color($c-cloudy, $lightness: 10%);
+}

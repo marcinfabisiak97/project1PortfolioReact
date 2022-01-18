@@ -1,0 +1,1132 @@
+.main-upperpartanddownpart {
+    background-image: url(../../../../assets/koła_01.png), url(../../../../assets/koła_02.png), url(../../../../assets/koła_01.png), url(../../../../assets/koła_01.png);
+    background-repeat: no-repeat;
+    background-position: 250px 350px, 730px 150px, 830px 650px, -250px 800px;
+    background-size: 300px, 400px;
+}
+
+.main-upperpart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: nth($sizes, 12);
+    padding-right: 0;
+    height: 60vh;
+    background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+    background-repeat: no-repeat;
+    background-position: -100px 0px, 100px 35px;
+    background-size: 200px;
+    box-sizing: border-box;
+}
+
+.main-info {
+
+    margin-right: $space-large;
+    margin-top: $space-standard;
+    width: 50vw;
+    @include boxShadow(5px 5px 5px 5px $c-gray);
+    margin-bottom: $space-null;
+    padding: $space-medium $space-medium $space-x-small;
+    border-radius: 5px;
+    background-color: $c-white-opacity;
+
+    h2 {
+        margin-top: $space-null;
+        margin-bottom: $space-null;
+        padding-bottom: $space-null;
+    }
+
+    h3 {
+        margin-top: $space-null;
+        margin-bottom: $space-null;
+        padding-bottom: $space-null;
+    }
+}
+
+.main-info_seework {
+    @include myFlex();
+    justify-content: flex-end;
+    margin-top: $space-null;
+
+    img:first-of-type {
+        width: 55px;
+        height: 55px;
+        margin-top: $space-xxx-small;
+    }
+
+    img {
+        width: 63px;
+        height: 63px;
+    }
+
+}
+
+.main-photo_rightdescription {
+    margin-top: $space-small;
+    text-align: right;
+    height: 20vh;
+    max-width: 30vw;
+
+    div {
+        display: flex;
+    }
+
+    button {
+        width: 40%;
+        padding: $space-x-small;
+        margin: $space-x-small;
+        background-color: $c-negroni;
+        border-radius: 4px;
+        border-style: none;
+        color: $c-black;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    button:active {
+        color: $c-black;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+
+.main-downpart {
+    @include myFlex();
+    width: 95vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: $space-large;
+    margin-right: $space-large;
+}
+
+.main-photo_belowdescription {
+    margin-left: $space-medium;
+    margin-top: $space-medium;
+    flex-basis: 40vw;
+
+    ul {
+        padding-left: 5%;
+    }
+
+    p {
+        img {
+            width: 30%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+.main-wrapper_bars {
+
+    width: 50vw;
+    @include boxShadow(5px 5px 5px 5px #888888);
+    margin: $space-standard;
+    padding: $space-standard $space-medium $space-medium $space-medium;
+    border-radius: 6px;
+}
+
+.wrapper-bar {
+    @include myFlex();
+    width: 80%;
+    background-color: $c-twilight-blue;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 30px;
+    margin-bottom: $space-x-small;
+}
+
+.bar {
+    &-php {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 20%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+
+    &-javascript {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 60%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+
+    &-css {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 80%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+
+    &-html {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 100%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+
+    &-node {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 20%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+
+    &-go {
+        @include myFlex();
+        color: $c-white;
+        padding-left: $space-xx-small;
+        align-items: center;
+        width: 10%;
+        background-color: $c-negroni;
+        border: 1px solid $c-black;
+        border-radius: 6px;
+
+        height: 28px;
+    }
+}
+
+.main-toolsworkscontact {
+    background-image: url(../../../../assets/koła_01.png), url(../../../../assets/koła_01.png), url(../../../../assets/koła_01.png);
+    background-repeat: no-repeat;
+    background-position: 950px 50px, 750px 450px, -100px 1100px;
+    background-size: 300px, 450px;
+
+}
+
+.main-wrapper_tools {
+    background-color: $c-negroni;
+    box-sizing: border-box;
+    background-image: url(../../../../assets/koła_01.png);
+    background-repeat: no-repeat;
+    background-position: 950px 50px;
+    background-size: 300px;
+    width: 100%;
+    padding-left: $space-xxx-large;
+    padding-top: $space-small;
+
+    h3 {
+        color: #7e6a55;
+    }
+
+}
+
+.main-tollsicon {
+    @include myFlex();
+    @include createFlex(row, normal, horizontal);
+    position: relative;
+    /*justify-content: space-around;*/
+    width: 70%;
+}
+
+.main-tollsicon_img {
+    margin: $space-x-small $space-x-small $space-x-small;
+
+    img {
+        background-color: $c-white;
+        width: 45px;
+        margin: 0px;
+        padding: $space-x-small $space-standard $space-large;
+        border-radius: 2px;
+        @include boxShadow(3px 3px 3px 3px $c-gray);
+    }
+
+    p {
+        display: block;
+        position: relative;
+        bottom: $space-large;
+        left: $space-null;
+        font-size: pxToRem(8);
+        text-align: center;
+    }
+}
+
+.main-tollsicon {
+    &_imgtool {
+        margin: $space-x-small $space-x-small $space-x-small;
+
+        img {
+            background-color: $c-white;
+            width: 45px;
+            margin: $space-null;
+            padding: $space-x-small $space-standard $space-large $space-standard;
+            border-radius: 2px;
+            @include boxShadow(3px 3px 3px 3px $c-gray);
+        }
+
+        p {
+            display: block;
+            position: relative;
+            bottom: 37px;
+            left: $space-null;
+            font-size: pxToRem(7);
+            text-align: center;
+        }
+    }
+
+    &_imgstyle {
+        margin: $space-x-small $space-x-small $space-x-small;
+
+        img {
+            background-color: $c-white;
+            width: 45px;
+            margin: $space-null;
+            padding: $space-x-small $space-standard $space-large;
+            border-radius: 2px;
+            @include boxShadow(3px 3px 3px 3px $c-gray);
+        }
+
+        p {
+            display: block;
+            position: relative;
+            bottom: $space-x-large;
+            left: $space-null;
+            font-size: pxToRem(8);
+            text-align: center;
+        }
+    }
+}
+
+.main-wrapper {
+    &_myworks {
+        margin-left: $space-xxx-large;
+        margin-top: $space-medium;
+        width: 50%;
+    }
+
+    &_set {
+        @include myFlex();
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: $space-large;
+        margin-right: $space-large;
+    }
+
+    &_setimg {
+        border-radius: 4px;
+        @include boxShadow(4px 4px 4px 4px $c-gray);
+        margin-top: $space-standard;
+    }
+
+    &_setimgbit {
+        @include myFlex();
+        justify-content: flex-end;
+
+        img {
+            width: 13%;
+        }
+    }
+}
+
+@media only screen and (max-width: $break-high) {
+    .main-upperpart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: nth($sizes, 12);
+        padding-right: 0;
+        max-height: 600px;
+        background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0px, 200px 35px;
+        background-size: 300px;
+        box-sizing: border-box;
+
+        .main-photo_rightdescription {
+            margin-top: $space-small;
+            margin-right: $space-large;
+            text-align: right;
+            height: 20vh;
+            max-width: 30vw;
+
+            h1 {
+                font-size: pxToRem(40)
+            }
+
+            p {
+                font-size: pxToRem(30)
+            }
+
+            button {
+                font-size: pxToRem(30)
+            }
+        }
+
+    }
+
+    .main-info {
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        h3 {
+            font-size: pxToRem(30);
+        }
+
+        p {
+            font-size: pxToRem(25);
+        }
+    }
+
+    .main-photo_belowdescription {
+        margin-left: $space-medium;
+        margin-top: $space-medium;
+        flex-basis: 40vw;
+
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        h3 {
+            font-size: pxToRem(30);
+        }
+
+        ul {
+            padding-left: 5%;
+        }
+
+        p {
+            font-size: pxToRem(25);
+
+            img {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-wrapper_bars {
+         max-height: 600px;
+    min-height: 500px;
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        p {
+            font-size: pxToRem(25);
+        }
+    }
+
+    .main-wrapper_tools {
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        h3 {
+            font-size: pxToRem(30);
+        }
+
+        .main-tollsicon {
+            display: flex;
+            justify-content: space-around;
+
+            .main-tollsicon_img {
+                img {
+                    min-width: 100px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+
+            .main-tollsicon_imgstyle {
+                img {
+                    min-width: 90px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+
+            .main-tollsicon_imgtool {
+                img {
+                    min-width: 100px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        &_myworks {
+            margin-left: $space-xxx-large;
+            margin-top: $space-medium;
+            width: 50%;
+
+            h2 {
+                font-size: pxToRem(40);
+            }
+
+            h3 {
+                font-size: pxToRem(30);
+            }
+
+            p {
+                font-size: pxToRem(25);
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $break-laptop) {
+    .main-upperpart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: nth($sizes, 12);
+        padding-right: 0;
+        min-height: 550px;
+        max-height: 700px;
+        background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0px, 100px 35px;
+        background-size: 200px;
+        box-sizing: border-box;
+
+        .main-photo_rightdescription {
+            margin-top: $space-small;
+            margin-right: $space-large;
+            text-align: right;
+            height: 20vh;
+            max-width: 30vw;
+        }
+
+    }
+     .main-wrapper_bars {
+         max-height: 600px;
+    min-height: 500px;
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        p {
+            font-size: pxToRem(25);
+        }
+    }
+
+    .main-wrapper_tools {
+        h2 {
+            font-size: pxToRem(40);
+        }
+
+        .main-tollsicon {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+
+            .main-tollsicon_img {
+                img {
+                    min-width: 100px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+
+            .main-tollsicon_imgstyle {
+                img {
+                    min-width: 90px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+
+            .main-tollsicon_imgtool {
+                img {
+                    min-width: 100px;
+                }
+
+                p {
+                    font-size: pxToRem(15);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $break-mid) {
+    .main-upperpart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: nth($sizes, 12);
+        padding-right: 0;
+        min-height: 400px;
+        max-height: 500px;
+        background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0px, 100px 35px;
+        background-size: 200px;
+        box-sizing: border-box;
+
+        .main-photo_rightdescription {
+            margin-top: $space-small;
+            margin-right: $space-large;
+            text-align: right;
+            height: 20vh;
+            max-width: 30vw;
+
+            h1 {
+                font-size: pxToRem(30)
+            }
+
+            p {
+                font-size: pxToRem(20)
+            }
+
+            button {
+                font-size: pxToRem(20)
+            }
+        }
+
+    }
+
+    .main-info {
+
+        h2 {
+            font-size: pxToRem(30);
+        }
+
+        h3 {
+            font-size: pxToRem(20);
+        }
+
+        p {
+            font-size: pxToRem(15);
+        }
+    }
+
+    .main-photo_belowdescription {
+        margin-left: $space-medium;
+        margin-top: $space-medium;
+        flex-basis: 40vw;
+
+        h2 {
+            font-size: pxToRem(30);
+        }
+
+        h3 {
+            font-size: pxToRem(20);
+        }
+
+        ul {
+            padding-left: 5%;
+        }
+
+        p {
+            font-size: pxToRem(15);
+
+            img {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-wrapper_bars {
+         max-height: 350px;
+    min-height: 300px;
+        h2 {
+            font-size: pxToRem(30);
+        }
+
+        p {
+            font-size: pxToRem(15);
+        }
+    }
+
+    .main-wrapper_tools {
+        h2 {
+            font-size: pxToRem(30);
+        }
+
+        h3 {
+            font-size: pxToRem(20);
+        }
+
+        .main-tollsicon {
+            display: flex;
+            justify-content: space-around;
+
+            .main-tollsicon_img {
+                img {
+                    min-width: 50px;
+                }
+
+                p {
+                    font-size: pxToRem(8);
+                }
+            }
+
+            .main-tollsicon_imgstyle {
+                img {
+                    min-width: 50px;
+                }
+
+                p {
+                    font-size: pxToRem(8);
+                }
+            }
+
+            .main-tollsicon_imgtool {
+                img {
+                    min-width: 50px;
+                }
+
+                p {
+                    font-size: pxToRem(8);
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        &_myworks {
+            margin-left: $space-xxx-large;
+            margin-top: $space-medium;
+            width: 50%;
+
+            h2 {
+                font-size: pxToRem(30);
+            }
+
+            h3 {
+                font-size: pxToRem(20);
+            }
+
+            p {
+                font-size: pxToRem(15);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $break-mobile) {
+    .main-upperpart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: nth($sizes, 12);
+        padding-right: 0;
+        max-height: 700px;
+        min-height: 400px;
+        background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0px, 50px 35px;
+        background-size: 150px;
+        box-sizing: border-box;
+
+        .main-photo_rightdescription {
+            margin-top: $space-small;
+            margin-right: $space-large;
+            text-align: right;
+            height: 20vh;
+            max-width: 35vw;
+
+            h1 {
+                font-size: pxToRem(25)
+            }
+
+            p {
+                font-size: pxToRem(15)
+            }
+
+            button {
+                font-size: pxToRem(15)
+            }
+        }
+
+    }
+
+    .main-downpart {
+        @include myFlex();
+        width: 95vw;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: $space-null;
+        margin-right: $space-null;
+    }
+
+    .main-info {
+        h2 {
+            font-size: pxToRem(25);
+        }
+
+        h3 {
+            font-size: pxToRem(15);
+        }
+
+        p {
+            font-size: pxToRem(15);
+        }
+    }
+
+    .main-photo_belowdescription {
+        margin-left: $space-medium;
+        margin-top: $space-medium;
+        flex-basis: 40vw;
+
+        h2 {
+            font-size: pxToRem(25);
+        }
+
+        h3 {
+            font-size: pxToRem(15);
+        }
+
+        ul {
+            font-size: pxToRem(15);
+            padding-left: 5%;
+        }
+
+        p {
+            font-size: pxToRem(15);
+
+            img {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-wrapper_bars {
+        h2 {
+            font-size: pxToRem(25);
+        }
+
+        p {
+            font-size: pxToRem(15);
+        }
+    }
+
+    .main-wrapper_tools {
+        padding-left: 10px;
+
+        h2 {
+            padding-left: pxToRem(50);
+            font-size: pxToRem(25);
+        }
+
+        h3 {
+            padding-left: pxToRem(50);
+            font-size: pxToRem(15);
+        }
+
+        .main-tollsicon {
+            display: flex;
+            justify-content: space-around;
+
+            .main-tollsicon_img {
+                img {
+                    min-width: 20px;
+                    max-width: 25px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+
+            .main-tollsicon_imgstyle {
+                img {
+                    min-width: 20px;
+                    max-width: 25px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+
+            .main-tollsicon_imgtool {
+                img {
+                    min-width: 20px;
+                    max-width: 25px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        &_myworks {
+            margin-left: $space-xxx-large;
+            margin-top: $space-medium;
+            width: 50%;
+
+            h2 {
+                font-size: pxToRem(25);
+            }
+
+            h3 {
+                font-size: pxToRem(20);
+            }
+
+            p {
+                font-size: pxToRem(15);
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $break-xs) {
+    .main-upperpart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: nth($sizes, 12);
+        padding-right: 0;
+        max-height: 300px;
+        min-height: 180px;
+        background-image: url(../../../../assets/koła_02.png), url(../../../../assets/zdj1.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px 0px, 50px 35px;
+        background-size: 70px;
+        box-sizing: border-box;
+
+        .main-photo_rightdescription {
+            margin-top: $space-small;
+            margin-right: $space-large;
+            text-align: right;
+            height: 20vh;
+            max-width: 35vw;
+
+            h1 {
+                font-size: pxToRem(15)
+            }
+
+            p {
+                font-size: pxToRem(10)
+            }
+
+            button {
+                font-size: pxToRem(10)
+            }
+        }
+
+    }
+
+    .main-downpart {
+        @include myFlex();
+        width: 95vw;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: $space-null;
+        margin-right: $space-null;
+    }
+
+    .main-info {
+        h2 {
+            font-size: pxToRem(15);
+        }
+
+        h3 {
+            font-size: pxToRem(10);
+        }
+
+        p {
+            font-size: pxToRem(10);
+        }
+
+        .main-info_seework {
+            @include myFlex();
+            justify-content: flex-end;
+            margin-top: $space-null;
+
+            img:first-of-type {
+                width: 35px;
+                height: 35px;
+                margin-top: $space-xxx-small;
+            }
+
+            img {
+                width: 43px;
+                height: 43px;
+            }
+
+        }
+
+    }
+    .main-downpart {
+    @include myFlex();
+    max-width: 90vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: $space-small;
+    margin-right: $space-small;
+}
+    .main-photo_belowdescription {
+
+        margin-left: $space-small;
+    margin-right: $space-small;
+        flex-basis: 40vw;
+
+        h2 {
+            font-size: pxToRem(15);
+        }
+
+        h3 {
+            font-size: pxToRem(10);
+        }
+
+        ul {
+            font-size: pxToRem(10);
+            padding-left: 5%;
+        }
+
+        p {
+            font-size: pxToRem(10);
+
+            img {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-wrapper_bars {
+        max-width: 90vw;
+        min-width: 60vw;
+        h2 {
+            font-size: pxToRem(15);
+        }
+
+        p {
+            font-size: pxToRem(10);
+        }
+    }
+
+    .main-wrapper_tools {
+        padding-left: 10px;
+
+        h2 {
+            padding-left: pxToRem(50);
+            font-size: pxToRem(15);
+        }
+
+        h3 {
+            padding-left: pxToRem(50);
+            font-size: pxToRem(10);
+        }
+
+        .main-tollsicon {
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            .main-tollsicon_img {
+                img {
+                    min-width: 10px;
+                    max-width: 15px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+
+            .main-tollsicon_imgstyle {
+                img {
+                    min-width: 10px;
+                    max-width: 15px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+
+            .main-tollsicon_imgtool {
+                img {
+                    min-width: 10px;
+                    max-width: 15px;
+                }
+
+                p {
+                    font-size: pxToRem(10);
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        &_myworks {
+            margin-left: $space-large;
+            margin-top: $space-medium;
+            width: 90%;
+
+            h2 {
+                font-size: pxToRem(15);
+            }
+
+            h3 {
+                font-size: pxToRem(12);
+            }
+
+            p {
+                font-size: pxToRem(10);
+            }
+        }
+        &_set{
+               
+                .main-wrapper_setimg{
+                     max-width: 270px;
+                    img{
+                        max-width: 270px; 
+                    }
+                   
+                }
+                
+            }
+    }
+}
