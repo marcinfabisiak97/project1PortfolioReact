@@ -16,27 +16,27 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
     const Header = (props) => {
         const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
         return (
-            <div className={props.klass} ><a onClick={()=>scrollToRef(props.link)}>{props.text}</a></div>
+            <div className={props.klass} ><a onClick={() => scrollToRef(props.link)}>{props.text}</a></div>
         )
     }
     return (
-        <div class="header" ref ={aboutref}>
-    <h3>M.F.</h3>
-    <div className="header__wrapper">
-        <div className="header__nav">
-            {
-            navHeader.map((el,index)=>{
-            return(
-            <Header key={index} klass={el.klass} link={el.link} text={el.text} />
-            )
-            })
-            }
-            <div class="header__navLi"><img src={twitter} alt="twitter" /></div>
-            <div class="header__navLi"><img src={facebook} alt="facebook" /></div>
-            <div class="header__navLi"><img src={linkedin} alt="linkedin" /></div>
+        <div class="header" ref={aboutref}>
+            <h3>M.F.</h3>
+            <div className="header__wrapper">
+                <div className="header__nav">
+                    {
+                        navHeader.map((el, index) => {
+                            return (
+                                <Header key={index} klass={el.klass} link={el.link} text={el.text} />
+                            )
+                        })
+                    }
+                    <div class="header__navLi"><img src={twitter} alt="twitter" /></div>
+                    <div class="header__navLi"><img src={facebook} alt="facebook" /></div>
+                    <div class="header__navLi"><img src={linkedin} alt="linkedin" /></div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     )
 }
 export default Wrapper;
