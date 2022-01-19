@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import github from '../../assets/github_icon.png';
 import devicon from '../../assets/dev_icon.png';
 import easycode from '../../assets/easy_code_button.png';
+import cv from '../../assets/cv.pdf';
 const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
     const myBar = [
 
@@ -17,6 +19,30 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
             </div>
         )
     }
+
+    const ButtonMailto = ({ mailto }) => {
+        return (
+            <React.Fragment>
+                <Link
+                    to='#'
+                    onClick={(e) => {
+                        window.location = mailto;
+                        e.preventDefault();
+                    }}
+                >
+                    <button><strong>Hire me</strong></button>
+                </Link>
+                <Link to={cv}
+                    target="_blank"
+                    download='cv Marcin Fabisiak'>
+                    <button><strong>Download CV</strong></button>
+                </Link>
+            </React.Fragment>
+        );
+    };
+
+
+
     return (
         <div className="main-upperpartanddownpart col-12">
             <div className="main-upperpart">
@@ -27,7 +53,7 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                         yers of experience within the field </p>
                     <div className="main-info_seework">
                         <p>See my work</p>
-                        <img src={github} />
+                        <a href='https://github.com/marcinfabisiak97'><img src={github} /></a>
                         <img src={devicon} />
                     </div>
                 </div>
@@ -35,8 +61,9 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                     <h1> // I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>
-                        <button><strong>Hire me</strong></button>
-                        <button><strong>Download CV</strong></button>
+                        <ButtonMailto mailto={'mailto:marcinfabisiak123@gmail.com'} />
+
+
                     </div>
                 </div>
             </div>

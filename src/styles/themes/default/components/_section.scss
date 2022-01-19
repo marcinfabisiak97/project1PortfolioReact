@@ -356,7 +356,7 @@
     align-items: flex-end;
     width: nth($sizes, 12);
     padding-right: 0;
-    max-height: 600px;
+    min-height: 600px;
     background-image: url(../../../../assets/koła_02.png),
       url(../../../../assets/zdj1.jpg);
     background-repeat: no-repeat;
