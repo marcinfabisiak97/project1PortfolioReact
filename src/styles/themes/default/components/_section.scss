@@ -73,9 +73,9 @@
   }
 
   button {
-    width: 40%;
+    width: 90%;
     padding: $space-x-small;
-    margin: $space-x-small;
+    margin: $space-small;
     background-color: $c-negroni;
     border-radius: 4px;
     border-style: none;
@@ -204,16 +204,26 @@
     height: 28px;
   }
 
-  &-go {
+  &-react {
     @include myFlex();
     color: $c-white;
     padding-left: $space-xx-small;
     align-items: center;
-    width: 10%;
+    width: 60%;
     background-color: $c-negroni;
     border: 1px solid $c-black;
     border-radius: 6px;
-
+    height: 28px;
+  }
+  &-typescript {
+    @include myFlex();
+    color: $c-white;
+    padding-left: $space-xx-small;
+    align-items: center;
+    width: 40%;
+    background-color: $c-negroni;
+    border: 1px solid $c-black;
+    border-radius: 6px;
     height: 28px;
   }
 }
@@ -235,6 +245,7 @@
   background-size: 300px;
   width: 100%;
   padding-left: $space-xxx-large;
+  padding-right: $space-xxx-large;
   padding-top: $space-small;
 
   h3 {
@@ -255,7 +266,6 @@
 
   img {
     background-color: $c-white;
-    width: 45px;
     margin: 0px;
     padding: $space-x-small $space-standard $space-large;
     border-radius: 2px;
@@ -269,52 +279,6 @@
     left: $space-null;
     font-size: pxToRem(8);
     text-align: center;
-  }
-}
-
-.main-tollsicon {
-  &_imgtool {
-    margin: $space-x-small $space-x-small $space-x-small;
-
-    img {
-      background-color: $c-white;
-      width: 45px;
-      margin: $space-null;
-      padding: $space-x-small $space-standard $space-large $space-standard;
-      border-radius: 2px;
-      @include boxShadow(3px 3px 3px 3px $c-gray);
-    }
-
-    p {
-      display: block;
-      position: relative;
-      bottom: 37px;
-      left: $space-null;
-      font-size: pxToRem(7);
-      text-align: center;
-    }
-  }
-
-  &_imgstyle {
-    margin: $space-x-small $space-x-small $space-x-small;
-
-    img {
-      background-color: $c-white;
-      width: 45px;
-      margin: $space-null;
-      padding: $space-x-small $space-standard $space-large;
-      border-radius: 2px;
-      @include boxShadow(3px 3px 3px 3px $c-gray);
-    }
-
-    p {
-      display: block;
-      position: relative;
-      bottom: $space-x-large;
-      left: $space-null;
-      font-size: pxToRem(8);
-      text-align: center;
-    }
   }
 }
 
@@ -342,9 +306,11 @@
   &_setimgbit {
     @include myFlex();
     justify-content: flex-end;
-
-    img {
-      width: 13%;
+    a {
+      width: 15%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -455,27 +421,8 @@
 
       .main-tollsicon_img {
         img {
-          min-width: 100px;
-        }
-
-        p {
-          font-size: pxToRem(15);
-        }
-      }
-
-      .main-tollsicon_imgstyle {
-        img {
-          min-width: 90px;
-        }
-
-        p {
-          font-size: pxToRem(15);
-        }
-      }
-
-      .main-tollsicon_imgtool {
-        img {
-          min-width: 100px;
+          width: 100px;
+          height: 100px;
         }
 
         p {
@@ -554,27 +501,8 @@
 
       .main-tollsicon_img {
         img {
-          min-width: 100px;
-        }
-
-        p {
-          font-size: pxToRem(15);
-        }
-      }
-
-      .main-tollsicon_imgstyle {
-        img {
-          min-width: 90px;
-        }
-
-        p {
-          font-size: pxToRem(15);
-        }
-      }
-
-      .main-tollsicon_imgtool {
-        img {
-          min-width: 100px;
+          width: 100px;
+          height: 100px;
         }
 
         p {
@@ -691,27 +619,8 @@
 
       .main-tollsicon_img {
         img {
-          min-width: 50px;
-        }
-
-        p {
-          font-size: pxToRem(8);
-        }
-      }
-
-      .main-tollsicon_imgstyle {
-        img {
-          min-width: 50px;
-        }
-
-        p {
-          font-size: pxToRem(8);
-        }
-      }
-
-      .main-tollsicon_imgtool {
-        img {
-          min-width: 50px;
+          width: 50px;
+          height: 50px;
         }
 
         p {
@@ -860,30 +769,8 @@
 
       .main-tollsicon_img {
         img {
-          min-width: 20px;
-          max-width: 25px;
-        }
-
-        p {
-          font-size: pxToRem(10);
-        }
-      }
-
-      .main-tollsicon_imgstyle {
-        img {
-          min-width: 20px;
-          max-width: 25px;
-        }
-
-        p {
-          font-size: pxToRem(10);
-        }
-      }
-
-      .main-tollsicon_imgtool {
-        img {
-          min-width: 20px;
-          max-width: 25px;
+          width: 20px;
+          height: 20px;
         }
 
         p {
@@ -1059,30 +946,8 @@
       flex-wrap: wrap;
       .main-tollsicon_img {
         img {
-          min-width: 10px;
-          max-width: 15px;
-        }
-
-        p {
-          font-size: pxToRem(10);
-        }
-      }
-
-      .main-tollsicon_imgstyle {
-        img {
-          min-width: 10px;
-          max-width: 15px;
-        }
-
-        p {
-          font-size: pxToRem(10);
-        }
-      }
-
-      .main-tollsicon_imgtool {
-        img {
-          min-width: 10px;
-          max-width: 15px;
+          width: 10px;
+          height: 10px;
         }
 
         p {

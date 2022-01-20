@@ -8,6 +8,8 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
     const myBar = [
 
         { 'klas': 'bar-javascript', 'text': 'javascript 60%' },
+        { 'klas': 'bar-react', 'text': 'react 60%' },
+        { 'klas': 'bar-typescript', 'text': 'typescript 40%' },
         { 'klas': 'bar-css', 'text': 'css 80%' },
         { 'klas': 'bar-html', 'text': 'html 100%' },
         { 'klas': 'bar-node', 'text': 'node 20%' },
@@ -40,9 +42,6 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
             </React.Fragment>
         );
     };
-
-
-
     return (
         <div className="main-upperpartanddownpart col-12">
             <div className="main-upperpart">
@@ -71,22 +70,23 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                 <div className="main-photo_belowdescription">
                     <h2 ref={skillref}> // About me</h2>
                     <h3>All about Techy</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                    <p>I am interested in practical creating innovative websites.
+                        I can easily make and maintain a full functional React sites.
+                        I always like to improve my skills and use new functionalities.
+                        I've recently started to improve make react with Typescript to make
+                        it more errorproof.
+                    </p>
                     <h3>My interests</h3>
                     <ul>
                         <li>music</li>
                         <li>kitesurfing</li>
                         <li>cycling</li>
                     </ul>
-                    <p>Ukończyłem kursy Easy Code <img src={easycode} /></p>
+                    <p>I finished Easy Code course <img src={easycode} /></p>
                 </div>
                 <div className="main-wrapper_bars">
                     <h2 id="skills">//Skills</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>All beneath techs or languages are known by practical site.</p>
                     {
                         myBar.map((el, index) => {
                             return (<Bar key={index} klas={el.klas} text={el.text} />)

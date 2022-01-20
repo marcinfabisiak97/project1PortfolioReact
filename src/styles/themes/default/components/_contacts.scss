@@ -1,333 +1,320 @@
 .main-wrapper {
-    &_contact {
-        @include myFlex();
-        background-color: $c-negroni;
-        height: 65vh;
-        background-image: url(../../../../assets/koła_03.png);
-        background-repeat: no-repeat;
-        background-position: 700px -200px;
-        background-size: 450px;
+  &_contact {
+    @include myFlex();
+    background-color: $c-negroni;
+    height: 75vh;
+    background-image: url(../../../../assets/koła_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
+
+  &_contactparent {
+    flex-basis: 190vw;
+    margin-right: $space-x-small;
+    margin-left: $space-x-large;
+
+    h2 {
+      font-size: pxToRem(40);
+      margin-left: 1vw;
     }
 
+    p {
+      font-size: pxToRem(25);
+      margin-left: 1vw;
+    }
+  }
 
-    &_contactparent {
-        flex-basis: 190vw;
-        margin-right: $space-x-small;
-        margin-left: $space-x-large;
+  &_contactchild1 > input {
+    margin: $space-x-small;
+    width: 80%;
+    padding: $space-small $space-small;
+    @include boxShadow(3px 3px 3px 3px $c-gray);
+    border-radius: 4px;
+    border-style: none;
+  }
 
-        h2 {
-            font-size: pxToRem(40);
-            margin-left: 1vw;
-        }
+  &_contactchild2 > input {
+    margin: $space-x-small;
+    width: 80%;
+    padding: $space-small $space-small;
+    @include boxShadow(3px 3px 3px 3px $c-gray);
+    border-radius: 4px;
+    border-style: none;
+  }
 
-        p {
-            font-size: pxToRem(25);
-            margin-left: 1vw;
-        }
+  &_contactchild3 > textarea {
+    margin: $space-x-small;
+    width: 80%;
+    padding: $space-y-large $space-small $space-y-large;
+    @include boxShadow(3px 3px 3px 3px $c-gray);
+    border-radius: 4px;
+    border-style: none;
+  }
 
+  &_contactchild3 > textarea:active {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &_contactchild {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: $space-x-medium;
+
+    input {
+      width: 150px;
+      padding: $space-xx-small;
+      border-radius: 4px;
+      @include boxShadow(3px 3px 3px 3px $c-gray);
+      border-radius: 4px;
+      background-color: $c-negroni;
+      color: $c-white;
+      font-size: pxToRem(20);
+      border-style: none;
     }
 
-    &_contactchild1>input {
-        margin: $space-x-small;
-        width: 80%;
-        padding: $space-small $space-small;
-        @include boxShadow(3px 3px 3px 3px $c-gray);
-        border-radius: 4px;
-        border-style: none;
+    input:active {
+      color: $c-black;
+      transform: scale(1.2, 1.2);
+      border-style: none;
+      outline: none;
     }
 
-    &_contactchild2>input {
-        margin: $space-x-small;
-        width: 80%;
-        padding: $space-small $space-small;
-        @include boxShadow(3px 3px 3px 3px $c-gray);
-        border-radius: 4px;
-        border-style: none;
+    input:focus {
+      outline: none;
     }
+  }
 
-    &_contactchild3>textarea {
-        margin: $space-x-small;
-        width: 80%;
-        padding: $space-y-large $space-small $space-y-large;
-        @include boxShadow(3px 3px 3px 3px $c-gray);
-        border-radius: 4px;
-        border-style: none;
+  &_contactphoto > img {
+    height: 20vh;
+  }
+
+  &_contactdescr {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: pxToRem(17);
+    width: 90vw;
+
+    p {
+      margin: $space-null;
     }
-
-    &_contactchild3>textarea:active {
-        text-decoration: none;
-        outline: none;
-    }
-
-    &_contactchild {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin: $space-x-medium;
-
-        input {
-            width: 150px;
-            padding: $space-xx-small;
-            border-radius: 4px;
-            @include boxShadow(3px 3px 3px 3px $c-gray);
-            border-radius: 4px;
-            background-color: $c-negroni;
-            color: $c-white;
-            font-size: pxToRem(20);
-            border-style: none;
-        }
-
-        input:active {
-            color: $c-black;
-            transform: scale(1.2, 1.2);
-            border-style: none;
-            outline: none;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-    }
-
-    &_contactphoto>img {
-        height: 20vh;
-    }
-
-    &_contactdescr {
-        text-align: right;
-        margin-right: 5%;
-        margin-top: 2%;
-        font-size: pxToRem(17);
-        width: 90vw;
-
-        p {
-            margin: $space-null;
-        }
-    }
+  }
 }
 
 .main-info_contact {
+  @include myFlex();
+  margin-left: $space-null;
+  margin-right: $space-standard;
+  margin-top: $space-standard;
+  width: 90vw;
+  max-height: 10vh;
+  @include boxShadow(5px 5px 5px 5px $c-gray);
+  margin-bottom: $space-null;
+  padding: 30px 30px 10px;
+  border-radius: 5px;
+  background-color: $c-white-opacity;
+
+  img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: $break-high) {
+  .main-wrapper {
+    &_contact {
+      @include myFlex();
+      background-color: $c-negroni;
+      max-height: 500px;
+      background-image: url(../../../../assets/koła_03.png);
+      background-repeat: no-repeat;
+      background-position: 700px -200px;
+      background-size: 450px;
+    }
+  }
+
+  .main-info_contact {
+    width: 100vw;
+    padding: $space-medium;
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-laptop) {
+  .main-wrapper {
+    &_contact {
+      @include myFlex();
+      background-color: $c-negroni;
+      height: 100vh;
+      background-image: url(../../../../assets/koła_03.png);
+      background-repeat: no-repeat;
+      background-position: 700px -200px;
+      background-size: 450px;
+    }
+
+    &_contactparent {
+      margin-right: $space-x-small;
+      margin-left: $space-xx-large;
+
+      h2 {
+        margin-left: 1vw;
+      }
+
+      p {
+        margin-left: 1vw;
+      }
+    }
+  }
+
+  .main-info_contact {
     @include myFlex();
     margin-left: $space-null;
     margin-right: $space-standard;
-    margin-top: $space-standard;
+    margin-top: $space-small;
     width: 90vw;
     max-height: 10vh;
     @include boxShadow(5px 5px 5px 5px $c-gray);
     margin-bottom: $space-null;
-    padding: 30px 30px 10px;
+    padding: 10px 10px 30px;
     border-radius: 5px;
     background-color: $c-white-opacity;
 
     img {
-        width: 120px;
+      width: 50px;
     }
-}
-
-@media only screen and (max-width: $break-high) {
-
-    .main-wrapper {
-        &_contact {
-            @include myFlex();
-            background-color: $c-negroni;
-            max-height: 500px;
-            background-image: url(../../../../assets/koła_03.png);
-            background-repeat: no-repeat;
-            background-position: 700px -200px;
-            background-size: 450px;
-        }
-    }
-
-    .main-info_contact {
-        width: 100vw;
-        padding: $space-medium;
-
-        img {
-            width: 120px;
-        }
-    }
-}
-
-@media only screen and (max-width: $break-laptop) {
-    .main-wrapper {
-        &_contact {
-            @include myFlex();
-            background-color: $c-negroni;
-            height: 100vh;
-            background-image: url(../../../../assets/koła_03.png);
-            background-repeat: no-repeat;
-            background-position: 700px -200px;
-            background-size: 450px;
-        }
-
-        &_contactparent {
-
-            margin-right: $space-x-small;
-            margin-left: $space-xx-large;
-
-            h2 {
-                margin-left: 1vw;
-            }
-
-            p {
-                margin-left: 1vw;
-            }
-        }
-    }
-
-    .main-info_contact {
-        @include myFlex();
-        margin-left: $space-null;
-        margin-right: $space-standard;
-        margin-top: $space-small;
-        width: 90vw;
-        max-height: 10vh;
-        @include boxShadow(5px 5px 5px 5px $c-gray);
-        margin-bottom: $space-null;
-        padding: 10px 10px 30px;
-        border-radius: 5px;
-        background-color: $c-white-opacity;
-
-        img {
-            width: 50px;
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: $break-mid) {
-    .main-wrapper {
-        &_contact {
-            @include myFlex();
-            background-color: $c-negroni;
-            max-height: 450px;
-            background-image: url(../../../../assets/koła_03.png);
-            background-repeat: no-repeat;
-            background-position: 700px -200px;
-            background-size: 450px;
-        }
-
-        &_contactparent {
-
-            margin-right: $space-x-small;
-            margin-left: $space-standard;
-
-            h2 {
-                font-size: pxToRem(30);
-                margin-left: 1vw;
-            }
-
-            p {
-                font-size: pxToRem(15);
-                margin-left: 1vw;
-            }
-        }
+  .main-wrapper {
+    &_contact {
+      @include myFlex();
+      background-color: $c-negroni;
+      max-height: 450px;
+      background-image: url(../../../../assets/koła_03.png);
+      background-repeat: no-repeat;
+      background-position: 700px -200px;
+      background-size: 450px;
     }
+
+    &_contactparent {
+      margin-right: $space-x-small;
+      margin-left: $space-standard;
+
+      h2 {
+        font-size: pxToRem(30);
+        margin-left: 1vw;
+      }
+
+      p {
+        font-size: pxToRem(15);
+        margin-left: 1vw;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: $break-mobile) {
-    .main-wrapper {
-        &_contact {
-            @include myFlex();
-            background-color: $c-negroni;
-            max-height: 450px;
-            background-image: url(../../../../assets/koła_03.png);
-            background-repeat: no-repeat;
-            background-position: 700px -200px;
-            background-size: 450px;
-        }
-
-        &_contactparent {
-
-            margin-right: $space-x-small;
-            margin-left: $space-standard;
-
-            h2 {
-                font-size: pxToRem(25);
-                margin-left: 1vw;
-            }
-
-            p {
-                font-size: pxToRem(15);
-                margin-left: 1vw;
-            }
-        }
-
-        &_contactchild {
-            input {
-                max-width: 60px;
-            }
-
-        }
+  .main-wrapper {
+    &_contact {
+      @include myFlex();
+      background-color: $c-negroni;
+      max-height: 450px;
+      background-image: url(../../../../assets/koła_03.png);
+      background-repeat: no-repeat;
+      background-position: 700px -200px;
+      background-size: 450px;
     }
 
-    .main-info_contact {
-        max-width: 150px;
-        padding: $space-x-small;
+    &_contactparent {
+      margin-right: $space-x-small;
+      margin-left: $space-standard;
 
-        p {
-            font-size: pxToRem(12);
-        }
+      h2 {
+        font-size: pxToRem(25);
+        margin-left: 1vw;
+      }
 
-
+      p {
+        font-size: pxToRem(15);
+        margin-left: 1vw;
+      }
     }
+
+    &_contactchild {
+      input {
+        max-width: 60px;
+      }
+    }
+  }
+
+  .main-info_contact {
+    max-width: 150px;
+    padding: $space-x-small;
+
+    p {
+      font-size: pxToRem(12);
+    }
+  }
 }
 
 @media only screen and (max-width: $break-xs) {
-    .main-wrapper {
-        &_contact {
-
-            @include myFlex();
-            flex-direction: column;
-            background-color: $c-negroni;
-            max-height: 480px;
-            background-image: url(../../../../assets/koła_03.png);
-            background-repeat: no-repeat;
-            background-position: 700px -200px;
-            background-size: 450px;
-        }
-
-        &_contactparent {
-
-            margin-right: $space-x-small;
-            margin-left: $space-standard;
-
-            h2 {
-                font-size: pxToRem(15);
-                margin-left: 1vw;
-            }
-
-            p {
-                font-size: pxToRem(15);
-                margin-left: 1vw;
-            }
-        }
-
-        &_contactchild {
-            input {
-                max-width: 90px;
-            }
-
-        }
+  .main-wrapper {
+    &_contact {
+      @include myFlex();
+      flex-direction: column;
+      background-color: $c-negroni;
+      max-height: 480px;
+      background-image: url(../../../../assets/koła_03.png);
+      background-repeat: no-repeat;
+      background-position: 700px -200px;
+      background-size: 450px;
     }
 
-    .main-info_contact {
-        max-width: 220px;
-        max-height: 70px;
-        padding: $space-x-small;
-        margin: $space-small;
-        img {
-            max-width: 50px;
-            max-height: 50px;
-        }
+    &_contactparent {
+      margin-right: $space-x-small;
+      margin-left: $space-standard;
 
-        p {
-            font-size: pxToRem(15);
-        }
+      h2 {
+        font-size: pxToRem(15);
+        margin-left: 1vw;
+      }
+
+      p {
+        font-size: pxToRem(15);
+        margin-left: 1vw;
+      }
     }
-    .main-wrapper_contactdescr{
-         p {
-            font-size: pxToRem(15);
-        }
+
+    &_contactchild {
+      input {
+        max-width: 90px;
+      }
     }
+  }
+
+  .main-info_contact {
+    max-width: 220px;
+    max-height: 70px;
+    padding: $space-x-small;
+    margin: $space-small;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    p {
+      font-size: pxToRem(15);
+    }
+  }
+  .main-wrapper_contactdescr {
+    p {
+      font-size: pxToRem(15);
+    }
+  }
 }
