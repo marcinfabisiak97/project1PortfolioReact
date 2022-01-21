@@ -223,8 +223,9 @@
   .main-wrapper {
     &_contact {
       @include myFlex();
+      flex-direction: column;
       background-color: $c-negroni;
-      max-height: 450px;
+      max-height: 490px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
