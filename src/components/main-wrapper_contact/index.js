@@ -23,7 +23,7 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
                 <img src={kontaktikona} />
                 <div class="main-info_contactdesc">
                     <p>marcibfabisiak123@gmail.com</p>
-                    <p>+32 123 345 567</p>
+                    <p>+48 604 132 689</p>
                 </div>
             </div>
             <div class="main-wrapper_contactdescr">
@@ -31,11 +31,9 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
                     <img src={zdj1} />
                 </div>
                 <p>author: Marcin Fabisiak</p>
-                <p>username: @marcinfabisiak</p>
-                <p>description: University Graduate | Software Engineer</p>
-                <p>homepage: marcinfabisiak.github.pl</p>
-                <p>repository type:Open-source</p>
-                <p>url: github.com/marcinfaisiak</p>
+                <p>description: Fron End Developer</p>
+                <p>git: https://github.com/marcinfabisiak97</p>
+
             </div>
         </div>
     )
