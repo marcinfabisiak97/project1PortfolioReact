@@ -14,7 +14,7 @@ const Mainwrapperset = () => {
 				<img src={porfolio01} />
 				<div class="main-wrapper_setimgbit">
 					<a href='https://bitbucket.org/marcinfabisiak123/pr2/src/dev/'><img src={bitbucketicon} /></a>
-					<a href='https://project2quizreact.netlify.app'><img src={externallink} /></a>
+					<a href='https://projekt2reactquiz.netlify.app'><img src={externallink} /></a>
 				</div>
 			</div>
 			<div class="main-wrapper_setimg">
