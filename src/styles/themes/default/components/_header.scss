@@ -291,6 +291,16 @@
 }
 
 @media only screen and (max-width: $break-xs) {
+  .header > h3 {
+    @include myFlex();
+    justify-content: center;
+    font-size: pxToRem(45);
+    width: 10vw;
+    margin-top: $space-xx-small;
+    margin-bottom: $space-xx-small;
+    padding-top: $space-xx-small;
+    padding-bottom: $space-xx-small;
+  }
   .header {
     max-width: 100vw;
     @include myFlex();
@@ -306,18 +316,6 @@
       align-items: center;
       margin: $space-null;
     }
-  }
-  .header > h3 {
-    @include myFlex();
-    justify-content: center;
-    font-size: pxToRem(45);
-    width: 10vw;
-    margin-top: $space-xx-small;
-    margin-bottom: $space-xx-small;
-    padding-top: $space-xx-small;
-    padding-bottom: $space-xx-small;
-  }
-  .header {
     &__nav {
       min-width: 70vw;
       max-width: 80vw;
@@ -325,7 +323,7 @@
       max-height: 7vh;
       display: flex;
       justify-content: space-between;
-      font-size: pxToRem(15);
+      font-size: pxToRem(20);
       padding: $space-xxx-small;
       margin: $space-small $space-null;
     }
@@ -348,11 +346,11 @@
 
     &__navLi > a {
       text-decoration: none;
-      font-size: pxToRem(10);
+      font-size: pxToRem(14);
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(12);
+      font-size: pxToRem(16);
       transition: font-size 0.5s;
     }
   }
