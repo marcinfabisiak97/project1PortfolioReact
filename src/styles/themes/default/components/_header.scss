@@ -310,7 +310,7 @@
   .header > h3 {
     @include myFlex();
     justify-content: center;
-    font-size: pxToRem(30);
+    font-size: pxToRem(45);
     width: 10vw;
     margin-top: $space-xx-small;
     margin-bottom: $space-xx-small;
