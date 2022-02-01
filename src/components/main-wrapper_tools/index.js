@@ -5,8 +5,11 @@ import reduxicon from '../../assets/redux_icon_s.png';
 import bitbucket from '../../assets/devtech/bitbucket.png';
 import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
+import javascript from '../../assets/devtech/javascript.png';
+
 const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
   const myTools = [
+    { 'klas': 'main-tollsicon_img', 'pict': javascript, 'text': 'Javascript' },
     { 'klas': 'main-tollsicon_img', 'pict': reacticon, 'text': 'React' },
     { 'klas': 'main-tollsicon_img', 'pict': typescripticon, 'text': 'Typescript' },
     { 'klas': 'main-tollsicon_img', 'pict': reduxicon, 'text': 'Redux' },

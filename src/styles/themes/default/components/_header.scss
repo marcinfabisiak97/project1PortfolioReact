@@ -3,7 +3,7 @@
   justify-content: flex-end;
   background-color: $c-gray-opacity;
   background-image: linear-gradient($c-gray-opacity, $c-white);
-  height: 15vh;
+  height: 10vh;
   width: 100%;
 }
 
@@ -37,7 +37,7 @@
 
   &__nav {
     font-size: pxToRem(25);
-    margin: $space-standard;
+    margin: $space-small;
     width: 100%;
     align-items: center;
     background-color: $c-negroni;
@@ -83,15 +83,9 @@
 
   .header {
     &__nav {
-      padding: $space-x-small;
-      margin: $space-small;
-    }
-  }
-
-  .header {
-    &__nav {
       font-size: pxToRem(25);
       padding: $space-medium;
+      margin: $space-small;
     }
 
     &__navLi1 {
@@ -193,8 +187,7 @@
   .header {
     &__nav {
       width: 60vw;
-      height: 10vh;
-      font-size: pxToRem(15);
+      font-size: pxToRem(20);
       padding: $space-xxx-small;
       margin-top: $space-small;
     }
@@ -256,8 +249,6 @@
   .header {
     &__nav {
       width: 60vw;
-      height: 10vh;
-      font-size: pxToRem(15);
       padding: $space-xxx-small;
       margin-top: $space-small;
     }
@@ -280,11 +271,11 @@
 
     &__navLi > a {
       text-decoration: none;
-      font-size: pxToRem(15);
+      font-size: pxToRem(20);
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(20);
+      font-size: pxToRem(25);
       transition: font-size 0.5s;
     }
   }
@@ -292,7 +283,7 @@
 
 @media only screen and (max-width: $break-xs) {
   .header > h3 {
-    @include myFlex();
+    display: none;
     justify-content: center;
     font-size: pxToRem(45);
     width: 10vw;
@@ -302,12 +293,10 @@
     padding-bottom: $space-xx-small;
   }
   .header {
-    max-width: 100vw;
     @include myFlex();
     justify-content: space-around;
     background-color: $c-gray-opacity;
     background-image: linear-gradient($c-gray-opacity, $c-white);
-    height: 15vh;
     box-sizing: content-box;
     &__wrapper {
       @include myFlex();
@@ -315,17 +304,14 @@
       background-size: cover;
       align-items: center;
       margin: $space-null;
+      width: 90%;
     }
     &__nav {
-      min-width: 70vw;
-      max-width: 80vw;
-      min-height: 5vh;
-      max-height: 7vh;
       display: flex;
       justify-content: space-between;
-      font-size: pxToRem(20);
-      padding: $space-xxx-small;
-      margin: $space-small $space-null;
+      width: 100vw;
+      padding: $space-x-small;
+      margin: $space-xxx-small $space-null;
     }
 
     &__navLi1 {
