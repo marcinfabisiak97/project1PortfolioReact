@@ -53,7 +53,7 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                     <div className="main-info_seework">
                         <p>See my work</p>
                         <a href='https://github.com/marcinfabisiak97'><img src={github} /></a>
-                        <img src={devicon} />
+
                     </div>
                 </div>
                 <div className="main-photo_rightdescription">
