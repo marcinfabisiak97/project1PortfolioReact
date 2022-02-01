@@ -48,16 +48,13 @@
   @include myFlex();
   justify-content: flex-end;
   margin-top: $space-null;
-
-  img:first-of-type {
+  img {
+    transition: 0.5s transform ease-in-out;
     width: 55px;
     height: 55px;
-    margin-top: $space-xxx-small;
   }
-
-  img {
-    width: 63px;
-    height: 63px;
+  img:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -158,10 +155,12 @@
   border-radius: 6px;
   height: 30px;
   margin-bottom: $space-x-small;
+  font-size: pxToRem(20);
 }
 
 .bar {
   color: $c-nightRider;
+
   &-php {
     @include myFlex();
     padding-left: $space-xx-small;
@@ -306,10 +305,16 @@
     @include myFlex();
     justify-content: flex-end;
     a {
+      transition: 0.5s transform ease-in-out;
       width: 15%;
       img {
         width: 100%;
       }
+    }
+  }
+  &_setimgbit {
+    a:hover {
+      transform: scale(1.2);
     }
   }
 }
@@ -321,7 +326,7 @@
     align-items: flex-end;
     width: nth($sizes, 12);
     padding-right: 0;
-    max-height: 600px;
+    height: 600px;
     background-image: url(../../../../assets/koła_02.png),
       url(../../../../assets/zdj1.jpg);
     background-repeat: no-repeat;
@@ -589,6 +594,9 @@
         vertical-align: middle;
       }
     }
+  }
+  .wrapper-bar {
+    font-size: pxToRem(15);
   }
 
   .main-wrapper_bars {
@@ -921,7 +929,9 @@
       font-size: pxToRem(10);
     }
   }
-
+  .wrapper-bar {
+    font-size: pxToRem(10);
+  }
   .main-wrapper_tools {
     padding-left: 10px;
     min-height: 300px;
