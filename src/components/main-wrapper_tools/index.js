@@ -6,7 +6,7 @@ import bitbucket from '../../assets/devtech/bitbucket.png';
 import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
 import javascript from '../../assets/devtech/javascript.png';
-
+import { useState, useRef, useLayoutEffect } from 'react';
 const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
   const myTools = [
     { 'klas': 'main-tollsicon_img', 'pict': javascript, 'text': 'Javascript' },
@@ -18,23 +18,19 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
     { 'klas': 'main-tollsicon_img', 'pict': bitbucket, 'text': 'Bitbucket' },
     { 'klas': 'main-tollsicon_img', 'pict': sourcetree, 'text': 'Sourcetree' }
   ]
-  const Image = (props) => {
-    return (
-      <div class={props.klas}>
-        <img src={props.pict} />
-        <p>{props.text}<br />{props.number}</p>
-      </div>
-    )
-  }
+
   return (
-    <div class="main-wrapper_tools" ref={myworkref}>
+    <div className="main-wrapper_tools" ref={myworkref}>
       <h2>//Tools</h2>
       <h3>My essentials</h3>
-      <div class="main-tollsicon">
+      <div className="main-tollsicon">
         {
           myTools.map((el, index) => {
             return (
-              <Image key={index} klas={el.klas} pict={el.pict} text={el.text} number={el.number} />
+              <div key={index} className={el.klas}>
+                <img src={el.pict} />
+                <p>{el.text}<br />{el.number}</p>
+              </div>
             )
           })
         }

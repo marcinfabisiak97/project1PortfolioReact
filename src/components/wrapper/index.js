@@ -20,7 +20,7 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         )
     }
     return (
-        <div class="header" ref={aboutref}>
+        <div className="header" ref={aboutref}>
             <h3>M.F.</h3>
             <div className="header__wrapper">
                 <div className="header__nav">
@@ -32,7 +32,7 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
                         })
                     }
 
-                    <div class="header__navLi"><img src={linkedin} alt="linkedin" /></div>
+                    <div className="header__navLi"><img src={linkedin} alt="linkedin" /></div>
                 </div>
             </div>
         </div>

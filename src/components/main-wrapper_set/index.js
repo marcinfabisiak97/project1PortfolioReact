@@ -9,17 +9,17 @@ import porfolio06 from '../../assets/portfolio_case_06.png';
 const Mainwrapperset = () => {
 
 	return (
-		<div class="main-wrapper_set" >
-			<div class="main-wrapper_setimg">
+		<div className="main-wrapper_set" >
+			<div className="main-wrapper_setimg">
 				<img src={porfolio01} />
-				<div class="main-wrapper_setimgbit">
+				<div className="main-wrapper_setimgbit">
 					<a href='https://bitbucket.org/marcinfabisiak123/pr2/src/dev/'><img src={bitbucketicon} /></a>
 					<a href='https://projekt2reactquiz.netlify.app'><img src={externallink} /></a>
 				</div>
 			</div>
-			<div class="main-wrapper_setimg">
+			<div className="main-wrapper_setimg">
 				<img src={porfolio02} />
-				<div class="main-wrapper_setimgbit">
+				<div className="main-wrapper_setimgbit">
 					<a href='https://bitbucket.org/marcinfabisiak123/pr3/src/dev/'><img src={bitbucketicon} /></a>
 					<a href='https://projekty3typescriptmarcinfabisiak.netlify.app'><img src={externallink} /></a>
 				</div>
