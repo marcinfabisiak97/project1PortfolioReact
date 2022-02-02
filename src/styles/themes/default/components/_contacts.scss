@@ -118,7 +118,8 @@
   background-color: $c-white-opacity;
 
   img {
-    width: 120px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -127,7 +128,7 @@
     &_contact {
       @include myFlex();
       background-color: $c-negroni;
-      max-height: 500px;
+      max-height: 600px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -138,9 +139,13 @@
   .main-info_contact {
     width: 45vw;
     padding: $space-medium;
-
+    max-height: 15vh;
     img {
-      width: 120px;
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      font-size: pxToRem(30);
     }
   }
 }
@@ -177,15 +182,18 @@
     margin-right: $space-standard;
     margin-top: $space-small;
     width: 70vw;
-    max-height: 10vh;
+    max-height: 15vh;
     @include boxShadow(5px 5px 5px 5px $c-gray);
     margin-bottom: $space-null;
     padding: 10px 10px 30px;
     border-radius: 5px;
     background-color: $c-white-opacity;
-
     img {
-      width: 50px;
+      width: 80px;
+      height: 80px;
+    }
+    p {
+      font-size: pxToRem(20);
     }
   }
 }
@@ -220,6 +228,17 @@
   .main-wrapper_contactdescr {
     p {
       font-size: pxToRem(12);
+    }
+  }
+  .main-info_contact {
+    width: 70vw;
+    max-height: 10vh;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    p {
+      font-size: pxToRem(15);
     }
   }
 }
@@ -257,14 +276,25 @@
         max-width: 60px;
       }
     }
+    &_contactdescr {
+      padding-bottom: 20px;
+      p {
+        font-size: pxToRem(12);
+      }
+    }
   }
 
   .main-info_contact {
-    width: 25vw;
+    width: 30vw;
+    max-height: 12vh;
     padding: $space-small;
-
+    margin-left: $space-small;
+    img {
+      width: 70px;
+      height: 70px;
+    }
     p {
-      font-size: pxToRem(12);
+      font-size: pxToRem(15);
     }
   }
 }
@@ -275,7 +305,7 @@
       @include myFlex();
       flex-direction: column;
       background-color: $c-negroni;
-      max-height: 480px;
+      max-height: 400px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -292,29 +322,48 @@
       }
 
       p {
-        font-size: pxToRem(15);
+        font-size: pxToRem(12);
         margin-left: 1vw;
       }
     }
-
     &_contactchild {
       input {
         max-width: 90px;
       }
     }
+    &_contactchild1 {
+      input {
+        max-width: 200px;
+        max-height: 5px;
+        font-size: pxToRem(10);
+      }
+    }
+    &_contactchild2 {
+      input {
+        max-width: 200px;
+        max-height: 5px;
+        font-size: pxToRem(10);
+      }
+    }
+    &_contactchild3 {
+      textarea {
+        max-width: 200px;
+        font-size: pxToRem(10);
+      }
+    }
   }
 
   .main-info_contact {
-    width: 50vw;
+    width: 40vw;
     padding: $space-x-small;
     margin: $space-small;
     img {
-      max-width: 50px;
-      max-height: 50px;
+      width: 50px;
+      height: 50px;
     }
 
     p {
-      font-size: pxToRem(15);
+      font-size: pxToRem(10);
     }
   }
   .main-wrapper_contactdescr {
@@ -325,6 +374,6 @@
 }
 @media only screen and (max-width: 326px) {
   .main-info_contact {
-    width: 70vw;
+    width: 45vw;
   }
 }

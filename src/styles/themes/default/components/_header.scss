@@ -78,7 +78,7 @@
     @include myFlex();
     font-size: pxToRem(150);
     margin-top: $space-medium;
-    padding-top: $space-x-small;
+    padding-top: $space-medium;
   }
 
   .header {
@@ -125,7 +125,7 @@
     width: 40vw;
     margin-top: $space-null;
     margin-bottom: $space-null;
-    padding-top: $space-null;
+    padding-top: $space-standard;
     padding-bottom: $space-null;
   }
 
@@ -180,7 +180,7 @@
     width: 20vw;
     margin-top: $space-xx-small;
     margin-bottom: $space-xx-small;
-    padding-top: $space-xx-small;
+    padding-top: $space-small;
     padding-bottom: $space-xx-small;
   }
 
