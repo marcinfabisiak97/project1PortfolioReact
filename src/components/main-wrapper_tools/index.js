@@ -6,8 +6,21 @@ import bitbucket from '../../assets/devtech/bitbucket.png';
 import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
 import javascript from '../../assets/devtech/javascript.png';
-import { useState, useRef, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+
 const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 750) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
   const myTools = [
     { 'klas': 'main-tollsicon_img', 'pict': javascript, 'text': 'Javascript' },
     { 'klas': 'main-tollsicon_img', 'pict': reacticon, 'text': 'React' },
@@ -27,7 +40,7 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
         {
           myTools.map((el, index) => {
             return (
-              <div key={index} className={el.klas}>
+              <div style={{ transform: `translateX(${(scrolled ? "0" : "-100vw")})` }} key={index} className={el.klas}>
                 <img src={el.pict} />
                 <p>{el.text}<br />{el.number}</p>
               </div>
