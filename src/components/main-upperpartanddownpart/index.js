@@ -4,23 +4,30 @@ import github from '../../assets/github_icon.png';
 import devicon from '../../assets/dev_icon.png';
 import easycode from '../../assets/easy_code_button.png';
 import cv from '../../assets/cv.pdf';
+import { useState, useRef, useEffect } from 'react';
 const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+    const [scrolled, setScrolled] = useState(false);
+    const dref = useRef(null);
+    const handleScroll = () => {
+        const YPosition = dref.current.getBoundingClientRect().top;
+        const offset = window.scrollY;
+        if (offset > YPosition) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    });
     const myBar = [
-
-        { 'klas': 'bar-javascript', 'text': 'javascript 60%' },
-        { 'klas': 'bar-react', 'text': 'react 60%' },
-        { 'klas': 'bar-typescript', 'text': 'typescript 40%' },
-        { 'klas': 'bar-css', 'text': 'css 80%' },
-        { 'klas': 'bar-html', 'text': 'html 100%' },
-        { 'klas': 'bar-node', 'text': 'node 20%' },
+        { 'styl': '60%', 'klas': 'bar-javascript', 'text': 'javascript 60%' },
+        { 'styl': '60%', 'klas': 'bar-react', 'text': 'react 60%' },
+        { 'styl': '40%', 'klas': 'bar-typescript', 'text': 'typescript 40%' },
+        { 'styl': '80%', 'klas': 'bar-css', 'text': 'css 80%' },
+        { 'styl': '100%', 'klas': 'bar-html', 'text': 'html 100%' },
+        { 'styl': '20%', 'klas': 'bar-node', 'text': 'node 20%' },
     ]
-    const Bar = (props) => {
-        return (
-            <div className="wrapper-bar">
-                <div className={props.klas}>{props.text}</div>
-            </div>
-        )
-    }
 
     const ButtonMailto = ({ mailto }) => {
         return (
@@ -82,19 +89,25 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                         <li>kitesurfing</li>
                         <li>cycling</li>
                     </ul>
-                    <p>I finished Easy Code course <img src={easycode} /></p>
+                    <p>I finished Easy Code course <img src={easycode} alt="easycode" /></p>
                 </div>
-                <div className="main-wrapper_bars">
+                <div className="main-wrapper_bars" ref={dref}>
                     <h2 id="skills">//Skills</h2>
                     <p>All beneath techs or languages are known by practical site.</p>
                     {
                         myBar.map((el, index) => {
-                            return (<Bar key={index} klas={el.klas} text={el.text} />)
+                            return (
+                                <div className="wrapper-bar" >
+                                    <div key={index} style={{ width: `${(scrolled ? el.styl : "20%")}` }} className={el.klas}>
+                                        {el.text}
+                                    </div>
+                                </div>
+                            )
                         })
                     }
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default Upperpartanddownpart;

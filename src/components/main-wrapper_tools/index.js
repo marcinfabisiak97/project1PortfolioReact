@@ -12,7 +12,7 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
   const [scrolled, setScrolled] = useState(false);
   const ourRef = useRef(null);
   const handleScroll = () => {
-    const YPosition = ourRef.current.getBoundingClientRect().top
+    const YPosition = ourRef.current.getBoundingClientRect().top;
     const offset = window.scrollY;
     if (offset > YPosition) {
       setScrolled(true);
@@ -35,10 +35,10 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
   ]
 
   return (
-    <div className="main-wrapper_tools" ref={myworkref} ref={ourRef}>
+    <div className="main-wrapper_tools" ref={myworkref} >
       <h2>//Tools</h2>
       <h3>My essentials</h3>
-      <div className="main-tollsicon" >
+      <div className="main-tollsicon" ref={ourRef}>
         {
           myTools.map((el, index) => {
             return (
