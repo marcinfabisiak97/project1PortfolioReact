@@ -6,13 +6,15 @@ import bitbucket from '../../assets/devtech/bitbucket.png';
 import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
 import javascript from '../../assets/devtech/javascript.png';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
   const [scrolled, setScrolled] = useState(false);
+  const ourRef = useRef(null);
   const handleScroll = () => {
+    const YPosition = ourRef.current.getBoundingClientRect().top
     const offset = window.scrollY;
-    if (offset > 750) {
+    if (offset > YPosition) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -33,10 +35,10 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
   ]
 
   return (
-    <div className="main-wrapper_tools" ref={myworkref}>
+    <div className="main-wrapper_tools" ref={myworkref} ref={ourRef}>
       <h2>//Tools</h2>
       <h3>My essentials</h3>
-      <div className="main-tollsicon">
+      <div className="main-tollsicon" >
         {
           myTools.map((el, index) => {
             return (
