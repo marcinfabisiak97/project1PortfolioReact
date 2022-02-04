@@ -2,7 +2,7 @@
   &_contact {
     @include myFlex();
     background-color: $c-negroni;
-    height: 75vh;
+    height: 80vh;
     background-image: url(../../../../assets/koła_03.png);
     background-repeat: no-repeat;
     background-position: 700px -200px;
@@ -62,8 +62,9 @@
     justify-content: flex-end;
     align-items: flex-end;
     margin: $space-x-medium;
+    padding-bottom: $space-x-medium;
 
-    input {
+    button {
       width: 150px;
       padding: $space-xx-small;
       border-radius: 4px;
@@ -75,14 +76,10 @@
       border-style: none;
     }
 
-    input:active {
+    button:active {
       color: $c-black;
       transform: scale(1.2, 1.2);
       border-style: none;
-      outline: none;
-    }
-
-    input:focus {
       outline: none;
     }
   }
@@ -203,7 +200,7 @@
     &_contact {
       @include myFlex();
       background-color: $c-negroni;
-      max-height: 450px;
+      max-height: 500px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -272,8 +269,8 @@
     }
 
     &_contactchild {
-      input {
-        max-width: 60px;
+      button {
+        max-width: 90px;
       }
     }
     &_contactdescr {
@@ -327,7 +324,7 @@
       }
     }
     &_contactchild {
-      input {
+      button {
         max-width: 90px;
       }
     }
