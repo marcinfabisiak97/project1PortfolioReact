@@ -14,7 +14,6 @@ const Mainwrapperblog = ({ aboutref, skillref, myworkref, blogref, contactref })
                     </div>
                     <div className="main-wrapper_blogtitle01desc">
                         <h2>//Searching on my own</h2>
-                        <h4>author 01.09.2020</h4>
                         <h3>Using my own experience</h3>
                         <p>I always start solving problems on my own.
                             The best way is to serach similar problem
@@ -27,7 +26,6 @@ const Mainwrapperblog = ({ aboutref, skillref, myworkref, blogref, contactref })
                     </div>
                     <div className="main-wrapper_blogtitle01desc">
                         <h2>//Looking for help in Stack Overflow</h2>
-                        <h4>author 01.09.2020</h4>
                         <h3>Using experience of other</h3>
                         <p>When I don't have clue how to solve problem I look it on Stack, some times make a new topic.
                             When Stack don't have any solution and I really don't known I ask my mentor.
