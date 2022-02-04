@@ -1,6 +1,8 @@
 import kontaktikona from '../../assets/kontakt_ikona.png';
 import zdj1 from '../../assets/zdj1.jpg';
+import React, { useState } from 'react';
 const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+
     return (
         <div className="main-wrapper_contact" ref={contactref}>
             <div className="main-wrapper_contactparent">
@@ -13,7 +15,7 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
                     <input type="email" name="" id="name" placeholder="Your name" required />
                 </div>
                 <div className="main-wrapper_contactchild3">
-                    <textarea defaultValue='How can I help you? &#13;Please,put here your meassage/reguest"'></textarea>
+                    <textarea placeholder='How can I help you? &#13;Please,put here your meassage/reguest'></textarea>
                 </div>
             </div>
             <div className="main-wrapper_contactchild">
