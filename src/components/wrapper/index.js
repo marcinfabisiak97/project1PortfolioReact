@@ -32,7 +32,6 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
                         })
                     }
 
-                    <div className="header__navLi"><img src={linkedin} alt="linkedin" /></div>
                 </div>
             </div>
         </div>
