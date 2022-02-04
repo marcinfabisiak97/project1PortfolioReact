@@ -161,80 +161,27 @@
 .bar {
   color: $c-nightRider;
 
-  &-php {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 20%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
-  }
-
   &-javascript {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 60%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
 
   &-css {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 80%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
 
   &-html {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 100%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
 
   &-node {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 20%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
 
   &-react {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 60%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
   &-typescript {
-    @include myFlex();
-    padding-left: $space-xx-small;
-    align-items: center;
-    width: 40%;
-    background-color: $c-negroni;
-    border: 1px solid $c-black;
-    border-radius: 6px;
-    height: 28px;
+    @include bar;
   }
 }
 
@@ -273,6 +220,7 @@
   @include boxShadow(3px 3px 3px 3px $c-gray);
   background-color: $c-white;
   padding: 1% 2%;
+  transition: 0.5s transform;
   p {
     text-align: center;
     margin-bottom: 0;

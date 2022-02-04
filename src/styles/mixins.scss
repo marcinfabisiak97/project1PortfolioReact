@@ -1,40 +1,53 @@
 @function pxToRem($pxsize, $rembase: 16) {
-    @return ($pxsize / $rembase)+rem;
+  @return ($pxsize / $rembase) + rem;
 }
 
 @mixin boxShadow($arg) {
-    -webkit-box-shadow: $arg;
-    box-shadow: $arg;
+  -webkit-box-shadow: $arg;
+  box-shadow: $arg;
 }
-
 @mixin myFlex() {
-    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+  $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
 
-    @each $prefix in $prefixes {
-        display: $prefix;
-    }
+  @each $prefix in $prefixes {
+    display: $prefix;
+  }
+}
+@mixin bar {
+  @include myFlex();
+  transition: 1s width;
+  padding-left: $space-xx-small;
+  align-items: center;
+  background-color: $c-negroni;
+  border: 1px solid $c-black;
+  border-radius: 6px;
+  height: 28px;
+}
+@mixin myFlex() {
+  $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+
+  @each $prefix in $prefixes {
+    display: $prefix;
+  }
 }
 
-@mixin createFlex($flexDirection:false, $boxD:false, $boxO:false) {
-
-    @if $flexDirection {
-        -webkit-box-orient: $boxO;
-        -webkit-box-direction: $boxD;
-        -ms-flex-direction: $flexDirection;
-        flex-direction: $flexDirection;
-    }
+@mixin createFlex($flexDirection: false, $boxD: false, $boxO: false) {
+  @if $flexDirection {
+    -webkit-box-orient: $boxO;
+    -webkit-box-direction: $boxD;
+    -ms-flex-direction: $flexDirection;
+    flex-direction: $flexDirection;
+  }
 }
 
 @mixin createCol() {
-    @each $size in $sizes {
-        $index: index($sizes, $size);
+  @each $size in $sizes {
+    $index: index($sizes, $size);
 
-        .col-#{$index} {
-            width: $size;
-
-        }
-
+    .col-#{$index} {
+      width: $size;
     }
+  }
 }
 
 // @include createCol();
@@ -51,7 +64,7 @@
 // 	background-color: $bcolor;
 // 	}
 // }
-.main-info{
-	background-color: $c-cloudy;
-	color: scale-color($c-cloudy, $lightness: 10%);
+.main-info {
+  background-color: $c-cloudy;
+  color: scale-color($c-cloudy, $lightness: 10%);
 }
