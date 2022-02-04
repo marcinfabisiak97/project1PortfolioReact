@@ -102,21 +102,19 @@
 }
 
 .main-info_contact {
-  @include myFlex();
-  margin-left: $space-null;
-  margin-right: $space-standard;
-  margin-top: $space-standard;
-  width: 90vw;
-  max-height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+  max-height: 100px;
+  margin-top: 10%;
+  padding: 1%;
+  background-color: hsla(0, 0%, 100%, 0.7);
   @include boxShadow(5px 5px 5px 5px $c-gray);
-  margin-bottom: $space-null;
-  padding: 30px 30px 10px;
-  border-radius: 5px;
-  background-color: $c-white-opacity;
-
+  border-radius: 10px;
   img {
-    width: 100px;
-    height: 100px;
+    max-width: 70px;
+    max-height: 70px;
   }
 }
 
@@ -131,19 +129,13 @@
       background-position: 700px -200px;
       background-size: 450px;
     }
+    &_contactdescr {
+      width: 50vw;
+    }
   }
-
   .main-info_contact {
-    width: 45vw;
-    padding: $space-medium;
-    max-height: 16vh;
-    img {
-      width: 100px;
-      height: 100px;
-    }
-    p {
-      font-size: pxToRem(28);
-    }
+    max-width: 600px;
+    max-height: 100px;
   }
 }
 
@@ -158,7 +150,9 @@
       background-position: 700px -200px;
       background-size: 450px;
     }
-
+    &_contactdescr {
+      width: 90vw;
+    }
     &_contactparent {
       margin-right: $space-x-small;
       margin-left: $space-xx-large;
@@ -170,27 +164,6 @@
       p {
         margin-left: 1vw;
       }
-    }
-  }
-
-  .main-info_contact {
-    @include myFlex();
-    margin-left: $space-null;
-    margin-right: $space-standard;
-    margin-top: $space-small;
-    width: 70vw;
-    max-height: 10vh;
-    @include boxShadow(5px 5px 5px 5px $c-gray);
-    margin-bottom: $space-null;
-    padding: 10px 10px 30px;
-    border-radius: 5px;
-    background-color: $c-white-opacity;
-    img {
-      width: 80px;
-      height: 80px;
-    }
-    p {
-      font-size: pxToRem(20);
     }
   }
 }
@@ -227,17 +200,6 @@
       font-size: pxToRem(12);
     }
   }
-  .main-info_contact {
-    width: 70vw;
-    max-height: 10vh;
-    img {
-      width: 70px;
-      height: 70px;
-    }
-    p {
-      font-size: pxToRem(15);
-    }
-  }
 }
 
 @media only screen and (max-width: $break-mobile) {
@@ -270,7 +232,7 @@
 
     &_contactchild {
       button {
-        max-width: 90px;
+        max-width: 60px;
       }
     }
     &_contactdescr {
@@ -280,19 +242,8 @@
       }
     }
   }
-
   .main-info_contact {
-    width: 30vw;
-    max-height: 12vh;
-    padding: $space-small;
-    margin-left: $space-small;
-    img {
-      width: 70px;
-      height: 70px;
-    }
-    p {
-      font-size: pxToRem(15);
-    }
+    margin: auto;
   }
 }
 
@@ -350,19 +301,6 @@
     }
   }
 
-  .main-info_contact {
-    width: 40vw;
-    padding: $space-x-small;
-    margin: $space-small;
-    img {
-      width: 50px;
-      height: 50px;
-    }
-
-    p {
-      font-size: pxToRem(10);
-    }
-  }
   .main-wrapper_contactdescr {
     p {
       font-size: pxToRem(10);
@@ -371,6 +309,6 @@
 }
 @media only screen and (max-width: 326px) {
   .main-info_contact {
-    width: 45vw;
+    margin: auto;
   }
 }
