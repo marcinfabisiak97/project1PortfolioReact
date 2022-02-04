@@ -110,7 +110,7 @@
   margin-right: $space-standard;
   margin-top: $space-standard;
   width: 90vw;
-  max-height: 10vh;
+  max-height: 15vh;
   @include boxShadow(5px 5px 5px 5px $c-gray);
   margin-bottom: $space-null;
   padding: 30px 30px 10px;
@@ -139,13 +139,13 @@
   .main-info_contact {
     width: 45vw;
     padding: $space-medium;
-    max-height: 10vh;
+    max-height: 16vh;
     img {
       width: 100px;
       height: 100px;
     }
     p {
-      font-size: pxToRem(30);
+      font-size: pxToRem(28);
     }
   }
 }
