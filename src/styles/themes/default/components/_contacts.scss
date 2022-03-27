@@ -182,7 +182,7 @@
 
     &_contactparent {
       margin-right: $space-x-small;
-      margin-left: $space-standard;
+      margin-left: $space-xx-large;
 
       h2 {
         font-size: pxToRem(30);
@@ -216,8 +216,8 @@
     }
 
     &_contactparent {
-      margin-right: $space-x-small;
-      margin-left: $space-standard;
+      margin-right: $space-xx-large;
+      margin-left: $space-xx-large;
 
       h2 {
         font-size: pxToRem(25);
@@ -229,14 +229,35 @@
         margin-left: 1vw;
       }
     }
-
+    &_form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
     &_contactchild {
+      width: 100%;
+      margin: 0;
+      margin-bottom: $space-large;
+      display: block;
       button {
-        max-width: 60px;
+        margin: auto;
+        width: 88%;
       }
     }
+    &_contactchild1,
+    &_contactchild2,
+    &_contactchild3 {
+      width: 100%;
+    }
     &_contactdescr {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       padding-bottom: 20px;
+      padding-top: 20px;
       p {
         font-size: pxToRem(12);
       }
@@ -253,7 +274,7 @@
       @include myFlex();
       flex-direction: column;
       background-color: $c-negroni;
-      max-height: 400px;
+      max-height: 430px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -275,28 +296,13 @@
       }
     }
     &_contactchild {
+      width: 100%;
+      margin: 0;
+      margin-bottom: $space-large;
+      display: block;
       button {
-        max-width: 90px;
-      }
-    }
-    &_contactchild1 {
-      input {
-        max-width: 200px;
-        max-height: 5px;
-        font-size: pxToRem(10);
-      }
-    }
-    &_contactchild2 {
-      input {
-        max-width: 200px;
-        max-height: 5px;
-        font-size: pxToRem(10);
-      }
-    }
-    &_contactchild3 {
-      textarea {
-        max-width: 200px;
-        font-size: pxToRem(10);
+        margin: auto;
+        width: 94%;
       }
     }
   }
@@ -310,5 +316,13 @@
 @media only screen and (max-width: 326px) {
   .main-info_contact {
     margin: auto;
+  }
+  .main-wrapper {
+    &_contactchild {
+      button {
+        margin: auto;
+        width: 98%;
+      }
+    }
   }
 }

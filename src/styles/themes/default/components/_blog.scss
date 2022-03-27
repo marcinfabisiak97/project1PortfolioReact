@@ -1,148 +1,146 @@
 .main-wrapper {
-    &_blog {
-        margin-left: $space-xx-large;
-        margin-right: $space-large;
+  &_blog {
+    margin-left: $space-xx-large;
+    margin-right: $space-large;
 
-        h2 {
-            font-size: pxToRem(40);
-        }
-
-        h3,
-        h4 {
-            font-size: pxToRem(30);
-        }
-
-        p {
-            font-size: pxToRem(25);
-        }
+    h2 {
+      font-size: pxToRem(40);
     }
 
-    &_blogtitle {
-        margin-left: 1vw;
+    h3,
+    h4 {
+      font-size: pxToRem(30);
     }
 
-    &_blogtitle01 {
-        width: 100%;
+    p {
+      font-size: pxToRem(25);
+    }
+  }
 
+  &_blogtitle {
+    margin-left: 1vw;
+  }
+
+  &_blogtitle01 {
+    width: 100%;
+  }
+
+  &_blogtitle01title1 {
+    @include myFlex();
+  }
+
+  &_blogtitle01title2 {
+    @include myFlex();
+  }
+
+  &_blogtitle01img {
+    width: 20vw;
+    margin-right: 5vw;
+    margin-left: 1vw;
+  }
+
+  &_blogtitle01img > img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &_blogtitle01desc {
+    padding: $space-null;
+    width: 65%;
+
+    h2 {
+      margin: $space-null;
     }
 
-    &_blogtitle01title1 {
+    h3 {
+      margin: $space-null;
+    }
+
+    h4 {
+      text-align: right;
+      margin: $space-null;
+    }
+
+    p {
+      a {
         @include myFlex();
-
+        justify-content: center;
+        color: $c-negroni;
+        text-decoration: none;
+      }
     }
-
-    &_blogtitle01title2 {
-        @include myFlex();
-
-    }
-
-    &_blogtitle01img {
-        width: 20vw;
-        margin-right: 5vw;
-        margin-left: 1vw;
-
-
-    }
-
-    &_blogtitle01img>img {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    &_blogtitle01desc {
-        padding: $space-null;
-        width: 65%;
-
-        h2 {
-            margin: $space-null;
-        }
-
-        h3 {
-            margin: $space-null;
-        }
-
-        h4 {
-            text-align: right;
-            margin: $space-null;
-        }
-
-        p {
-            a {
-                @include myFlex();
-                justify-content: center;
-                color: $c-negroni;
-                text-decoration: none;
-            }
-        }
-    }
+  }
 }
 
-@media only screen and (max-width: $break-high) {}
+@media only screen and (max-width: $break-high) {
+}
 
-@media only screen and (max-width: $break-laptop) {}
+@media only screen and (max-width: $break-laptop) {
+}
 
 @media only screen and (max-width: $break-mid) {
-    .main-wrapper {
-        &_blog {
-            margin-left: $space-xx-large;
-            margin-right: $space-large;
+  .main-wrapper {
+    &_blog {
+      margin-top: $space-large;
+      margin-left: $space-xx-large;
+      margin-right: $space-large;
+      margin-bottom: $space-standard;
+      h2 {
+        font-size: pxToRem(30);
+      }
 
-            h2 {
-                font-size: pxToRem(30);
-            }
+      h3,
+      h4 {
+        font-size: pxToRem(20);
+      }
 
-            h3,
-            h4 {
-                font-size: pxToRem(20);
-            }
-
-            p {
-                font-size: pxToRem(15);
-            }
-        }
+      p {
+        font-size: pxToRem(15);
+      }
     }
+  }
 }
 
 @media only screen and (max-width: $break-mobile) {
-    .main-wrapper {
-        &_blog {
-            margin-left: $space-xx-large;
-            margin-right: $space-large;
+  .main-wrapper {
+    &_blog {
+      margin-left: $space-xx-large;
+      margin-right: $space-large;
 
-            h2 {
-                font-size: pxToRem(25);
-            }
+      h2 {
+        font-size: pxToRem(25);
+      }
 
-            h3,
-            h4 {
-                font-size: pxToRem(20);
-            }
+      h3,
+      h4 {
+        font-size: pxToRem(20);
+      }
 
-            p {
-                font-size: pxToRem(15);
-            }
-        }
+      p {
+        font-size: pxToRem(15);
+      }
     }
+  }
 }
 
 @media only screen and (max-width: $break-xs) {
-    .main-wrapper {
-        &_blog {
-            margin-left: $space-xx-large;
-            margin-right: $space-large;
+  .main-wrapper {
+    &_blog {
+      margin-left: $space-standard;
+      margin-right: $space-large;
 
-            h2 {
-                font-size: pxToRem(15);
-            }
+      h2 {
+        font-size: pxToRem(15);
+      }
 
-            h3,
-            h4 {
-                font-size: pxToRem(10);
-            }
+      h3,
+      h4 {
+        font-size: pxToRem(10);
+      }
 
-            p {
-                font-size: pxToRem(10);
-            }
-        }
+      p {
+        font-size: pxToRem(10);
+      }
     }
+  }
 }

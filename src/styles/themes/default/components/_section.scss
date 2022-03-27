@@ -30,7 +30,7 @@
   padding: $space-medium $space-medium $space-x-small;
   border-radius: 5px;
   background-color: $c-white-opacity;
-
+  color: $c-black;
   h2 {
     margin-top: $space-null;
     margin-bottom: $space-null;
@@ -69,7 +69,7 @@
     animation-name: example;
     animation-duration: 1s;
     position: relative;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
   }
 
   @keyframes example {
@@ -108,7 +108,7 @@
     transform: scale(1.2, 1.2);
   }
   button:hover {
-    background-color: rgb(238, 199, 120);
+    background-color: rgb(94, 104, 146);
   }
 }
 
@@ -125,11 +125,9 @@
   margin-left: $space-medium;
   margin-top: $space-medium;
   flex-basis: 40vw;
-
   ul {
     padding-left: 5%;
   }
-
   p {
     img {
       width: 30%;
@@ -206,7 +204,7 @@
   padding-top: $space-small;
   min-height: 300px;
   h3 {
-    color: #7e6a55;
+    color: #7371ec;
   }
 }
 
@@ -234,9 +232,9 @@
 
 .main-wrapper {
   &_myworks {
-    margin-left: $space-xxx-large;
+    margin-left: $space-standard;
     margin-top: $space-medium;
-    width: 50%;
+    width: 90%;
   }
 
   &_set {
@@ -338,7 +336,8 @@
       padding-left: 5%;
     }
 
-    p {
+    p,
+    ul {
       font-size: pxToRem(25);
 
       img {
@@ -368,6 +367,7 @@
     }
 
     h3 {
+      color: #7371ec;
       font-size: pxToRem(30);
     }
 
@@ -393,7 +393,7 @@
     &_myworks {
       margin-left: $space-xxx-large;
       margin-top: $space-medium;
-      width: 50%;
+      width: 90%;
 
       h2 {
         font-size: pxToRem(40);
@@ -441,7 +441,7 @@
     }
 
     p {
-      font-size: pxToRem(25);
+      font-size: pxToRem(20);
     }
   }
 
@@ -565,11 +565,13 @@
 
   .main-wrapper_tools {
     min-height: 300px;
+
     h2 {
       font-size: pxToRem(30);
     }
 
     h3 {
+      color: #7371ec;
       font-size: pxToRem(20);
     }
 
@@ -594,7 +596,7 @@
     &_myworks {
       margin-left: $space-xxx-large;
       margin-top: $space-medium;
-      width: 50%;
+      width: 90%;
 
       h2 {
         font-size: pxToRem(30);
@@ -705,21 +707,21 @@
     }
 
     p {
-      font-size: pxToRem(15);
+      font-size: pxToRem(10);
     }
   }
 
   .main-wrapper_tools {
-    padding-left: 10px;
     min-height: 250px;
     h2 {
-      padding-left: pxToRem(50);
+      padding-left: $space-standard;
       font-size: pxToRem(25);
     }
 
     h3 {
-      padding-left: pxToRem(50);
+      padding-left: $space-standard;
       font-size: pxToRem(15);
+      color: #7371ec;
     }
 
     .main-tollsicon {
@@ -739,7 +741,7 @@
     &_myworks {
       margin-left: $space-xxx-large;
       margin-top: $space-medium;
-      width: 50%;
+      width: 90%;
 
       h2 {
         font-size: pxToRem(25);
@@ -886,7 +888,6 @@
     font-size: pxToRem(10);
   }
   .main-wrapper_tools {
-    padding-left: 10px;
     min-height: 300px;
     h2 {
       padding-left: pxToRem(50);
@@ -913,7 +914,7 @@
 
   .main-wrapper {
     &_myworks {
-      margin-left: $space-large;
+      margin-left: $space-standard;
       margin-top: $space-medium;
       width: 80%;
 

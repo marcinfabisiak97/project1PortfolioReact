@@ -33,7 +33,7 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
             <div className="main-wrapper_contactparent">
                 <h2 id="contact">//Contact me</h2>
                 <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
-                <form onSubmit={onSubmit}>
+                <form onSubmit={onSubmit} class="main-wrapper_form">
                     <div className="main-wrapper_contactchild1">
                         <input
                             type='text'
@@ -80,7 +80,7 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
                     <img src={zdj1} />
                 </div>
                 <p>author: Marcin Fabisiak</p>
-                <p>description: Fron End Developer</p>
+                <p>description: Frontend Developer</p>
                 <p>git: https://github.com/marcinfabisiak97</p>
 
             </div>

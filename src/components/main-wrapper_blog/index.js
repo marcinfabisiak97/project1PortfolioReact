@@ -26,7 +26,7 @@ const Mainwrapperblog = ({ aboutref, skillref, myworkref, blogref, contactref })
                     </div>
                     <div className="main-wrapper_blogtitle01desc">
                         <h2>//Looking for help in Stack Overflow</h2>
-                        <h3>Using experience of other</h3>
+                        <h3>Using experience of others</h3>
                         <p>When I don't have clue how to solve problem I look it on Stack, some times make a new topic.
                             When Stack don't have any solution and I really don't known I ask my mentor.
                         </p>

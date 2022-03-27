@@ -56,10 +56,10 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                     <h2> // Hi, My name is Martin Fabisiak</h2>
                     <h3>Software Engineer</h3>
                     <p>Passionate Techy and Tech Author<br />with 1
-                        yers of experience within the field </p>
+                        year of experience within the field </p>
                     <div className="main-info_seework">
-                        <p>See my work</p>
-                        <a href='https://github.com/marcinfabisiak97'><img src={github} /></a>
+                        <p>See my work in github</p>
+                        <a href='https://github.com/marcinfabisiak97/one-page-portfolio-react'><img src={github} /></a>
 
                     </div>
                 </div>
@@ -86,7 +86,7 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                     <h3>My interests</h3>
                     <ul>
                         <li>music</li>
-                        <li>kitesurfing</li>
+                        <li>boxing</li>
                         <li>cycling</li>
                     </ul>
                     <p>I finished Easy Code course <img src={easycode} alt="easycode" /></p>
@@ -99,7 +99,7 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                             return (
                                 <div className="wrapper-bar" >
                                     <div key={index} style={{ width: `${(scrolled ? el.styl : "20%")}` }} className={el.klas}>
-                                        {el.text}
+                                        <p style={{ display: `${(scrolled ? 'block' : "none")}` }}>{el.text}</p>
                                     </div>
                                 </div>
                             )
