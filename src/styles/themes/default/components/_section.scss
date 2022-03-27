@@ -155,7 +155,7 @@
   border-radius: 6px;
   height: 30px;
   margin-bottom: $space-x-small;
-  font-size: pxToRem(20);
+  font-size: pxToRem(15);
 }
 
 .bar {
@@ -219,12 +219,16 @@
 .main-tollsicon_img {
   @include boxShadow(3px 3px 3px 3px $c-gray);
   background-color: $c-white;
-  padding: 1% 2%;
+  padding: 1% 1%;
   transition: 0.5s transform;
+  img {
+    margin: 10px;
+  }
   p {
     text-align: center;
     margin-bottom: 0;
     margin-top: 10px;
+    font-size: pxToRem(25);
   }
 }
 
@@ -379,7 +383,7 @@
         }
 
         p {
-          font-size: pxToRem(30);
+          font-size: pxToRem(25);
         }
       }
     }
@@ -454,12 +458,12 @@
 
       .main-tollsicon_img {
         img {
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
         }
 
         p {
-          font-size: pxToRem(20);
+          font-size: pxToRem(15);
         }
       }
     }
@@ -575,12 +579,12 @@
 
       .main-tollsicon_img {
         img {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
         }
 
         p {
-          font-size: pxToRem(15);
+          font-size: pxToRem(10);
         }
       }
     }
@@ -723,8 +727,9 @@
       justify-content: space-around;
       flex-wrap: wrap;
       .main-tollsicon_img {
+        margin-top: 1rem;
         p {
-          font-size: pxToRem(15);
+          font-size: pxToRem(10);
         }
       }
     }
