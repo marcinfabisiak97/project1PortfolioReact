@@ -59,7 +59,7 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
                         year of experience within the field </p>
                     <div className="main-info_seework">
                         <p>See my work in github</p>
-                        <a href='https://github.com/marcinfabisiak97/one-page-portfolio-react'><img src={github} /></a>
+                        <a href='https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev'><img src={github} /></a>
 
                     </div>
                 </div>
