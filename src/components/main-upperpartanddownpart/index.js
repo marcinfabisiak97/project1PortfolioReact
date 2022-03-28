@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import github from '../../assets/github_icon.png';
-import devicon from '../../assets/dev_icon.png';
 import easycode from '../../assets/easy_code_button.png';
 import cv from '../../assets/cv.pdf';
 import { useState, useRef, useEffect } from 'react';
-const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+const Upperpartanddownpart = ({ skillref }) => {
     const [scrolled, setScrolled] = useState(false);
     const dref = useRef(null);
     const handleScroll = () => {
@@ -28,7 +27,6 @@ const Upperpartanddownpart = ({ aboutref, skillref, myworkref, blogref, contactr
         { 'styl': '100%', 'klas': 'bar-html', 'text': 'html 100%' },
         { 'styl': '20%', 'klas': 'bar-node', 'text': 'node 20%' },
     ]
-
     const ButtonMailto = ({ mailto }) => {
         return (
             <React.Fragment>

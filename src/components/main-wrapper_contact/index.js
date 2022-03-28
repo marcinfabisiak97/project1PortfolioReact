@@ -2,7 +2,7 @@ import kontaktikona from '../../assets/kontakt_ikona.png';
 import zdj1 from '../../assets/zdj1.jpg';
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
-const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+const Mainwrappercontact = ({ contactref }) => {
     const onSubmit = (e) => {
         e.preventDefault();
         send(
@@ -27,7 +27,7 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
-
+    {/*making function to send email to developer */ }
     return (
         <div className="main-wrapper_contact" ref={contactref}>
             <div className="main-wrapper_contactparent">
@@ -82,7 +82,6 @@ const Mainwrappercontact = ({ aboutref, skillref, myworkref, blogref, contactref
                 <p>author: Marcin Fabisiak</p>
                 <p>description: Frontend Developer</p>
                 <p>git: https://github.com/marcinfabisiak97</p>
-
             </div>
 
         </div >

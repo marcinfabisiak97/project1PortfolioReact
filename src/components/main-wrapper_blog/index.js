@@ -1,6 +1,6 @@
 import photo1 from '../../assets/photo-1.jpg';
 import photo2 from '../../assets/photo-2.jpg';
-const Mainwrapperblog = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+const Mainwrapperblog = ({ blogref }) => {
     return (
         <div className="main-wrapper_blog" ref={blogref}>
             <div className="main-wrapper_blogtitle">

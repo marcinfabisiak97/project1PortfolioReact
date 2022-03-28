@@ -7,8 +7,7 @@ import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
 import javascript from '../../assets/devtech/javascript.png';
 import React, { useState, useRef, useEffect } from 'react';
-
-const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+const Mainwrappertools = ({ myworkref }) => {
   const [scrolled, setScrolled] = useState(false);
   const ourRef = useRef(null);
   const handleScroll = () => {
@@ -33,9 +32,9 @@ const Mainwrappertools = ({ aboutref, skillref, myworkref, blogref, contactref }
     { 'klas': 'main-tollsicon_img', 'pict': bitbucket, 'text': 'Bitbucket' },
     { 'klas': 'main-tollsicon_img', 'pict': sourcetree, 'text': 'Sourcetree' }
   ]
-
+  {/*making animation using css transform and hook useEffect and function handleScroll */ }
   return (
-    <div className="main-wrapper_tools" ref={myworkref} >
+    <div className="main-wrapper_tools"  >
       <h2>//Tools</h2>
       <h3>My essentials</h3>
       <div className="main-tollsicon" ref={ourRef}>

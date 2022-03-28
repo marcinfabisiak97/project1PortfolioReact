@@ -9,7 +9,7 @@
 
 .header > h3 {
   @include myFlex();
-  font-size: pxToRem(130);
+  font-size: pxToRem(120);
   align-items: center;
   justify-content: center;
   color: $c-gray-opacity;
@@ -76,7 +76,7 @@
 @media only screen and (max-width: $break-high) {
   .header > h3 {
     @include myFlex();
-    font-size: pxToRem(150);
+    font-size: pxToRem(140);
     margin-top: $space-medium;
     padding-top: $space-medium;
   }
@@ -110,7 +110,7 @@
 
     &__navLi > a {
       text-decoration: none;
-      font-size: pxToRem(40);
+      font-size: pxToRem(30);
     }
   }
 }
@@ -118,7 +118,7 @@
 @media only screen and (max-width: $break-laptop) {
   .header > h3 {
     @include myFlex();
-    font-size: pxToRem(110);
+    font-size: pxToRem(100);
     align-items: center;
     justify-content: center;
     color: $c-gray-opacity;
@@ -337,6 +337,19 @@
 
     &__navLi > a:hover {
       font-size: pxToRem(16);
+      transition: font-size 0.5s;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header {
+    &__navLi > a {
+      text-decoration: none;
+      font-size: pxToRem(10);
+    }
+
+    &__navLi > a:hover {
+      font-size: pxToRem(12);
       transition: font-size 0.5s;
     }
   }
