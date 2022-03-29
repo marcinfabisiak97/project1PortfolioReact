@@ -90,6 +90,7 @@ const Upperpartanddownpart = ({ skillref, aboutref }) => {
                     <p>All beneath techs or languages are known by practical site.</p>
                     {
                         myBar.map((el, index) => {
+                            {/*making animation using css transform and hook useEffect and function handleScroll */ }
                             return (
                                 <div className="wrapper-bar" >
                                     <div key={index} style={{ width: `${(scrolled ? el.styl : "20%")}` }} className={el.klas}>

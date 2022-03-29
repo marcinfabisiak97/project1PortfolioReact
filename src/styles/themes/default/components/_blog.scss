@@ -2,7 +2,6 @@
   &_blog {
     margin-left: $space-xx-large;
     margin-right: $space-large;
-
     h2 {
       font-size: pxToRem(40);
     }
@@ -16,51 +15,40 @@
       font-size: pxToRem(25);
     }
   }
-
   &_blogtitle {
     margin-left: 1vw;
   }
-
   &_blogtitle01 {
     width: 100%;
   }
-
   &_blogtitle01title1 {
     @include myFlex();
   }
-
   &_blogtitle01title2 {
     @include myFlex();
   }
-
   &_blogtitle01img {
     width: 20vw;
     margin-right: 5vw;
     margin-left: 1vw;
   }
-
   &_blogtitle01img > img {
     width: 100%;
     border-radius: 5px;
   }
-
   &_blogtitle01desc {
     padding: $space-null;
     width: 65%;
-
     h2 {
       margin: $space-null;
     }
-
     h3 {
       margin: $space-null;
     }
-
     h4 {
       text-align: right;
       margin: $space-null;
     }
-
     p {
       a {
         @include myFlex();
@@ -71,7 +59,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-high) {
 }
 

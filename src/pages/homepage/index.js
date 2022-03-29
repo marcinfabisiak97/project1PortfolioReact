@@ -12,6 +12,7 @@ const Homepage = () => {
     const myworkref = useRef(null);
     const blogref = useRef(null);
     const contactref = useRef(null);
+    {/*using useRef hook to make navigation */ }
     return (
         <div style={{ padding: '0px', maring: '0px' }}>
             <Wrapper {...{ aboutref, skillref, myworkref, blogref, contactref }} />

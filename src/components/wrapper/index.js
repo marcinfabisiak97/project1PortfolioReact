@@ -8,7 +8,7 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         { 'klass': 'header__navLi', 'link': contactref, 'text': 'Contact me' }
     ]
     const Header = (props) => {
-        {/*using scrollToRef to make scroll to right div */ }
+        {/*using scrollToRef to scroll to right div */ }
         const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
         return (
             <div className={props.klass} ><a onClick={() => scrollToRef(props.link)}>{props.text}</a></div>

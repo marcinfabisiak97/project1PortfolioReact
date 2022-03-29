@@ -3,7 +3,6 @@ import bitbucketicon from '../../assets/bit_bucket_icon.png';
 import github from '../../assets/github_icon.png';
 import porfolio02 from '../../assets/portfoliopr3.png';
 const Mainwrapperset = () => {
-
 	return (
 		<div className="main-wrapper_set" >
 			<a href='https://projekt2reactquiz.netlify.app'>

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { send } from 'emailjs-com';
 const Mainwrappercontact = ({ contactref }) => {
+    {/*making function to send email to developer by external web */ }
     const onSubmit = (e) => {
         e.preventDefault();
         send(
@@ -28,7 +29,6 @@ const Mainwrappercontact = ({ contactref }) => {
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
-    {/*making function to send email to developer */ }
     return (
         <div className="main-wrapper_contact" ref={contactref}>
             <div className="main-wrapper_contactparent">
@@ -52,7 +52,6 @@ const Mainwrappercontact = ({ contactref }) => {
                             value={toSend.from_name}
                             onChange={handleChange}
                         />
-
                     </div>
                     <div className="main-wrapper_contactchild3">
                         <textarea
