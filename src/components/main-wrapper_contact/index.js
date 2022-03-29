@@ -68,22 +68,25 @@ const Mainwrappercontact = ({ contactref }) => {
                     </div>
                 </form>
             </div >
-            <div className="main-info_contact">
-                <img src={kontaktikona} />
-                <div className="main-info_contactdesc">
-                    <p>marcibfabisiak123@gmail.com</p>
-                    <p>+48 604 132 689</p>
+            <div className='wrapper-contact'>
+                <div className="main-info_contact">
+                    <a href="tel://+48604132689"> <img src={kontaktikona} alt="contact" /></a>
+                    <div className="main-info_contactdesc">
+                        <p>marcibfabisiak123@gmail.com</p>
+                        <p>+48 604 132 689</p>
+                    </div>
+                </div>
+                <div className="main-wrapper_contactdescr">
+                    <div className="main-wrapper_contactphoto">
+                        <img src={zdj1} alt="developer" />
+                    </div>
+                    <p>author: Marcin Fabisiak</p>
+                    <p>description: Frontend Developer</p>
+                    <a href='https://github.com/marcinfabisiak97'>
+                        <p>git: https://github.com/marcinfabisiak97</p>
+                    </a>
                 </div>
             </div>
-            <div className="main-wrapper_contactdescr">
-                <div className="main-wrapper_contactphoto">
-                    <img src={zdj1} />
-                </div>
-                <p>author: Marcin Fabisiak</p>
-                <p>description: Frontend Developer</p>
-                <p>git: https://github.com/marcinfabisiak97</p>
-            </div>
-
         </div >
     )
 }

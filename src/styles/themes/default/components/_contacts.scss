@@ -56,22 +56,15 @@
     text-decoration: none;
     outline: none;
   }
-
   &_contactchild {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: $space-x-medium;
-    padding-bottom: $space-x-medium;
-
     button {
       cursor: pointer;
-      width: 150px;
-      padding: $space-xx-small;
+      margin: 10px;
+      width: 84%;
+      padding: $space-small;
       border-radius: 4px;
       @include boxShadow(3px 3px 3px 3px $c-gray);
-      border-radius: 4px;
-      background-color: $c-negroni;
+      background-color: #7371ec;
       color: $c-white;
       font-size: pxToRem(20);
       border-style: none;
@@ -79,7 +72,7 @@
 
     button:active {
       color: $c-black;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       border-style: none;
       outline: none;
     }
@@ -93,7 +86,7 @@
     text-align: right;
     margin-right: 5%;
     margin-top: 2%;
-    font-size: pxToRem(12);
+    font-size: pxToRem(22);
     width: 90vw;
 
     p {
@@ -108,17 +101,28 @@
   align-items: center;
   max-width: 300px;
   max-height: 100px;
-  margin-top: 10%;
-  padding: 1%;
+  padding: 3% 6% 3% 3%;
   background-color: hsla(0, 0%, 100%, 0.7);
   @include boxShadow(5px 5px 5px 5px $c-gray);
   border-radius: 10px;
+  &desc {
+    p {
+      font-size: pxToRem(22);
+    }
+  }
   img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
   }
 }
-
+.wrapper-contact {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 5rem;
+}
 @media only screen and (max-width: $break-high) {
   .main-wrapper {
     &_contact {
@@ -180,7 +184,27 @@
       background-position: 700px -200px;
       background-size: 450px;
     }
-
+    &_contactchild {
+      width: 100%;
+      margin: 0;
+      margin-bottom: $space-large;
+      display: block;
+      button {
+        margin: 10px;
+        width: 96%;
+      }
+    }
+    &_contactchild1,
+    &_contactchild2,
+    &_contactchild3 {
+      width: 100%;
+      input {
+        width: 90%;
+      }
+      textarea {
+        width: 90%;
+      }
+    }
     &_contactparent {
       margin-right: $space-x-small;
       margin-left: $space-xx-large;
@@ -198,7 +222,26 @@
   }
   .main-wrapper_contactdescr {
     p {
-      font-size: pxToRem(12);
+      font-size: pxToRem(15);
+    }
+  }
+  .main-info_contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+    max-height: 100px;
+    padding: 3% 6% 3% 3%;
+    @include boxShadow(5px 5px 5px 5px $c-gray);
+    border-radius: 10px;
+    &desc {
+      p {
+        font-size: pxToRem(15);
+      }
+    }
+    img {
+      max-width: 70px;
+      max-height: 70px;
     }
   }
 }
@@ -242,14 +285,20 @@
       margin-bottom: $space-large;
       display: block;
       button {
-        margin: auto;
-        width: 88%;
+        margin: 10px;
+        width: 95%;
       }
     }
     &_contactchild1,
     &_contactchild2,
     &_contactchild3 {
       width: 100%;
+      input {
+        width: 90%;
+      }
+      textarea {
+        width: 90%;
+      }
     }
     &_contactdescr {
       width: 100vw;
@@ -260,12 +309,21 @@
       padding-bottom: 20px;
       padding-top: 20px;
       p {
-        font-size: pxToRem(12);
+        font-size: pxToRem(15);
       }
     }
   }
   .main-info_contact {
     margin: auto;
+  }
+  .wrapper-contact {
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -275,7 +333,7 @@
       @include myFlex();
       flex-direction: column;
       background-color: $c-negroni;
-      max-height: 430px;
+      max-height: 450px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -302,27 +360,46 @@
       margin-bottom: $space-large;
       display: block;
       button {
-        margin: auto;
-        width: 94%;
+        margin: 10px;
+        width: 88%;
+        font-size: pxToRem(12);
+      }
+    }
+    &_contactchild1,
+    &_contactchild2,
+    &_contactchild3 {
+      width: 100%;
+      input {
+        width: 80%;
+        font-size: pxToRem(12);
+      }
+      textarea {
+        width: 80%;
+        font-size: pxToRem(12);
       }
     }
   }
 
   .main-wrapper_contactdescr {
     p {
-      font-size: pxToRem(10);
+      font-size: pxToRem(15);
     }
   }
 }
 @media only screen and (max-width: 326px) {
+  .main-wrapper {
+    &_contact {
+      max-height: 460px;
+    }
+  }
   .main-info_contact {
     margin: auto;
   }
   .main-wrapper {
     &_contactchild {
       button {
-        margin: auto;
-        width: 98%;
+        margin: 10px;
+        width: 90%;
       }
     }
   }

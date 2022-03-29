@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import github from '../../assets/github_icon.png';
-import easycode from '../../assets/easy_code_button.png';
 import cv from '../../assets/cv.pdf';
 import { useState, useRef, useEffect } from 'react';
 const Upperpartanddownpart = ({ skillref }) => {
@@ -66,8 +65,6 @@ const Upperpartanddownpart = ({ skillref }) => {
                     <p>Contact me if you want to work with me</p>
                     <div>
                         <ButtonMailto mailto={'mailto:marcinfabisiak123@gmail.com'} />
-
-
                     </div>
                 </div>
             </div>
@@ -87,7 +84,6 @@ const Upperpartanddownpart = ({ skillref }) => {
                         <li>boxing</li>
                         <li>cycling</li>
                     </ul>
-                    <p>I finished Easy Code course <img src={easycode} alt="easycode" /></p>
                 </div>
                 <div className="main-wrapper_bars" ref={dref}>
                     <h2 id="skills">//Skills</h2>
