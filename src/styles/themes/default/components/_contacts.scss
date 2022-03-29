@@ -333,7 +333,7 @@
       @include myFlex();
       flex-direction: column;
       background-color: $c-negroni;
-      max-height: 450px;
+      max-height: 440px;
       background-image: url(../../../../assets/koła_03.png);
       background-repeat: no-repeat;
       background-position: 700px -200px;
@@ -389,7 +389,7 @@
 @media only screen and (max-width: 326px) {
   .main-wrapper {
     &_contact {
-      max-height: 460px;
+      max-height: 450px;
     }
   }
   .main-info_contact {
