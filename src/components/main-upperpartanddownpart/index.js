@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import github from '../../assets/github_icon.png';
 import cv from '../../assets/cv.pdf';
 import { useState, useRef, useEffect } from 'react';
-const Upperpartanddownpart = ({ skillref }) => {
+const Upperpartanddownpart = ({ skillref, aboutref }) => {
     const [scrolled, setScrolled] = useState(false);
     const dref = useRef(null);
     const handleScroll = () => {
@@ -47,9 +47,9 @@ const Upperpartanddownpart = ({ skillref }) => {
         );
     };
     return (
-        <div className="main-upperpartanddownpart col-12">
+        <div className="main-upperpartanddownpart col-12" ref={aboutref}>
             <div className="main-upperpart">
-                <div className="main-info">
+                <div className="main-info" >
                     <h2> // Hi, My name is Martin Fabisiak</h2>
                     <h3>Software Engineer</h3>
                     <p>Passionate Techy and Tech Author<br />with 1

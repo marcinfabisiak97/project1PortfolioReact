@@ -1,6 +1,7 @@
 import kontaktikona from '../../assets/kontakt_ikona.png';
 import zdj1 from '../../assets/zdj1.jpg';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { send } from 'emailjs-com';
 const Mainwrappercontact = ({ contactref }) => {
     const onSubmit = (e) => {
@@ -70,10 +71,18 @@ const Mainwrappercontact = ({ contactref }) => {
             </div >
             <div className='wrapper-contact'>
                 <div className="main-info_contact">
-                    <a href="tel://+48604132689"> <img src={kontaktikona} alt="contact" /></a>
+                    <a href="tel:48604132689"> <img src={kontaktikona} alt="contact" /></a>
                     <div className="main-info_contactdesc">
-                        <p>marcibfabisiak123@gmail.com</p>
-                        <p>+48 604 132 689</p>
+                        <Link
+                            to='#'
+                            onClick={(e) => {
+                                window.location = 'mailto:marcinfabisiak123@gmail.com';
+                                e.preventDefault();
+                            }}
+                        >
+                            <p>marcibfabisiak123@gmail.com</p>
+                        </Link>
+                        <a href="tel:48604132689"><p>+48 604 132 689</p></a>
                     </div>
                 </div>
                 <div className="main-wrapper_contactdescr">

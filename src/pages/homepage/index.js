@@ -15,7 +15,7 @@ const Homepage = () => {
     return (
         <div style={{ padding: '0px', maring: '0px' }}>
             <Wrapper {...{ aboutref, skillref, myworkref, blogref, contactref }} />
-            <Upperpartanddownpart {...{ skillref }} />
+            <Upperpartanddownpart {...{ aboutref, skillref }} />
             <Mainwrappertools {...{ myworkref }} />
             <Mainwrappermyworks {...{ myworkref }} />
             <Mainwrapperset />

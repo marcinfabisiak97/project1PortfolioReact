@@ -15,7 +15,7 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         )
     }
     return (
-        <div className="header" ref={aboutref}>
+        <div className="header" >
             <h3>M.F.</h3>
             <div className="header__wrapper">
                 <div className="header__nav">
