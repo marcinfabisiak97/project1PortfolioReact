@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import github from "../../assets/github_icon.png";
-import cv from "../../assets/cv.pdf";
+import { ButtonMailto } from "./ButtonMailto";
 import { useState, useRef, useEffect } from "react";
 const Upperpartanddownpart = ({ skillref, aboutref }) => {
     const [scrolled, setScrolled] = useState(false);
@@ -26,28 +26,7 @@ const Upperpartanddownpart = ({ skillref, aboutref }) => {
         { styl: "100%", klas: "bar-html", text: "html 100%" },
         { styl: "20%", klas: "bar-node", text: "node 20%" },
     ];
-    const ButtonMailto = ({ mailto }) => {
-        return (
-            <React.Fragment>
-                <Link
-                    to="#"
-                    onClick={(e) => {
-                        window.location = mailto;
-                        e.preventDefault();
-                    }}
-                >
-                    <button>
-                        <strong>Hire me</strong>
-                    </button>
-                </Link>
-                <Link to={cv} target="_blank" download="cv Marcin Fabisiak">
-                    <button>
-                        <strong>Download CV</strong>
-                    </button>
-                </Link>
-            </React.Fragment>
-        );
-    };
+
     return (
         <div className="main-upperpartanddownpart col-12" ref={aboutref}>
             <div className="main-upperpart">
