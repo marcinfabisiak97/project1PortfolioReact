@@ -22,6 +22,7 @@
   border: 1px solid $c-black;
   border-radius: 6px;
   height: 28px;
+  width: 20%;
 }
 @mixin myFlex() {
   $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);

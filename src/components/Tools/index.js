@@ -23,14 +23,14 @@ const Mainwrappertools = () => {
     window.addEventListener("scroll", handleScroll);
   });
   const myTools = [
-    { 'klas': 'main-tollsicon_img', 'pict': javascript, 'text': 'Javascript' },
-    { 'klas': 'main-tollsicon_img', 'pict': reacticon, 'text': 'React' },
-    { 'klas': 'main-tollsicon_img', 'pict': typescripticon, 'text': 'Typescript' },
-    { 'klas': 'main-tollsicon_img', 'pict': reduxicon, 'text': 'Redux' },
-    { 'klas': 'main-tollsicon_img', 'pict': sassicon, 'text': 'Sass' },
-    { 'klas': 'main-tollsicon_img', 'pict': flexboxicon, 'text': 'Flexbox' },
-    { 'klas': 'main-tollsicon_img', 'pict': bitbucket, 'text': 'Bitbucket' },
-    { 'klas': 'main-tollsicon_img', 'pict': sourcetree, 'text': 'Sourcetree' }
+    { 'pict': javascript, 'text': 'Javascript' },
+    { 'pict': reacticon, 'text': 'React' },
+    { 'pict': typescripticon, 'text': 'Typescript' },
+    { 'pict': reduxicon, 'text': 'Redux' },
+    { 'pict': sassicon, 'text': 'Sass' },
+    { 'pict': flexboxicon, 'text': 'Flexbox' },
+    { 'pict': bitbucket, 'text': 'Bitbucket' },
+    { 'pict': sourcetree, 'text': 'Sourcetree' }
   ]
   return (
     <div className="main-wrapper_tools"  >
@@ -41,7 +41,7 @@ const Mainwrappertools = () => {
           myTools.map((el, index) => {
             {/*making animation using css transform and hook useEffect and function handleScroll */ }
             return (
-              <div style={{ transform: `translateX(${(scrolled ? "0" : "-100vw")})` }} key={index} className={el.klas}>
+              <div key={index} className={scrolled ? "main-tollsicon_img" : "main-tollsicon_img main-tollsicon_imgTranslate"}>
                 <img src={el.pict} />
                 <p>{el.text}<br />{el.number}</p>
               </div>

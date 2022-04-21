@@ -158,28 +158,52 @@
 
 .bar {
   color: $c-nightRider;
-
-  &-javascript {
+  &__displayBlock{
+    display:block;
+  }
+  &__displayNone{
+    display:none;
+  }
+  &__javascript {
     @include bar;
+    &--width{
+      width: 60%;
+      
+    }
   }
 
-  &-css {
+  &__css {
     @include bar;
+    &--width{
+      width: 80%;
+    }
   }
 
-  &-html {
+  &__html {
     @include bar;
+    &--width{
+      width: 100%;
+    }
   }
 
-  &-node {
+  &__node {
     @include bar;
+    &--width{
+      width: 20%;
+    }
   }
 
-  &-react {
+  &__react {
     @include bar;
+    &--width{
+      width: 60%;
+    }
   }
-  &-typescript {
+  &__typescript {
     @include bar;
+    &--width{
+      width: 40%;
+    }
   }
 }
 
@@ -213,7 +237,9 @@
   @include createFlex(row, normal, horizontal);
   position: relative;
 }
-
+.main-tollsicon_imgTranslate{
+  transform: translateX(-100vw);
+}
 .main-tollsicon_img {
   @include boxShadow(3px 3px 3px 3px $c-gray);
   background-color: $c-white;
