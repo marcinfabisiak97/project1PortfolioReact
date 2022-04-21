@@ -4,10 +4,10 @@ import { ButtonMailto } from "./ButtonMailto";
 import Bars from "./Bars";
 import { useRef } from "react";
 
-const Upperpartanddownpart = ({ skillref, aboutref }) => {
+const Upperpartanddownpart = ({ skillref }) => {
     const dref = useRef(null);
     return (
-        <div className="main-upperpartanddownpart col-12" ref={aboutref}>
+        <div className="main-upperpartanddownpart col-12" >
             <div className="main-upperpart">
                 <div className="main-info">
                     <h2> // Hi, My name is Martin Fabisiak</h2>

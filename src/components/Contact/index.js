@@ -34,7 +34,7 @@ const Mainwrappercontact = ({ contactref }) => {
             <div className="main-wrapper_contactparent">
                 <h2 id="contact">//Contact me</h2>
                 <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
-                <form onSubmit={onSubmit} class="main-wrapper_form">
+                <form onSubmit={onSubmit} className="main-wrapper_form">
                     <div className="main-wrapper_contactchild1">
                         <input
                             type='text'

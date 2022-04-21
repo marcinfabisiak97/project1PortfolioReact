@@ -30,9 +30,9 @@ const Bars = ({ dref }) => {
                     /*making animation using css transform and hook useEffect and function handleScroll */
                 }
                 return (
-                    <div className="wrapper-bar">
+                    <div className="wrapper-bar" key={index}>
                         <div
-                            key={index}
+
                             className={scrolled ? el.styl : el.klas}
                         >
                             <p className={scrolled ? "bar__displayBlock" : "bar__displayNone"}>

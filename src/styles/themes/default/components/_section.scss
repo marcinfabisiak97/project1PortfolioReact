@@ -1,6 +1,15 @@
 .page{
-  padding: 0px;
-  margin: 0px
+  &__upper{
+    width: 100vw;
+    position: fixed;
+    left:95%;
+    top:50px;
+    cursor:pointer;
+    .icons{
+      font-size: 50px;
+      color: #7371ec;
+    }
+  }
 }
 .main-upperpartanddownpart {
   background-image: url(../../../../assets/koła_01.png),
@@ -647,6 +656,14 @@
 }
 
 @media only screen and (max-width: $break-mobile) {
+  .page{
+    &__upper{
+      width: 100vw;
+      position: fixed;
+      left:90%;
+      top:50px;
+    }
+  }
   .main-upperpart {
     display: flex;
     flex-direction: column;
@@ -793,6 +810,17 @@
 }
 
 @media only screen and (max-width: $break-xs) {
+  .page{
+    &__upper{
+      width: 100vw;
+      position: fixed;
+      left:87%;
+      top:50px;
+      .icons{
+        font-size: 30px;
+      }
+    }
+  }
   .main-upperpart {
     display: flex;
     flex-direction: column;
