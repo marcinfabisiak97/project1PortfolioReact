@@ -1,5 +1,7 @@
 import React from 'react';
-const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+const Navigation = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
+    const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+    {/*using scrollToRef to scroll to right div */ }
     const navHeader = [
         { 'klass': 'header__navLi', 'link': aboutref, 'text': 'About me' },
         { 'klass': 'header__navLi', 'link': skillref, 'text': 'Skills' },
@@ -7,13 +9,6 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         { 'klass': 'header__navLi', 'link': blogref, 'text': 'Workstyle' },
         { 'klass': 'header__navLi', 'link': contactref, 'text': 'Contact me' }
     ]
-    const Header = (props) => {
-        {/*using scrollToRef to scroll to right div */ }
-        const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
-        return (
-            <div className={props.klass} ><a onClick={() => scrollToRef(props.link)}>{props.text}</a></div>
-        )
-    }
     return (
         <div className="header" >
             <h3>M.F.</h3>
@@ -22,7 +17,7 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
                     {
                         navHeader.map((el, index) => {
                             return (
-                                <Header key={index} klass={el.klass} link={el.link} text={el.text} />
+                                <div className={el.klass} ><a onClick={() => scrollToRef(el.link)}>{el.text}</a></div>
                             )
                         })
                     }
@@ -31,4 +26,4 @@ const Wrapper = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         </div>
     )
 }
-export default Wrapper;
+export default Navigation;

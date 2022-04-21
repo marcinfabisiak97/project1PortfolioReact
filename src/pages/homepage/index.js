@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import Wrapper from '../../components/wrapper';
+import Navigation from '../../components/Navigation';
 import Upperpartanddownpart from '../../components/UpperpartAndDownpart';
-import Mainwrappertools from '../../components/Tools';
+import Tools from '../../components/Tools';
 import Mainwrappermyworks from '../../components/main-wrapper_myworks';
 import Mainwrapperset from '../../components/main-wrapper_set';
 import Mainwrapperblog from '../../components/main-wrapper_blog';
@@ -14,10 +14,10 @@ const Homepage = () => {
     const contactref = useRef(null);
     {/*using useRef hook to make navigation */ }
     return (
-        <div style={{ padding: '0px', maring: '0px' }}>
-            <Wrapper {...{ aboutref, skillref, myworkref, blogref, contactref }} />
+        <div className='page'>
+            <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
             <Upperpartanddownpart {...{ aboutref, skillref }} />
-            <Mainwrappertools {...{ myworkref }} />
+            <Tools {...{ myworkref }} />
             <Mainwrappermyworks {...{ myworkref }} />
             <Mainwrapperset />
             <Mainwrapperblog {...{ blogref }} />

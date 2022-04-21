@@ -7,7 +7,7 @@ import sourcetree from '../../assets/devtech/sourcetree.png';
 import flexboxicon from '../../assets/devtech/css.png';
 import javascript from '../../assets/devtech/javascript.png';
 import React, { useState, useRef, useEffect } from 'react';
-const Mainwrappertools = () => {
+const Tools = () => {
   const [scrolled, setScrolled] = useState(false);
   const ourRef = useRef(null);
   const handleScroll = () => {
@@ -52,4 +52,4 @@ const Mainwrappertools = () => {
     </div>
   )
 }
-export default Mainwrappertools;
+export default Tools;

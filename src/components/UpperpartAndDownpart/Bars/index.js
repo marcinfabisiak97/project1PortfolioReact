@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 const myBar = [
     { styl: "bar__javascript bar__javascript--width", klas: "bar__javascript", text: "javascript 60%" },
     { styl: "bar__react bar__react--width", klas: "bar__react", text: "react 60%" },
