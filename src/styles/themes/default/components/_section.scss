@@ -12,9 +12,9 @@
   }
 }
 .main-upperpartanddownpart {
-  background-image: url(../../../../assets/koła_01.png),
-    url(../../../../assets/koła_02.png), url(../../../../assets/koła_01.png),
-    url(../../../../assets/koła_01.png);
+  background-image: url(../../../../assets/circle_01.png),
+    url(../../../../assets/circle_02.png), url(../../../../assets/circle_01.png),
+    url(../../../../assets/circle_01.png);
   background-repeat: no-repeat;
   background-position: 250px 350px, 730px 150px, 830px 650px, -250px 800px;
   background-size: 300px, 400px;
@@ -26,8 +26,8 @@
   align-items: flex-end;
   width: nth($sizes, 12);
   padding-right: 0;
-  background-image: url(../../../../assets/koła_02.png),
-    url(../../../../assets/zdj1.jpg);
+  background-image: url(../../../../assets/circle_02.png),
+    url(../../../../assets/devPhoto.jpg);
   background-repeat: no-repeat;
   background-position: -100px 0px, 100px 35px;
   background-size: 200px;
@@ -221,8 +221,8 @@
 }
 
 .main-toolsworkscontact {
-  background-image: url(../../../../assets/koła_01.png),
-    url(../../../../assets/koła_01.png), url(../../../../assets/koła_01.png);
+  background-image: url(../../../../assets/circle_01.png),
+    url(../../../../assets/circle_01.png), url(../../../../assets/circle_01.png);
   background-repeat: no-repeat;
   background-position: 950px 50px, 750px 450px, -100px 1100px;
   background-size: 300px, 450px;
@@ -231,7 +231,7 @@
 .main-wrapper_tools {
   background-color: $c-negroni;
   box-sizing: border-box;
-  background-image: url(../../../../assets/koła_01.png);
+  background-image: url(../../../../assets/circle_01.png);
   background-repeat: no-repeat;
   background-position: 950px 50px;
   background-size: 300px;
@@ -318,8 +318,8 @@
     width: nth($sizes, 12);
     padding-right: 0;
     height: 600px;
-    background-image: url(../../../../assets/koła_02.png),
-      url(../../../../assets/zdj1.jpg);
+    background-image: url(../../../../assets/circle_02.png),
+      url(../../../../assets/devPhoto.jpg);
     background-repeat: no-repeat;
     background-position: -100px 0px, 200px 35px;
     background-size: 300px;
@@ -459,8 +459,8 @@
     width: nth($sizes, 12);
     padding-right: 0;
     max-height: 600px;
-    background-image: url(../../../../assets/koła_02.png),
-      url(../../../../assets/zdj1.jpg);
+    background-image: url(../../../../assets/circle_02.png),
+      url(../../../../assets/devPhoto.jpg);
     background-repeat: no-repeat;
     background-position: -100px 0px, 100px 35px;
     background-size: 200px;
@@ -519,8 +519,8 @@
     width: nth($sizes, 12);
     padding-right: 0;
     max-height: 450px;
-    background-image: url(../../../../assets/koła_02.png),
-      url(../../../../assets/zdj1.jpg);
+    background-image: url(../../../../assets/circle_02.png),
+      url(../../../../assets/devPhoto.jpg);
     background-repeat: no-repeat;
     background-position: -100px 0px, 100px 35px;
     background-size: 200px;
@@ -671,8 +671,8 @@
     width: nth($sizes, 12);
     padding-right: 0;
     max-height: 420px;
-    background-image: url(../../../../assets/koła_02.png),
-      url(../../../../assets/zdj1.jpg);
+    background-image: url(../../../../assets/circle_02.png),
+      url(../../../../assets/devPhoto.jpg);
     background-repeat: no-repeat;
     background-position: -100px 0px, 50px 35px;
     background-size: 150px;
@@ -828,7 +828,7 @@
     width: nth($sizes, 12);
     padding-right: 0;
     max-height: 280px;
-    background-image: url(../../../../assets/koła_02.png);
+    background-image: url(../../../../assets/circle_02.png);
     background-repeat: no-repeat;
     background-position: -100px 0px, 50px 35px;
     background-size: 170px;

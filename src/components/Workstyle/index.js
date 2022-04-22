@@ -1,5 +1,6 @@
 import photo1 from '../../assets/photo-1.jpg';
 import photo2 from '../../assets/photo-2.jpg';
+
 const Workstyle = ({ blogref }) => {
     return (
         <div className="main-wrapper_blog" ref={blogref}>

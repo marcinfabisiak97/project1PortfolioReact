@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Navigation = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
     const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
     {/*using scrollToRef to scroll to right div */ }

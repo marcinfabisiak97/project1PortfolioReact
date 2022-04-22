@@ -1,9 +1,10 @@
-import kontaktikona from '../../assets/kontakt_ikona.png';
-import zdj1 from '../../assets/zdj1.jpg';
+import contact from '../../assets/contact_icon.png';
+import devPhoto from '../../assets/devPhoto.jpg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { send } from 'emailjs-com';
-const Mainwrappercontact = ({ contactref }) => {
+
+const Contact = ({ contactref }) => {
     {/*making function to send email to developer by external web */ }
     const onSubmit = (e) => {
         e.preventDefault();
@@ -70,7 +71,7 @@ const Mainwrappercontact = ({ contactref }) => {
             </div >
             <div className='wrapper-contact'>
                 <div className="main-info_contact">
-                    <a href="tel:48604132689"> <img src={kontaktikona} alt="contact" /></a>
+                    <a href="tel:48604132689"> <img src={contact} alt="contact" /></a>
                     <div className="main-info_contactdesc">
                         <Link
                             to='#'
@@ -86,7 +87,7 @@ const Mainwrappercontact = ({ contactref }) => {
                 </div>
                 <div className="main-wrapper_contactdescr">
                     <div className="main-wrapper_contactphoto">
-                        <img src={zdj1} alt="developer" />
+                        <img src={devPhoto} alt="developer" />
                     </div>
                     <p>author: Marcin Fabisiak</p>
                     <p>description: Frontend Developer</p>
@@ -98,4 +99,4 @@ const Mainwrappercontact = ({ contactref }) => {
         </div >
     )
 }
-export default Mainwrappercontact;
+export default Contact;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cv from "../../../assets/cv.pdf";
+
 export const ButtonMailto = ({ mailto }) => {
 
     return (

@@ -6,6 +6,7 @@ import Myworks from '../../components/Myworks';
 import Workstyle from '../../components/Workstyle';
 import Contact from '../../components/Contact'
 import { BsFillCaretUpFill } from "react-icons/bs";
+
 const Homepage = () => {
     const aboutref = useRef(null);
     const skillref = useRef(null);
