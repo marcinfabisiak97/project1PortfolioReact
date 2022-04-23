@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
-import Upperpartanddownpart from '../../components/UpperpartAndDownpart';
+import ExperienceAndAbout from '../../components/ExperienceAndAbout';
 import Tools from '../../components/Tools';
 import Myworks from '../../components/Myworks';
 import Workstyle from '../../components/Workstyle';
@@ -15,6 +15,10 @@ const Homepage = () => {
     const contactref = useRef(null);
     {/*using useRef hook to make navigation */ }
     const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    });
     const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
     const handleScroll = () => {
         const YPosition = skillref.current.getBoundingClientRect().top;
@@ -25,19 +29,15 @@ const Homepage = () => {
             setScrolled(false);
         }
     };
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-    });
     return (
         <div className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
             {scrolled && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
-            <Upperpartanddownpart {...{ skillref }} />
+            <ExperienceAndAbout {...{ skillref }} />
             <Tools {...{ myworkref }} />
             <Myworks {...{ myworkref }} />
             <Workstyle {...{ blogref }} />
             <Contact {...{ contactref }} />
-
         </div>
     );
 };
