@@ -3,7 +3,6 @@ import About from "./About";
 import Experience from "./Experience";
 
 const ExperienceAndAbout = ({ skillref }) => {
-
     return (
         <div className="main-upperpartanddownpart" >
             <Experience />

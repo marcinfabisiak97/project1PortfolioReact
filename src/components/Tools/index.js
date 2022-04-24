@@ -34,7 +34,7 @@ const Tools = () => {
     { 'pict': sourcetree, 'text': 'Sourcetree' }
   ]
   return (
-    <div className="main-wrapper_tools"  >
+    <div className="wrapperTools"  >
       <h2>//Tools</h2>
       <h3>My essentials</h3>
       <div className="main-tollsicon" ref={ourRef}>
