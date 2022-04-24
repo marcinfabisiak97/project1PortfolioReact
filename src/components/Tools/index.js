@@ -37,12 +37,12 @@ const Tools = () => {
     <div className="wrapperTools"  >
       <h2>//Tools</h2>
       <h3>My essentials</h3>
-      <div className="main-tollsicon" ref={ourRef}>
+      <div className="tollsIcon" ref={ourRef}>
         {
           myTools.map((el, index) => {
             {/*making animation using css transform and hook useEffect and function handleScroll */ }
             return (
-              <div key={index} className={scrolled ? "main-tollsicon_img" : "main-tollsicon_img main-tollsicon_imgTranslate"}>
+              <div key={index} className={scrolled ? "tollsIcon__img" : "tollsIcon__img tollsIcon__img--translate"}>
                 <img src={el.pict} />
                 <p>{el.text}<br />{el.number}</p>
               </div>
