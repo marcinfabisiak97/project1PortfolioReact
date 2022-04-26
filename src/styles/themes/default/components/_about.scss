@@ -1,0 +1,228 @@
+.downPart {
+  @include myFlex();
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: $space-large;
+  margin-right: $space-large;
+  &__about {
+    margin-left: $space-medium;
+    margin-top: $space-medium;
+    flex-basis: 40vw;
+    ul {
+      padding-left: 5%;
+    }
+    p {
+      img {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__skills {
+    width: 50vw;
+    @include boxShadow(5px 5px 5px 5px #888888);
+    margin: $space-standard;
+    padding: $space-standard $space-medium $space-medium $space-medium;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: $break-high) {
+  .downPart {
+    &__about {
+      margin-left: $space-medium;
+      margin-top: $space-medium;
+      flex-basis: 40vw;
+
+      h2 {
+        font-size: pxToRem(40);
+      }
+
+      h3 {
+        font-size: pxToRem(30);
+      }
+
+      ul {
+        padding-left: 5%;
+      }
+
+      p,
+      ul {
+        font-size: pxToRem(25);
+
+        img {
+          width: 30%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    &__skills {
+      max-height: 600px;
+      min-height: 500px;
+      h2 {
+        font-size: pxToRem(40);
+      }
+
+      p {
+        font-size: pxToRem(20);
+      }
+    }
+  }
+}
+@media only screen and (max-width: $break-laptop) {
+  .downPart__skills {
+    max-height: 600px;
+    min-height: 500px;
+    h2 {
+      font-size: pxToRem(40);
+    }
+
+    p {
+      font-size: pxToRem(20);
+    }
+  }
+}
+@media only screen and (max-width: $break-mid) {
+  .downPart {
+    &__about {
+      margin-left: $space-medium;
+      margin-top: $space-medium;
+      flex-basis: 40vw;
+
+      h2 {
+        font-size: pxToRem(30);
+      }
+
+      h3 {
+        font-size: pxToRem(20);
+      }
+
+      ul {
+        padding-left: 5%;
+        font-size: pxToRem(15);
+      }
+
+      p {
+        font-size: pxToRem(15);
+
+        img {
+          width: 30%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    &__skills {
+      max-height: 350px;
+      min-height: 300px;
+      h2 {
+        font-size: pxToRem(30);
+      }
+
+      p {
+        font-size: pxToRem(15);
+      }
+    }
+  }
+}
+@media only screen and (max-width: $break-mobile) {
+  .downPart {
+    @include myFlex();
+    width: 95vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: $space-null;
+    margin-right: $space-null;
+    &__about {
+      margin-left: $space-medium;
+      margin-top: $space-medium;
+      flex-basis: 40vw;
+
+      h2 {
+        font-size: pxToRem(25);
+      }
+
+      h3 {
+        font-size: pxToRem(15);
+      }
+
+      ul {
+        font-size: pxToRem(15);
+        padding-left: 5%;
+      }
+
+      p {
+        font-size: pxToRem(15);
+
+        img {
+          width: 30%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    &__skills {
+      h2 {
+        font-size: pxToRem(25);
+      }
+
+      p {
+        font-size: pxToRem(10);
+      }
+    }
+  }
+}
+@media only screen and (max-width: $break-xs) {
+  .downPart {
+    @include myFlex();
+    max-width: 90vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: $space-small;
+    margin-right: $space-small;
+    &__about {
+      margin-left: $space-small;
+      margin-right: $space-small;
+      margin-top: 0;
+      flex-basis: 40vw;
+
+      h2 {
+        font-size: pxToRem(15);
+      }
+
+      h3 {
+        font-size: pxToRem(10);
+      }
+
+      ul {
+        font-size: pxToRem(10);
+        padding-left: 5%;
+      }
+
+      p {
+        font-size: pxToRem(10);
+
+        img {
+          width: 30%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    &__skills {
+      max-width: 90vw;
+      min-width: 60vw;
+      h2 {
+        font-size: pxToRem(15);
+      }
+
+      p {
+        font-size: pxToRem(10);
+      }
+    }
+  }
+}

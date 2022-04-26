@@ -3,7 +3,7 @@ import ContactDetails from './ContactDetails';
 import Form from './Form';
 const Contact = ({ contactref }) => {
     return (
-        <div className="main-wrapper_contact" ref={contactref}>
+        <div className="contact" ref={contactref}>
             <Form />
             <ContactDetails />
         </div >

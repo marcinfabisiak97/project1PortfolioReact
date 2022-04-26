@@ -4,7 +4,7 @@ import Experience from "./Experience";
 
 const ExperienceAndAbout = ({ skillref }) => {
     return (
-        <div className="main-upperpartanddownpart" >
+        <div className="upperpartAndDownpart" >
             <Experience />
             <About skillref={skillref} />
         </div>

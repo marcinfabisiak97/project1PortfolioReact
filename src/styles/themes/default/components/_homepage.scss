@@ -1,0 +1,36 @@
+.page{
+    &__upper{
+      width: 100vw;
+      position: fixed;
+      left:95%;
+      top:50px;
+      cursor:pointer;
+      .icons{
+        font-size: 50px;
+        color: #7371ec;
+      }
+    }
+  }
+  @media only screen and (max-width: $break-mobile) {
+    .page{
+      &__upper{
+        width: 100vw;
+        position: fixed;
+        left:90%;
+        top:50px;
+      }
+    }
+}
+@media only screen and (max-width: $break-xs) {
+    .page{
+      &__upper{
+        width: 100vw;
+        position: fixed;
+        left:87%;
+        top:50px;
+        .icons{
+          font-size: 30px;
+        }
+      }
+    }
+}

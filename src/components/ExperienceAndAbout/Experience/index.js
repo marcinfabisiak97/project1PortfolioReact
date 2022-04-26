@@ -4,8 +4,8 @@ import { ButtonMailto } from '../ButtonMailto';
 const Experience = () => {
     return (
         <React.Fragment>
-            <div className="main-upperpart">
-                <div className="main-info">
+            <div className="upperPart">
+                <div className="experience">
                     <h2> // Hi, My name is Martin Fabisiak</h2>
                     <h3>Software Engineer</h3>
                     <p>
@@ -13,7 +13,7 @@ const Experience = () => {
                         <br />
                         with 1 year of experience within the field{" "}
                     </p>
-                    <div className="main-info_seework">
+                    <div className="experience__seework">
                         <a
                             target="blank"
                             href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev"
@@ -28,7 +28,7 @@ const Experience = () => {
                         </a>
                     </div>
                 </div>
-                <div className="main-photo_rightdescription">
+                <div className="freelanceDescr">
                     <h1> // I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>

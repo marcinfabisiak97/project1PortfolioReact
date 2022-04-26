@@ -1,0 +1,116 @@
+.myWorks {
+  margin-left: $space-standard;
+  margin-top: $space-medium;
+  width: 90%;
+}
+.portfolios {
+  @include myFlex();
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: $space-large;
+  margin-right: $space-large;
+  &__view {
+    border-radius: 4px;
+    @include boxShadow(4px 4px 4px 4px $c-gray);
+    margin-top: $space-standard;
+  }
+  &__links {
+    @include myFlex();
+    justify-content: flex-end;
+    a {
+      transition: 0.5s transform ease-in-out;
+      width: 15%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__links {
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+@media only screen and (max-width: $break-high) {
+  .myWorks {
+    margin-left: $space-xxx-large;
+    margin-top: $space-medium;
+    width: 90%;
+
+    h2 {
+      font-size: pxToRem(40);
+    }
+
+    h3 {
+      font-size: pxToRem(30);
+    }
+
+    p {
+      font-size: pxToRem(25);
+    }
+  }
+}
+@media only screen and (max-width: $break-mid) {
+  .myWorks {
+    margin-left: $space-xxx-large;
+    margin-top: $space-medium;
+    width: 90%;
+
+    h2 {
+      font-size: pxToRem(30);
+    }
+
+    h3 {
+      font-size: pxToRem(20);
+    }
+
+    p {
+      font-size: pxToRem(15);
+    }
+  }
+}
+@media only screen and (max-width: $break-mobile) {
+  .myWorks {
+    margin-left: $space-xxx-large;
+    margin-top: $space-medium;
+    width: 90%;
+
+    h2 {
+      font-size: pxToRem(25);
+    }
+
+    h3 {
+      font-size: pxToRem(20);
+    }
+
+    p {
+      font-size: pxToRem(15);
+    }
+  }
+}
+@media only screen and (max-width: $break-xs) {
+  .myWorks {
+    margin-left: $space-standard;
+    margin-top: $space-medium;
+    width: 80%;
+
+    h2 {
+      font-size: pxToRem(15);
+    }
+
+    h3 {
+      font-size: pxToRem(12);
+    }
+
+    p {
+      font-size: pxToRem(10);
+    }
+  }
+    .portfolios_view {
+      max-width: 270px;
+      img {
+        max-width: 270px;
+      }
+    }
+
+}

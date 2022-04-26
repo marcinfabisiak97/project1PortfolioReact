@@ -3,8 +3,8 @@ import Bars from '../Bars';
 const About = ({ skillref }) => {
     const dref = useRef(null);
     return (
-        <div className="main-downpart">
-            <div className="main-photo_belowdescription">
+        <div className="downPart">
+            <div className="downPart__about">
                 <h2 ref={skillref}> // About me</h2>
                 <h3>All about Techy</h3>
                 <p>
@@ -21,7 +21,7 @@ const About = ({ skillref }) => {
                     <li>cycling</li>
                 </ul>
             </div>
-            <div className="main-wrapper_bars" ref={dref}>
+            <div className="downPart__skills" ref={dref}>
                 <h2 id="skills">//Skills</h2>
                 <p>All beneath techs or languages are known by practical site.</p>
                 <Bars dref={dref} />

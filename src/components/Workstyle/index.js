@@ -3,17 +3,17 @@ import photo2 from '../../assets/photo-2.jpg';
 
 const Workstyle = ({ blogref }) => {
     return (
-        <div className="main-wrapper_blog" ref={blogref}>
-            <div className="main-wrapper_blogtitle">
-                <h2 id="blog">//How I work</h2>
+        <div className="workStyle" ref={blogref}>
+            <div className="workStyle__mainTitle">
+                <h2 >//How I work</h2>
                 <h3>Hints and tips</h3>
             </div>
-            <div className="main-wrapper_blogtitle01">
-                <div className="main-wrapper_blogtitle01title1">
-                    <div className="main-wrapper_blogtitle01img">
+            <div className="workStyle__paragraphs">
+                <div className="paragraph">
+                    <div className="paragraph__photo">
                         <img src={photo1} />
                     </div>
-                    <div className="main-wrapper_blogtitle01desc">
+                    <div className="paragraph__descr">
                         <h2>//Searching on my own</h2>
                         <h3>Using my own experience</h3>
                         <p>I always start solving problems on my own.
@@ -21,11 +21,11 @@ const Workstyle = ({ blogref }) => {
                             and adjust it to make needed solution.</p>
                     </div>
                 </div>
-                <div className="main-wrapper_blogtitle01title2">
-                    <div className="main-wrapper_blogtitle01img">
+                <div className="paragraph">
+                    <div className="paragraph__photo">
                         <img src={photo2} />
                     </div>
-                    <div className="main-wrapper_blogtitle01desc">
+                    <div className="paragraph__descr">
                         <h2>//Looking for help in Stack Overflow</h2>
                         <h3>Using experience of others</h3>
                         <p>When I don't have clue how to solve problem I look it on Stack, some times make a new topic.

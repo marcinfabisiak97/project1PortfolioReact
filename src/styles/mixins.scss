@@ -50,22 +50,3 @@
     }
   }
 }
-
-// @include createCol();
-
-// $elements:
-// "red" red 20px orange,
-// "orange" orange 30px blue,
-// "blue" blue 20px red;
-
-// @each $name, $color, $fontSize, $bcolor in $elements {
-// 	.test-#{$name}{
-// 	color: $color;
-// 	font-size: $fontSize;
-// 	background-color: $bcolor;
-// 	}
-// }
-.main-info {
-  background-color: $c-cloudy;
-  color: scale-color($c-cloudy, $lightness: 10%);
-}

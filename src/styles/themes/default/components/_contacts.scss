@@ -1,14 +1,13 @@
+.contact {
+  @include myFlex();
+  background-color: $c-negroni;
+  height: 80vh;
+  background-image: url(../../../../assets/circle_03.png);
+  background-repeat: no-repeat;
+  background-position: 700px -200px;
+  background-size: 450px;
+}
 .main-wrapper {
-  &_contact {
-    @include myFlex();
-    background-color: $c-negroni;
-    height: 80vh;
-    background-image: url(../../../../assets/circle_03.png);
-    background-repeat: no-repeat;
-    background-position: 700px -200px;
-    background-size: 450px;
-  }
-
   &_contactparent {
     flex-basis: 190vw;
     margin-right: $space-x-small;
@@ -124,16 +123,16 @@
   margin: 5rem;
 }
 @media only screen and (max-width: $break-high) {
+  .contact {
+    @include myFlex();
+    background-color: $c-negroni;
+    max-height: 600px;
+    background-image: url(../../../../assets/circle_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
   .main-wrapper {
-    &_contact {
-      @include myFlex();
-      background-color: $c-negroni;
-      max-height: 600px;
-      background-image: url(../../../../assets/circle_03.png);
-      background-repeat: no-repeat;
-      background-position: 700px -200px;
-      background-size: 450px;
-    }
     &_contactdescr {
       width: 50vw;
     }
@@ -145,16 +144,16 @@
 }
 
 @media only screen and (max-width: $break-laptop) {
+  .contact {
+    @include myFlex();
+    background-color: $c-negroni;
+    height: 100vh;
+    background-image: url(../../../../assets/circle_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
   .main-wrapper {
-    &_contact {
-      @include myFlex();
-      background-color: $c-negroni;
-      height: 100vh;
-      background-image: url(../../../../assets/circle_03.png);
-      background-repeat: no-repeat;
-      background-position: 700px -200px;
-      background-size: 450px;
-    }
     &_contactdescr {
       width: 90vw;
     }
@@ -174,16 +173,16 @@
 }
 
 @media only screen and (max-width: $break-mid) {
+  .contact {
+    @include myFlex();
+    background-color: $c-negroni;
+    max-height: 500px;
+    background-image: url(../../../../assets/circle_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
   .main-wrapper {
-    &_contact {
-      @include myFlex();
-      background-color: $c-negroni;
-      max-height: 500px;
-      background-image: url(../../../../assets/circle_03.png);
-      background-repeat: no-repeat;
-      background-position: 700px -200px;
-      background-size: 450px;
-    }
     &_contactchild {
       width: 100%;
       margin: 0;
@@ -247,18 +246,17 @@
 }
 
 @media only screen and (max-width: $break-mobile) {
+  .contact {
+    @include myFlex();
+    flex-direction: column;
+    background-color: $c-negroni;
+    max-height: 490px;
+    background-image: url(../../../../assets/circle_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
   .main-wrapper {
-    &_contact {
-      @include myFlex();
-      flex-direction: column;
-      background-color: $c-negroni;
-      max-height: 490px;
-      background-image: url(../../../../assets/circle_03.png);
-      background-repeat: no-repeat;
-      background-position: 700px -200px;
-      background-size: 450px;
-    }
-
     &_contactparent {
       margin-right: $space-xx-large;
       margin-left: $space-xx-large;
@@ -328,18 +326,17 @@
 }
 
 @media only screen and (max-width: $break-xs) {
+  .contact {
+    @include myFlex();
+    flex-direction: column;
+    background-color: $c-negroni;
+    max-height: 440px;
+    background-image: url(../../../../assets/circle_03.png);
+    background-repeat: no-repeat;
+    background-position: 700px -200px;
+    background-size: 450px;
+  }
   .main-wrapper {
-    &_contact {
-      @include myFlex();
-      flex-direction: column;
-      background-color: $c-negroni;
-      max-height: 440px;
-      background-image: url(../../../../assets/circle_03.png);
-      background-repeat: no-repeat;
-      background-position: 700px -200px;
-      background-size: 450px;
-    }
-
     &_contactparent {
       margin-right: $space-x-small;
       margin-left: $space-standard;
@@ -387,10 +384,8 @@
   }
 }
 @media only screen and (max-width: 326px) {
-  .main-wrapper {
-    &_contact {
-      max-height: 450px;
-    }
+  .contact {
+    max-height: 450px;
   }
   .main-info_contact {
     margin: auto;
