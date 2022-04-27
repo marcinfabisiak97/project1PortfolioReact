@@ -338,7 +338,7 @@
     }
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: $break-xss) {
   .header {
     padding-left: 0;
     &__navLi > a {
