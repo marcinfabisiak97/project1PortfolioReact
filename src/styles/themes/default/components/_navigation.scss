@@ -295,6 +295,7 @@
     box-sizing: content-box;
     padding-right: 0;
     padding-left: 0;
+    padding-top:$space-small;
     &__wrapper {
       @include myFlex();
       justify-content: flex-start;
