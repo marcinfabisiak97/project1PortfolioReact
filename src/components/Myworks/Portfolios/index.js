@@ -8,7 +8,7 @@ const Portfolios = () => {
         <div className="portfolios" >
             <a target='blank' href='https://projekt2reactquiz.netlify.app'>
                 <div className="portfolios__view">
-                    <img src={porfolio01} />
+                    <img src={porfolio01} alt='porfolio' />
                     <div className="portfolios__links">
                         <a target='blank' href='https://bitbucket.org/marcinfabisiak123/pr2/src/dev/'><img src={bitbucketicon} /></a>
                         <a target='blank' href='https://github.com/marcinfabisiak97/quizReact'><img src={github} /></a>
@@ -17,7 +17,7 @@ const Portfolios = () => {
             </a>
             <a target='blank' href='https://projekty3typescriptmarcinfabisiak.netlify.app'>
                 <div className="portfolios__view">
-                    <img src={porfolio02} />
+                    <img src={porfolio02} alt='porfolio' />
                     <div className="portfolios__links">
                         <a target='blank' href='https://bitbucket.org/marcinfabisiak123/pr3/src/dev/'><img src={bitbucketicon} /></a>
                         <a target='blank' href='https://github.com/marcinfabisiak97/cvOnePageReactTypescrit'><img src={github} /></a>

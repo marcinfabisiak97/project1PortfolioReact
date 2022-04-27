@@ -15,11 +15,11 @@ const Homepage = () => {
     const contactref = useRef(null);
     {/*using useRef hook to make navigation */ }
     const [scrolled, setScrolled] = useState(false);
-
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
     });
     const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+    {/*using handleScroll to make slide to upper place */ }
     const handleScroll = () => {
         const YPosition = skillref.current.getBoundingClientRect().top;
         const offset = window.scrollY;

@@ -29,11 +29,11 @@ const Form = () => {
     };
     return (
         <React.Fragment>
-            <div className="main-wrapper_contactparent">
-                <h2 id="contact">//Contact me</h2>
+            <div className="formPart">
+                <h2 >//Contact me</h2>
                 <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
-                <form onSubmit={onSubmit} className="main-wrapper_form">
-                    <div className="main-wrapper_contactchild1">
+                <form onSubmit={onSubmit} className="form">
+                    <div className="form__input">
                         <input
                             type='text'
                             name='reply_to'
@@ -42,7 +42,7 @@ const Form = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div className="main-wrapper_contactchild2">
+                    <div className="form__input">
                         <input
                             type='text'
                             name='from_name'
@@ -51,7 +51,7 @@ const Form = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div className="main-wrapper_contactchild3">
+                    <div className="form__textArea">
                         <textarea
                             type='text'
                             name='message'
@@ -61,7 +61,7 @@ const Form = () => {
                         >
                         </textarea>
                     </div>
-                    <div className="main-wrapper_contactchild">
+                    <div className="form__submit">
                         <button type='submit'>Submit</button >
                     </div>
                 </form>

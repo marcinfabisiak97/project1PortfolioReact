@@ -11,6 +11,9 @@ import React, { useState, useRef, useEffect } from 'react';
 const Tools = () => {
   const [scrolled, setScrolled] = useState(false);
   const ourRef = useRef(null);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
   const handleScroll = () => {
     const YPosition = ourRef.current.getBoundingClientRect().top;
     const offset = window.scrollY;
@@ -20,9 +23,6 @@ const Tools = () => {
       setScrolled(false);
     }
   };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
   const myTools = [
     { 'pict': javascript, 'text': 'Javascript' },
     { 'pict': reacticon, 'text': 'React' },

@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const ContactDetails = () => {
     return (
         <React.Fragment>
-            <div className='wrapper-contact'>
-                <div className="main-info_contact">
+            <div className='contactDetails'>
+                <div className="phoneAndEmail">
                     <a href="tel:48604132689"> <img src={contact} alt="contact" /></a>
-                    <div className="main-info_contactdesc">
+                    <div className="phoneAndEmail__text">
                         <Link
                             to='#'
                             onClick={(e) => {
@@ -22,13 +22,13 @@ const ContactDetails = () => {
                         <a href="tel:48604132689"><p>+48 604 132 689</p></a>
                     </div>
                 </div>
-                <div className="main-wrapper_contactdescr">
-                    <div className="main-wrapper_contactphoto">
+                <div className="descr">
+                    <div className="descr__photo">
                         <img src={devPhoto} alt="developer" />
                     </div>
                     <p>author: Marcin Fabisiak</p>
                     <p>description: Frontend Developer</p>
-                    <a href='https://github.com/marcinfabisiak97'>
+                    <a target="_blank" href='https://github.com/marcinfabisiak97'>
                         <p>git: https://github.com/marcinfabisiak97</p>
                     </a>
                 </div>

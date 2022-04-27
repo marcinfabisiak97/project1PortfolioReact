@@ -13,6 +13,9 @@
     border-radius: 4px;
     @include boxShadow(4px 4px 4px 4px $c-gray);
     margin-top: $space-standard;
+    img{
+      border-radius: 4px 4px 0px 0px;
+    }
   }
   &__links {
     @include myFlex();
@@ -106,11 +109,18 @@
       font-size: pxToRem(10);
     }
   }
-    .portfolios_view {
+  .portfolios_view {
+    max-width: 270px;
+    img {
       max-width: 270px;
+    }
+  }
+}
+@media only screen and (max-width: $break-xss) {
+    .portfolios__view {
+      max-width: 250px;
       img {
-        max-width: 270px;
+        max-width: 250px;
       }
     }
-
 }

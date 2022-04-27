@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Bars from '../Bars';
+
 const About = ({ skillref }) => {
     const dref = useRef(null);
     return (
@@ -29,5 +30,4 @@ const About = ({ skillref }) => {
         </div>
     );
 };
-
 export default About;

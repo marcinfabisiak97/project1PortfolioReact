@@ -41,3 +41,31 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+@keyframes hop {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: -10px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes hopButton {
+  0% {
+    left: 95%;;
+    top: 50px;
+  }
+  50% {
+    left: 95%;;
+    top: 40px;
+  }
+  100% {
+    left: 95%;;
+    top: 50px;
+  }
+}
