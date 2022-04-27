@@ -130,6 +130,7 @@
   }
 
   .header {
+    padding-top:$space-standard;
     &__nav {
       font-size: pxToRem(25);
       padding: $space-medium;
@@ -165,7 +166,6 @@
 @media only screen and (max-width: $break-mid) {
   .header {
     margin-right: 100px;
-
     &__wrapper {
       @include myFlex();
       justify-content: center;
@@ -174,7 +174,6 @@
       margin: $space-null;
     }
   }
-
   .header > h3 {
     font-size: pxToRem(80);
     width: 20vw;
@@ -183,20 +182,16 @@
     padding-top: $space-small;
     padding-bottom: $space-xx-small;
   }
-
   .header {
     &__nav {
       width: 60vw;
       font-size: pxToRem(20);
-      padding: $space-small;
+      padding: $space-standard;
       margin-top: $space-small;
     }
-
-    &__navLi1 {
+    &__navLi {
       border: 1px solid $c-white;
-      height: 50px;
     }
-
     &__navLi > img {
       min-width: 30px;
       max-width: 60px;
@@ -224,7 +219,7 @@
   .header {
     @include myFlex();
     justify-content: space-around;
-
+    padding-left: $space-standard;
     margin-right: 0px;
     box-sizing: border-box;
 
@@ -249,7 +244,7 @@
   .header {
     &__nav {
       width: 60vw;
-      padding: $space-small;
+      padding: $space-standard;
       margin-top: $space-small;
     }
 
@@ -298,6 +293,8 @@
     background-color: $c-gray-opacity;
     background-image: linear-gradient($c-gray-opacity, $c-white);
     box-sizing: content-box;
+    padding-right: 0;
+    padding-left: 0;
     &__wrapper {
       @include myFlex();
       justify-content: flex-start;
@@ -310,8 +307,8 @@
       display: flex;
       justify-content: space-between;
       width: 100vw;
-      padding: $space-x-small;
-      margin: $space-xxx-small $space-null;
+      padding: $space-xxx-small;
+      margin: $space-null;
     }
 
     &__navLi1 {
@@ -343,6 +340,7 @@
 }
 @media only screen and (max-width: 320px) {
   .header {
+    padding-left: 0;
     &__navLi > a {
       text-decoration: none;
       font-size: pxToRem(10);

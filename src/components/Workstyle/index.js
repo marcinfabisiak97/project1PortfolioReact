@@ -5,7 +5,7 @@ const Workstyle = ({ blogref }) => {
     return (
         <div className="workStyle" ref={blogref}>
             <div className="workStyle__mainTitle">
-                <h2 >//How I work</h2>
+                <h2 >&#47;&#47; How I work</h2>
                 <h3>Hints and tips</h3>
             </div>
             <div className="workStyle__paragraphs">

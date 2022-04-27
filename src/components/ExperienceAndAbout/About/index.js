@@ -6,7 +6,7 @@ const About = ({ skillref }) => {
     return (
         <div className="downPart">
             <div className="downPart__about">
-                <h2 ref={skillref}> // About me</h2>
+                <h2 ref={skillref}>&#47;&#47; About me</h2>
                 <h3>All about Techy</h3>
                 <p>
                     I am interested in practical creating innovative websites. I can
@@ -23,7 +23,7 @@ const About = ({ skillref }) => {
                 </ul>
             </div>
             <div className="downPart__skills" ref={dref}>
-                <h2 id="skills">//Skills</h2>
+                <h2 id="skills">&#47;&#47; Skills</h2>
                 <p>All beneath techs or languages are known by practical site.</p>
                 <Bars dref={dref} />
             </div>

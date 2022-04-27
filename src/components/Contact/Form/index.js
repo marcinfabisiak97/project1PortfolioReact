@@ -30,7 +30,7 @@ const Form = () => {
     return (
         <React.Fragment>
             <div className="formPart">
-                <h2 >//Contact me</h2>
+                <h2 >&#47;&#47; Contact me</h2>
                 <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
                 <form onSubmit={onSubmit} className="form">
                     <div className="form__input">

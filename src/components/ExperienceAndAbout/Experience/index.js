@@ -7,7 +7,7 @@ const Experience = () => {
         <React.Fragment>
             <div className="upperPart">
                 <div className="experience">
-                    <h2> // Hi, My name is Martin Fabisiak</h2>
+                    <h2>&#47;&#47; Hi, My name is Martin Fabisiak</h2>
                     <h3>Software Engineer</h3>
                     <p>
                         Passionate Techy and Tech Author
@@ -30,7 +30,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="freelanceDescr">
-                    <h1> // I am freelancer</h1>
+                    <h1>&#47;&#47; I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>
                         <ButtonMailto mailto={"mailto:marcinfabisiak123@gmail.com"} />

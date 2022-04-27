@@ -35,7 +35,7 @@ const Tools = () => {
   ]
   return (
     <div className="wrapperTools"  >
-      <h2>//Tools</h2>
+      <h2>&#47;&#47; Tools</h2>
       <h3>My essentials</h3>
       <div className="tollsIcon" ref={ourRef}>
         {
