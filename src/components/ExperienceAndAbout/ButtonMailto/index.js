@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cv from "../../../assets/cv.pdf";
+import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
 
 export const ButtonMailto = ({ mailto }) => {
 
