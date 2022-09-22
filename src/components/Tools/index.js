@@ -43,7 +43,7 @@ const Tools = () => {
             {/*making animation using css transform and hook useEffect and function handleScroll */ }
             return (
               <div key={index} className={scrolled ? "tollsIcon__img" : "tollsIcon__img tollsIcon__img--translate"}>
-                <img src={el.pict} />
+                <img src={el.pict} alt={el.pict} />
                 <p>{el.text}<br />{el.number}</p>
               </div>
             )

@@ -11,7 +11,7 @@ const Workstyle = ({ blogref }) => {
             <div className="workStyle__paragraphs">
                 <div className="paragraph">
                     <div className="paragraph__photo">
-                        <img src={photo1} />
+                        <img src={photo1} alt="laptop" />
                     </div>
                     <div className="paragraph__descr">
                         <h2>//Searching on my own</h2>
@@ -23,13 +23,12 @@ const Workstyle = ({ blogref }) => {
                 </div>
                 <div className="paragraph">
                     <div className="paragraph__photo">
-                        <img src={photo2} />
+                        <img src={photo2} alt="laptop" />
                     </div>
                     <div className="paragraph__descr">
                         <h2>//Looking for help in Stack Overflow</h2>
                         <h3>Using experience of others</h3>
-                        <p>When I don't have clue how to solve problem I look it on Stack, some times make a new topic.
-                            When Stack don't have any solution and I really don't known I ask my mentor.
+                        <p>When I don't have clue how to solve problem I look it on Stack, sometimes make a new topic.
                         </p>
                     </div>
                 </div>

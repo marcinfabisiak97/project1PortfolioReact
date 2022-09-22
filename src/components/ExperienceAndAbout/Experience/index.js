@@ -25,7 +25,7 @@ const Experience = () => {
                             target="blank"
                             href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev"
                         >
-                            <img src={github} />
+                            <img src={github} alt="github" />
                         </a>
                     </div>
                 </div>
