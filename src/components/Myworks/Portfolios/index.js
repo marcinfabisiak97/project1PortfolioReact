@@ -1,5 +1,4 @@
 import porfolio01 from '../../../assets/portfoliopr2.png';
-import bitbucketicon from '../../../assets/bit_bucket_icon.png';
 import github from '../../../assets/github_icon.png';
 import porfolio02 from '../../../assets/portfoliopr3.png';
 
