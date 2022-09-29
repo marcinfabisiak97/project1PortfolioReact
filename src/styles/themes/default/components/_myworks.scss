@@ -13,7 +13,7 @@
     border-radius: 4px;
     @include boxShadow(4px 4px 4px 4px $c-gray);
     margin-top: $space-standard;
-    img{
+    img {
       border-radius: 4px 4px 0px 0px;
     }
   }
@@ -117,10 +117,10 @@
   }
 }
 @media only screen and (max-width: $break-xss) {
-    .portfolios__view {
+  .portfolios__view {
+    max-width: 250px;
+    img {
       max-width: 250px;
-      img {
-        max-width: 250px;
-      }
     }
+  }
 }

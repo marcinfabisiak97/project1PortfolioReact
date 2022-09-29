@@ -69,7 +69,7 @@
 
   &__navLi > a {
     text-decoration: none;
-    transition: font-size 0.5s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
   }
 }
 
@@ -95,7 +95,6 @@
 
     &__navLi > img {
       width: 80px;
-      transition: transform 0.5s ease-in-out;
       cursor: pointer;
     }
 
@@ -104,8 +103,7 @@
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(35);
-      transition: font-size 0.5s;
+      font-size: pxToRem(32);
     }
 
     &__navLi > a {
@@ -130,7 +128,7 @@
   }
 
   .header {
-    padding-top:$space-standard;
+    padding-top: $space-standard;
     &__nav {
       font-size: pxToRem(25);
       padding: $space-medium;
@@ -143,7 +141,6 @@
 
     &__navLi > img {
       min-width: 90px;
-      transition: transform 0.5s ease-in-out;
       cursor: pointer;
     }
 
@@ -152,7 +149,7 @@
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(35);
+      font-size: pxToRem(32);
       transition: font-size 0.5s;
     }
 
@@ -195,7 +192,6 @@
     &__navLi > img {
       min-width: 30px;
       max-width: 60px;
-      transition: transform 0.5s ease-in-out;
       cursor: pointer;
     }
 
@@ -209,7 +205,7 @@
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(25);
+      font-size: pxToRem(22);
       transition: font-size 0.5s;
     }
   }
@@ -256,7 +252,6 @@
     &__navLi > img {
       min-width: 20px;
       max-width: 40px;
-      transition: transform 0.5s ease-in-out;
       cursor: pointer;
     }
 
@@ -270,7 +265,7 @@
     }
 
     &__navLi > a:hover {
-      font-size: pxToRem(25);
+      font-size: pxToRem(22);
       transition: font-size 0.5s;
     }
   }
@@ -295,7 +290,7 @@
     box-sizing: content-box;
     padding-right: 0;
     padding-left: 0;
-    padding-top:$space-small;
+    padding-top: $space-small;
     &__wrapper {
       @include myFlex();
       justify-content: flex-start;
@@ -320,7 +315,6 @@
     &__navLi > img {
       min-width: 10px;
       max-width: 30px;
-      transition: transform 0.5s ease-in-out;
       cursor: pointer;
     }
 
