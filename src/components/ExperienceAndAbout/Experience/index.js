@@ -1,5 +1,5 @@
 import React from 'react';
-import github from "../../../assets/github_icon.png";
+import Images from '../../../assets/exportFiles';
 import { ButtonMailto } from '../ButtonMailto';
 
 const Experience = () => {
@@ -25,7 +25,7 @@ const Experience = () => {
                             target="blank"
                             href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev"
                         >
-                            <img src={github} alt="github" />
+                            <img src={Images.gitHub} alt="github" />
                         </a>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import contact from '../../../assets/contact_icon.png';
-import devPhoto from '../../../assets/devPhoto.jpg';
+import Images from '../../../assets/exportFiles';
 import { Link } from 'react-router-dom';
 
 const ContactDetails = () => {
@@ -8,7 +7,7 @@ const ContactDetails = () => {
         <React.Fragment>
             <div className='contactDetails'>
                 <div className="phoneAndEmail">
-                    <a href="tel:48604132689"> <img src={contact} alt="contact" /></a>
+                    <a href="tel:48604132689"> <img src={Images.contact} alt="contact" /></a>
                     <div className="phoneAndEmail__text">
                         <Link
                             to='#'
@@ -24,7 +23,7 @@ const ContactDetails = () => {
                 </div>
                 <div className="descr">
                     <div className="descr__photo">
-                        <img src={devPhoto} alt="developer" />
+                        <img src={Images.devPhoto} alt="developer" />
                     </div>
                     <p>author: Marcin Fabisiak</p>
                     <p>description: Frontend Developer</p>

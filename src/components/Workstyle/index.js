@@ -1,6 +1,4 @@
-import photo1 from '../../assets/photo-1.jpg';
-import photo2 from '../../assets/photo-2.jpg';
-
+import Images from '../../assets/exportFiles';
 const Workstyle = ({ blogref }) => {
     return (
         <div className="workStyle" ref={blogref}>
@@ -11,7 +9,7 @@ const Workstyle = ({ blogref }) => {
             <div className="workStyle__paragraphs">
                 <div className="paragraph">
                     <div className="paragraph__photo">
-                        <img src={photo1} alt="laptop" />
+                        <img src={Images.noteBook} alt="noteBook" />
                     </div>
                     <div className="paragraph__descr">
                         <h2>//Searching on my own</h2>
@@ -23,7 +21,7 @@ const Workstyle = ({ blogref }) => {
                 </div>
                 <div className="paragraph">
                     <div className="paragraph__photo">
-                        <img src={photo2} alt="laptop" />
+                        <img src={Images.noteBooks} alt="noteBooks" />
                     </div>
                     <div className="paragraph__descr">
                         <h2>//Looking for help in Stack Overflow</h2>

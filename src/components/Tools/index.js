@@ -1,11 +1,4 @@
-import reacticon from '../../assets/devtech/react.png';
-import typescripticon from '../../assets/devtech/typescript.png';
-import sassicon from '../../assets/devtech/sass.png';
-import reduxicon from '../../assets/redux_icon_s.png';
-import bitbucket from '../../assets/devtech/bitbucket.png';
-import sourcetree from '../../assets/devtech/sourcetree.png';
-import flexboxicon from '../../assets/devtech/css.png';
-import javascript from '../../assets/devtech/javascript.png';
+import Images from '../../assets/exportFiles';
 import React, { useState, useRef, useEffect } from 'react';
 
 const Tools = () => {
@@ -24,14 +17,14 @@ const Tools = () => {
     }
   };
   const myTools = [
-    { 'pict': javascript, 'text': 'Javascript' },
-    { 'pict': reacticon, 'text': 'React' },
-    { 'pict': typescripticon, 'text': 'Typescript' },
-    { 'pict': reduxicon, 'text': 'Redux' },
-    { 'pict': sassicon, 'text': 'Sass' },
-    { 'pict': flexboxicon, 'text': 'Flexbox' },
-    { 'pict': bitbucket, 'text': 'Bitbucket' },
-    { 'pict': sourcetree, 'text': 'Sourcetree' }
+    { 'pict': Images.javaScript, 'text': 'Javascript' },
+    { 'pict': Images.reactIcon, 'text': 'React' },
+    { 'pict': Images.typeScriptIcon, 'text': 'Typescript' },
+    { 'pict': Images.reduxIcon, 'text': 'Redux' },
+    { 'pict': Images.sassIcon, 'text': 'Sass' },
+    { 'pict': Images.flexboxIcon, 'text': 'Flexbox' },
+    { 'pict': Images.bitBucket, 'text': 'Bitbucket' },
+    { 'pict': Images.sourceTree, 'text': 'Sourcetree' }
   ]
   return (
     <div className="wrapperTools"  >
