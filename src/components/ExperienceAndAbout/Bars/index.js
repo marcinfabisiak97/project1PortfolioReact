@@ -10,7 +10,6 @@ const myBar = [
 ];
 
 const Bars = ({ dref }) => {
-
     const [scrolled, setScrolled] = useState(false);
     const handleScroll = () => {
         const YPosition = dref.current.getBoundingClientRect().top;

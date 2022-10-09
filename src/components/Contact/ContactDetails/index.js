@@ -5,10 +5,14 @@ import { Link } from 'react-router-dom';
 const ContactDetails = () => {
     return (
         <React.Fragment>
-            <div className='contactDetails'>
-                <div className="phoneAndEmail">
-                    <a href="tel:48604132689"> <img src={Images.contact} alt="contact" /></a>
-                    <div className="phoneAndEmail__text">
+            <section className='contactDetails'>
+                <article className="phoneAndEmail">
+                    <figure>
+                        <a href="tel:48604132689">
+                            <img src={Images.contact} alt="contact" />
+                        </a>
+                    </figure>
+                    <article className="phoneAndEmail__text">
                         <Link
                             to='#'
                             onClick={(e) => {
@@ -19,19 +23,19 @@ const ContactDetails = () => {
                             <p>marcibfabisiak123@gmail.com</p>
                         </Link>
                         <a href="tel:48604132689"><p>+48 604 132 689</p></a>
-                    </div>
-                </div>
-                <div className="descr">
-                    <div className="descr__photo">
+                    </article>
+                </article>
+                <article className="descr">
+                    <figure className="descr__photo">
                         <img src={Images.devPhoto} alt="developer" />
-                    </div>
+                    </figure>
                     <p>author: Marcin Fabisiak</p>
                     <p>description: Frontend Developer</p>
                     <a target="_blank" href='https://github.com/marcinfabisiak97'>
                         <p>git: https://github.com/marcinfabisiak97</p>
                     </a>
-                </div>
-            </div>
+                </article>
+            </section>
         </React.Fragment>
     );
 };

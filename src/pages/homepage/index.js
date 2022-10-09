@@ -30,7 +30,7 @@ const Homepage = () => {
         }
     };
     return (
-        <div className='page'>
+        <main className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
             {scrolled && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
             <ExperienceAndAbout {...{ skillref }} />
@@ -38,7 +38,7 @@ const Homepage = () => {
             <Myworks {...{ myworkref }} />
             <Workstyle {...{ blogref }} />
             <Contact {...{ contactref }} />
-        </div>
+        </main>
     );
 };
 export default Homepage;

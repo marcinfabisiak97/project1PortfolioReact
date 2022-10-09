@@ -65,7 +65,7 @@
       color: $c-white;
       font-size: pxToRem(20);
       border-style: none;
-      transition: 0.5s background-color  ease-in-out;
+      transition: 0.5s background-color ease-in-out;
     }
 
     button:active {
@@ -97,6 +97,9 @@
     background-color: hsla(0, 0%, 100%, 0.7);
     @include boxShadow(5px 5px 5px 5px $c-gray);
     border-radius: 10px;
+    figure {
+      margin: 0;
+    }
     img {
       max-width: 100px;
       max-height: 100px;
@@ -384,8 +387,8 @@
   .contactDetails {
     .phoneAndEmail {
       margin: auto;
-      p{
-        font-size: pxToRem(12);;
+      p {
+        font-size: pxToRem(12);
       }
     }
   }

@@ -4,9 +4,9 @@ import Bars from '../Bars';
 const About = ({ skillref }) => {
     const dref = useRef(null);
     return (
-        <section className="downPart">
+        <section ref={skillref} className="downPart">
             <section className="downPart__about">
-                <h2 ref={skillref}>&#47;&#47; About me</h2>
+                <h2 >&#47;&#47; About me</h2>
                 <h3>All about Techy</h3>
                 <p>
                     I am interested in practical creating innovative websites. I can
