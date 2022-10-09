@@ -19,7 +19,7 @@ const Homepage = () => {
         window.addEventListener("scroll", handleScroll);
     });
     const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
-    {/*using handleScroll to make slide to upper place */ }
+    {/*using handleScroll to slide to upper place */ }
     const handleScroll = () => {
         const YPosition = skillref.current.getBoundingClientRect().top;
         const offset = window.scrollY;
