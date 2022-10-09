@@ -29,11 +29,11 @@ const Form = () => {
     };
     return (
         <React.Fragment>
-            <div className="formPart">
+            <section className="formPart">
                 <h2 >&#47;&#47; Contact me</h2>
                 <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
                 <form onSubmit={onSubmit} className="form">
-                    <div className="form__input">
+                    <fieldset className="form__input">
                         <input
                             type='text'
                             name='reply_to'
@@ -41,8 +41,8 @@ const Form = () => {
                             value={toSend.reply_to}
                             onChange={handleChange}
                         />
-                    </div>
-                    <div className="form__input">
+                    </fieldset>
+                    <fieldset className="form__input">
                         <input
                             type='text'
                             name='from_name'
@@ -50,8 +50,8 @@ const Form = () => {
                             value={toSend.from_name}
                             onChange={handleChange}
                         />
-                    </div>
-                    <div className="form__textArea">
+                    </fieldset>
+                    <fieldset className="form__textArea">
                         <textarea
                             type='text'
                             name='message'
@@ -60,12 +60,12 @@ const Form = () => {
                             onChange={handleChange}
                         >
                         </textarea>
-                    </div>
-                    <div className="form__submit">
+                    </fieldset>
+                    <fieldset className="form__submit">
                         <button type='submit'>Submit</button >
-                    </div>
+                    </fieldset>
                 </form>
-            </div >
+            </section >
         </React.Fragment>
     );
 };

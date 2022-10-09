@@ -27,10 +27,10 @@ const Tools = () => {
     { 'pict': Images.sourceTree, 'text': 'Sourcetree' }
   ]
   return (
-    <div className="wrapperTools"  >
+    <section className="wrapperTools"  >
       <h2>&#47;&#47; Tools</h2>
       <h3>My essentials</h3>
-      <div className="tollsIcon" ref={ourRef}>
+      <article className="tollsIcon" ref={ourRef}>
         {
           myTools.map((el, index) => {
             {/*making animation using css transform and hook useEffect and function handleScroll */ }
@@ -42,8 +42,8 @@ const Tools = () => {
             )
           })
         }
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 export default Tools;

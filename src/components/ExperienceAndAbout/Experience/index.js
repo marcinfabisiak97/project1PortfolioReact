@@ -5,8 +5,8 @@ import { ButtonMailto } from '../ButtonMailto';
 const Experience = () => {
     return (
         <React.Fragment>
-            <div className="upperPart">
-                <div className="experience">
+            <section className="upperPart">
+                <article className="experience">
                     <h2>&#47;&#47; Hi, My name is Martin Fabisiak</h2>
                     <h3>Software Engineer</h3>
                     <p>
@@ -14,29 +14,23 @@ const Experience = () => {
                         <br />
                         with 1 year of experience within the field{" "}
                     </p>
-                    <div className="experience__seework">
-                        <a
-                            target="blank"
-                            href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev"
-                        >
+                    <figure className="experience__seework">
+                        <a target="blank" href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev">
                             <p>See my work in github</p>
                         </a>
-                        <a
-                            target="blank"
-                            href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev"
-                        >
+                        <a target="blank" href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev">
                             <img src={Images.gitHub} alt="github" />
                         </a>
-                    </div>
-                </div>
-                <div className="freelanceDescr">
+                    </figure>
+                </article>
+                <article className="freelanceDescr">
                     <h1>&#47;&#47; I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>
                         <ButtonMailto mailto={"mailto:marcinfabisiak123@gmail.com"} />
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </React.Fragment>
     );
 };

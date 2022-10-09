@@ -4,10 +4,10 @@ import Experience from "./Experience";
 
 const ExperienceAndAbout = ({ skillref }) => {
     return (
-        <div className="upperpartAndDownpart" >
+        <section className="upperpartAndDownpart" >
             <Experience />
             <About skillref={skillref} />
-        </div>
+        </section>
     );
 };
 export default ExperienceAndAbout;

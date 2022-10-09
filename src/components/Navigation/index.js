@@ -11,10 +11,10 @@ const Navigation = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
         { 'link': contactref, 'text': 'Contact me' }
     ]
     return (
-        <div className="header" ref={aboutref}>
+        <header className="header" ref={aboutref}>
             <h3>M.F.</h3>
-            <div className="header__wrapper">
-                <div className="header__nav">
+            <article className="header__wrapper">
+                <nav className="header__nav">
                     {
                         navHeader.map((el, index) => {
                             return (
@@ -22,9 +22,9 @@ const Navigation = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
                             )
                         })
                     }
-                </div>
-            </div>
-        </div>
+                </nav>
+            </article>
+        </header>
     )
 }
 export default Navigation;

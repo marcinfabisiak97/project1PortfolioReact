@@ -4,8 +4,8 @@ import Bars from '../Bars';
 const About = ({ skillref }) => {
     const dref = useRef(null);
     return (
-        <div className="downPart">
-            <div className="downPart__about">
+        <section className="downPart">
+            <section className="downPart__about">
                 <h2 ref={skillref}>&#47;&#47; About me</h2>
                 <h3>All about Techy</h3>
                 <p>
@@ -21,13 +21,13 @@ const About = ({ skillref }) => {
                     <li>boxing</li>
                     <li>cycling</li>
                 </ul>
-            </div>
-            <div className="downPart__skills" ref={dref}>
+            </section>
+            <section className="downPart__skills" ref={dref}>
                 <h2 id="skills">&#47;&#47; Skills</h2>
                 <p>All beneath techs or languages are known by practical site.</p>
                 <Bars dref={dref} />
-            </div>
-        </div>
+            </section>
+        </section>
     );
 };
 export default About;

@@ -25,26 +25,20 @@ const Bars = ({ dref }) => {
         window.addEventListener("scroll", handleScroll);
     });
     return (
-        <div>
+        <React.Fragment>
             {myBar.map((el, index) => {
-                {
-                    /*making animation using css transform and hook useEffect and function handleScroll */
-                }
+                { /*making animation using css transform and hook useEffect and function handleScroll */ }
                 return (
-                    <div className="wrapper-bar" key={index}>
-                        <div
-
-                            className={scrolled ? el.styl : el.klas}
-                        >
+                    <section className="wrapper-bar" key={index}>
+                        <article className={scrolled ? el.styl : el.klas}>
                             <p className={scrolled ? "bar__displayBlock" : "bar__displayNone"}>
                                 {el.text}
                             </p>
-                        </div>
-                    </div>
+                        </article>
+                    </section>
                 );
             })}
-        </div>
+        </React.Fragment>
     );
 };
-
 export default Bars;

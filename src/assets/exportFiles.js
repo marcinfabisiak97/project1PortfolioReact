@@ -1,5 +1,5 @@
 import contact from './contact_icon.png';
-import devPhoto from './devPhoto.jpg';
+import devPhoto from './devPhoto.png';
 import gitHub from "./github_icon.png";
 import porfolio01 from './portfoliopr2.png';
 import porfolio02 from './portfoliopr3.png';
