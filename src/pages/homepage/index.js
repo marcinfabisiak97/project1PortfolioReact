@@ -1,4 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
+import { useScroll, scrollToRef } from '../../components/Utils/Utils';
 import Navigation from '../../components/Navigation';
 import ExperienceAndAbout from '../../components/ExperienceAndAbout';
 import Tools from '../../components/Tools';
@@ -13,22 +14,7 @@ const Homepage = () => {
     const myworkref = useRef(null);
     const blogref = useRef(null);
     const contactref = useRef(null);
-    {/*using useRef hook to make navigation */ }
-    const [scrolled, setScrolled] = useState(false);
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-    });
-    const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
-    {/*using handleScroll to slide to upper place */ }
-    const handleScroll = () => {
-        const YPosition = skillref.current.getBoundingClientRect().top;
-        const offset = window.scrollY;
-        if (offset > YPosition) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
-    };
+    const [scrolled] = useScroll(skillref)
     return (
         <main className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
