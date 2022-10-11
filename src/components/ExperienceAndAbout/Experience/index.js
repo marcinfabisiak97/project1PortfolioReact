@@ -1,14 +1,29 @@
 import React from 'react';
 import Images from '../../../assets/exportFiles';
 import { ButtonMailto } from '../ButtonMailto';
-
+import Typewriter from 'typewriter-effect';
 const Experience = () => {
     return (
         <React.Fragment>
             <section className="upperPart">
                 <article className="experience">
                     <h2>&#47;&#47; Hi, My name is Martin Fabisiak</h2>
-                    <h3>Software Engineer</h3>
+                    <Typewriter
+                        className="experience__welcome"
+                        onInit={(typewriter) => {
+                            typewriter.typeString('React Developer')
+                                .pauseFor(5000)
+                                .deleteAll()
+                                .typeString('Front-End Developer')
+                                .pauseFor(5000)
+                                .deleteAll()
+                                .start()
+                        }}
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
                     <p>
                         Passionate Techy and Tech Author
                         <br />

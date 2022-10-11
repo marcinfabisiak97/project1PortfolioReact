@@ -34,6 +34,13 @@
     margin-bottom: $space-null;
     padding-bottom: $space-null;
   }
+  div {
+    margin-top: $space-null;
+    margin-bottom: $space-null;
+    padding-bottom: $space-null;
+    font-weight: bold;
+    color: #7371ec;
+  }
   &__seework {
     @include myFlex();
     justify-content: flex-end;
@@ -121,6 +128,9 @@
   }
 
   .experience {
+    div {
+      font-size: pxToRem(30);
+    }
     h2 {
       font-size: pxToRem(40);
     }
@@ -191,6 +201,9 @@
   }
 
   .experience {
+    div {
+      font-size: pxToRem(20);
+    }
     h2 {
       font-size: pxToRem(30);
     }
@@ -217,6 +230,9 @@
     background-size: 150px;
     box-sizing: border-box;
     .experience {
+      div {
+        font-size: pxToRem(15);
+      }
       h2 {
         font-size: pxToRem(25);
       }
@@ -268,6 +284,9 @@
       margin: auto;
       margin-top: 20px;
       width: 50vw;
+      div {
+        font-size: pxToRem(10);
+      }
       h2 {
         font-size: pxToRem(15);
       }
