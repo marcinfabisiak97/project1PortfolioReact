@@ -31,7 +31,7 @@ const Form = () => {
         <React.Fragment>
             <section className="formPart">
                 <h2 >&#47;&#47; Contact me</h2>
-                <p>If you are willing to work with me, contact me. I can join your conference to serve you with engeneering experience.</p>
+                <p>If you are willing to work with me, please send me a meassage.</p>
                 <form onSubmit={onSubmit} className="form">
                     <fieldset className="form__input">
                         <input

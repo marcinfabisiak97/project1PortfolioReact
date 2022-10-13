@@ -12,10 +12,10 @@ const Experience = () => {
                         className="experience__welcome"
                         onInit={(typewriter) => {
                             typewriter.typeString('React Developer')
-                                .pauseFor(5000)
+                                .pauseFor(3000)
                                 .deleteAll()
                                 .typeString('Front-End Developer')
-                                .pauseFor(5000)
+                                .pauseFor(3000)
                                 .deleteAll()
                                 .start()
                         }}

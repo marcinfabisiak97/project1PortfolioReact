@@ -14,9 +14,11 @@ const Workstyle = ({ blogref }) => {
                     <article className="paragraph__descr">
                         <h2>//Searching on my own</h2>
                         <h3>Using my own experience</h3>
-                        <p>I always start solving problems on my own.
-                            The best way is to serach similar problem
-                            and adjust it to make needed solution.</p>
+                        <p>
+                            I always start work by overthinking the problem.
+                            I need to know what effect I want to achieve and then I can
+                            start developing the solution
+                        </p>
                     </article>
                 </article>
                 <article className="paragraph">
