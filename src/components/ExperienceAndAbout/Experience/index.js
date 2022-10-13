@@ -27,7 +27,7 @@ const Experience = () => {
                     <p>
                         Passionate Techy and Tech Author
                         <br />
-                        with 1 year of experience within the field{" "}
+                        with 1 year of experience within the field.
                     </p>
                     <figure className="experience__seework">
                         <a target="blank" href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev">

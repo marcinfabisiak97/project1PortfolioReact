@@ -11,9 +11,9 @@ const About = ({ skillref }) => {
                 <p>
                     I am interested in practical creating innovative websites. I can
                     easily make and maintain a full functional React sites. I always
-                    like to improve my skills and use new functionalities. I've recently
-                    started to improve make react with Typescript to make it more
-                    errorproof.
+                    like to improve my skills and use new functionalities. When I create
+                    a project, I always follow the DRY – KISS – YAGNI rules.
+
                 </p>
                 <h3>My interests</h3>
                 <ul>
