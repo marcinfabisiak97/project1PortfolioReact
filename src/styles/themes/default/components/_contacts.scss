@@ -111,6 +111,10 @@
     margin-top: 2%;
     font-size: pxToRem(22);
     width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     p {
       margin: $space-null;
     }
@@ -122,6 +126,29 @@
   }
 }
 @media only screen and (max-width: $break-high) {
+  .form {
+    &__submit {
+      button {
+        cursor: pointer;
+        margin: 10px;
+        width: 82%;
+        padding: $space-small;
+        border-radius: 4px;
+        @include boxShadow(3px 3px 3px 3px $c-gray);
+        background-color: #7371ec;
+        color: $c-white;
+        font-size: pxToRem(20);
+        border-style: none;
+        transition: 0.5s background-color ease-in-out;
+      }
+      button:active {
+        color: $c-black;
+        transform: scale(1.05, 1.05);
+        border-style: none;
+        outline: none;
+      }
+    }
+  }
   .contact {
     @include myFlex();
     background-color: $c-negroni;
@@ -133,7 +160,7 @@
   }
   .contactDetails {
     .descr {
-      width: 50vw;
+      width: 40vw;
     }
     .phoneAndEmail {
       max-width: 600px;
@@ -141,7 +168,20 @@
     }
   }
 }
-
+@media only screen and (max-width: $break-laptopBigger) {
+  .form {
+    &__submit {
+      button {
+        width: 83.5%;
+      }
+    }
+  }
+  .contactDetails {
+    .descr {
+      width: 40vw;
+    }
+  }
+}
 @media only screen and (max-width: $break-laptop) {
   .contact {
     @include myFlex();
@@ -164,13 +204,19 @@
       margin-left: 1vw;
     }
   }
+  .form {
+    &__submit {
+      button {
+        width: 84%;
+      }
+    }
+  }
   .contactDetails {
     .descr {
-      width: 90vw;
+      width: 40vw;
     }
   }
 }
-
 @media only screen and (max-width: $break-mid) {
   .contact {
     @include myFlex();
@@ -181,10 +227,8 @@
     background-position: 700px -200px;
     background-size: 450px;
   }
-  form {
+  .form {
     &__submit {
-      width: 100%;
-      margin: 0;
       margin-bottom: $space-large;
       display: block;
       button {
@@ -217,10 +261,12 @@
       margin-left: 1vw;
     }
   }
-
-  .descr {
-    p {
-      font-size: pxToRem(15);
+  .contactDetails {
+    .descr {
+      width: 35vw;
+      p {
+        font-size: pxToRem(15);
+      }
     }
   }
   .phoneAndEmail {
@@ -243,7 +289,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-mobile) {
   .contact {
     @include myFlex();
@@ -320,7 +365,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-xs) {
   .contact {
     @include myFlex();

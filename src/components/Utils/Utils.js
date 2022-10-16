@@ -6,7 +6,7 @@ const useScroll = (skillref) => {
     const handleScroll = () => {
         const YPosition = skillref.current.getBoundingClientRect().top;
         const offset = window.scrollY;
-        if (offset > YPosition) return setScrolled(true);
+        if (offset >= YPosition) return setScrolled(true);
         return setScrolled(false);
     };
     {/*using useRef hook to make navigation */ }

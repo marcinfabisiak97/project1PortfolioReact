@@ -1,6 +1,6 @@
 import React from 'react';
 import Images from '../../../assets/exportFiles';
-import { ButtonMailto } from '../ButtonMailto';
+import ButtonMailto from '../ButtonMailto';
 import Typewriter from 'typewriter-effect';
 const Experience = () => {
     return (
@@ -42,12 +42,11 @@ const Experience = () => {
                     <h1>&#47;&#47; I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>
-                        <ButtonMailto mailto={"mailto:marcinfabisiak123@gmail.com"} />
+                        <ButtonMailto mailto="mailto:marcinfabisiak123@gmail.com" />
                     </div>
                 </article>
             </section>
         </React.Fragment>
     );
 };
-
 export default Experience;

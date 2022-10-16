@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
 
-export const ButtonMailto = ({ mailto }) => {
-
+const ButtonMailto = ({ mailto }) => {
     return (
         <React.Fragment>
             <Link
                 to="#"
+                target="_top"
                 onClick={(e) => {
-                    window.location = mailto;
+                    window.location.href = mailto;
                     e.preventDefault();
                 }}
             >
@@ -25,3 +25,4 @@ export const ButtonMailto = ({ mailto }) => {
         </React.Fragment>
     );
 };
+export default ButtonMailto;
