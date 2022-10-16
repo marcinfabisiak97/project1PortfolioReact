@@ -11,6 +11,18 @@
     flex-basis: 40vw;
     ul {
       padding-left: 5%;
+      li {
+        margin: 10px;
+      }
+      li:first-child {
+        list-style-type: "\1F3B5";
+      }
+      li:nth-child(2) {
+        list-style-type: "\26BD";
+      }
+      li:nth-child(3) {
+        list-style-type: "\1F6B4";
+      }
     }
     p {
       text-align: justify;

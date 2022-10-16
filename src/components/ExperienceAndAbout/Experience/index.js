@@ -25,7 +25,7 @@ const Experience = () => {
                         }}
                     />
                     <p>
-                        Passionate Techy and Tech Author
+                        Passionate about coding user-side applications
                         <br />
                         with 1 year of experience within the field.
                     </p>

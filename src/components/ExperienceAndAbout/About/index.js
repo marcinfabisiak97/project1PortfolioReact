@@ -13,12 +13,11 @@ const About = ({ skillref }) => {
                     easily make and maintain a full functional React sites. I always
                     like to improve my skills and use new functionalities. When I create
                     a project, I always follow the DRY – KISS – YAGNI rules.
-
                 </p>
                 <h3>My interests</h3>
                 <ul>
                     <li>music</li>
-                    <li>boxing</li>
+                    <li>football</li>
                     <li>cycling</li>
                 </ul>
             </section>

@@ -34,7 +34,6 @@
       border: 4px dashed $c-black;
     }
   }
-
   &__nav {
     font-size: pxToRem(25);
     margin: $space-small;
@@ -46,6 +45,7 @@
     justify-content: space-around;
     border-radius: 3px;
     margin-right: $space-large;
+    position: sticky;
   }
 
   &__navLi1 {
@@ -113,7 +113,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-laptop) {
   .header > h3 {
     @include myFlex();
@@ -160,7 +159,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-mid) {
   .header {
     margin-right: 100px;
@@ -211,7 +209,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-mobile) {
   .header {
     @include myFlex();
@@ -271,7 +268,6 @@
     }
   }
 }
-
 @media only screen and (max-width: $break-xs) {
   .header > h3 {
     display: none;

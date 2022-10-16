@@ -4,8 +4,7 @@ const Navigation = ({ aboutref, skillref, myworkref, blogref, contactref }) => {
     const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
     {/*using scrollToRef to scroll to right div */ }
     const navHeader = [
-        { 'link': aboutref, 'text': 'About me' },
-        { 'link': skillref, 'text': 'Skills' },
+        { 'link': skillref, 'text': 'About me' },
         { 'link': myworkref, 'text': 'Portfolio' },
         { 'link': blogref, 'text': 'Workstyle' },
         { 'link': contactref, 'text': 'Contact me' }
