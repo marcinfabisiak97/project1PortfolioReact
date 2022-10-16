@@ -86,7 +86,6 @@
   align-items: flex-end;
   flex-direction: column;
   margin: 5rem;
-
   .phoneAndEmail {
     display: flex;
     justify-content: space-around;
@@ -100,9 +99,30 @@
     figure {
       margin: 0;
     }
+    &__text {
+      p:first-child {
+        display: flex;
+        span {
+          margin-left: 5px;
+        }
+      }
+      p {
+        border-bottom: 4px solid transparent;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          border-bottom: 4px solid rgb(34, 61, 171);
+          cursor: pointer;
+        }
+      }
+    }
     img {
       max-width: 100px;
       max-height: 100px;
+      transition: 1s ease;
+      &:hover {
+        transform: rotateZ(-10deg);
+        transition: 1s ease;
+      }
     }
   }
   .descr {
@@ -115,8 +135,15 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    a {
+      border-bottom: 4px solid transparent;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        border-bottom: 4px solid rgb(34, 61, 171);
+      }
+    }
     p {
-      margin: $space-null;
+      margin: $space-xxx-small;
     }
     &__photo {
       img {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Images from '../../../assets/exportFiles';
-import ButtonMailto from '../ButtonMailto';
+import ButtonsCopyAndDownload from '../ButtonsCopyAndDownload';
 import Typewriter from 'typewriter-effect';
 const Experience = () => {
     return (
@@ -42,7 +42,7 @@ const Experience = () => {
                     <h1>&#47;&#47; I am freelancer</h1>
                     <p>Contact me if you want to work with me</p>
                     <div>
-                        <ButtonMailto mailto="mailto:marcinfabisiak123@gmail.com" />
+                        <ButtonsCopyAndDownload />
                     </div>
                 </article>
             </section>

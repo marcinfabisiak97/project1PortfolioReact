@@ -1,8 +1,18 @@
 import React from 'react';
 import Images from '../../../assets/exportFiles';
-import { Link } from 'react-router-dom';
+import Clipboard from 'react-clipboard-animation'
+import { useState, useEffect } from "react"
+import { copyEmail } from '../../Utils/Utils';
+const email = 'marcibfabisiak123@gmail.com'
 
 const ContactDetails = () => {
+    const [copied, setCopied] = useState(false)
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            if (copied) setCopied(false)
+        }, 1000)
+        return () => clearTimeout(timeout)
+    }, [copied])
     return (
         <React.Fragment>
             <section className='contactDetails'>
@@ -13,15 +23,14 @@ const ContactDetails = () => {
                         </a>
                     </figure>
                     <article className="phoneAndEmail__text">
-                        <Link
-                            to='#'
-                            onClick={(e) => {
-                                window.location = 'mailto:marcinfabisiak123@gmail.com';
-                                e.preventDefault();
-                            }}
-                        >
-                            <p>marcibfabisiak123@gmail.com</p>
-                        </Link>
+                        <p onClick={() => { setCopied(true); copyEmail(email) }}>marcibfabisiak123@gmail.com<span>
+                            <Clipboard
+                                copied={copied}
+                                setCopied={setCopied}
+                                text={email}
+                                color='black'
+                            />
+                        </span></p>
                         <a href="tel:48604132689"><p>+48 604 132 689</p></a>
                     </article>
                 </article>
@@ -36,7 +45,7 @@ const ContactDetails = () => {
                     </a>
                 </article>
             </section>
-        </React.Fragment>
+        </React.Fragment >
     );
 };
 

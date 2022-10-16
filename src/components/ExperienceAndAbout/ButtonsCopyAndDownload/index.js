@@ -1,22 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
+import { copyEmail, email } from "../../Utils/Utils";
 
-const ButtonMailto = ({ mailto }) => {
+const ButtonsCopyAndDownload = () => {
     return (
         <React.Fragment>
-            <Link
-                to="#"
-                target="_top"
-                onClick={(e) => {
-                    window.location.href = mailto;
-                    e.preventDefault();
-                }}
-            >
-                <button>
-                    <strong>Hire me</strong>
+            <article >
+                <button onClick={() => copyEmail(email)}>
+                    <strong>Copy e-mail</strong>
                 </button>
-            </Link>
+            </article>
             <Link to={cv} target="_blank" download="cv Marcin Fabisiak">
                 <button>
                     <strong>Download CV</strong>
@@ -25,4 +19,4 @@ const ButtonMailto = ({ mailto }) => {
         </React.Fragment>
     );
 };
-export default ButtonMailto;
+export default ButtonsCopyAndDownload;

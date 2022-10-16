@@ -74,6 +74,9 @@
   }
 }
 @media only screen and (max-width: $break-laptop) {
+  .downPart {
+    padding-top: $space-x-medium;
+  }
   .downPart__skills {
     max-height: 600px;
     min-height: 500px;
