@@ -23,14 +23,15 @@ const ContactDetails = () => {
                         </a>
                     </figure>
                     <article className="phoneAndEmail__text">
-                        <p onClick={() => { setCopied(true); copyEmail(email) }}>marcibfabisiak123@gmail.com<span>
+                        <div>
+                            <p onClick={() => { setCopied(true); copyEmail(email) }}>marcibfabisiak123@gmail.com</p>
                             <Clipboard
                                 copied={copied}
                                 setCopied={setCopied}
                                 text={email}
                                 color='black'
                             />
-                        </span></p>
+                        </div>
                         <a href="tel:48604132689"><p>+48 604 132 689</p></a>
                     </article>
                 </article>

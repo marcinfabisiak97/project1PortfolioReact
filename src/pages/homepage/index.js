@@ -7,6 +7,7 @@ import Tools from '../../components/Tools';
 import Myworks from '../../components/Myworks';
 import Workstyle from '../../components/Workstyle';
 import Contact from '../../components/Contact'
+import JokePart from '../../components/JokePart/JokePart';
 import { BsFillCaretUpFill } from "react-icons/bs";
 
 const Homepage = () => {
@@ -24,6 +25,7 @@ const Homepage = () => {
             <Tools {...{ myworkref }} />
             <Myworks {...{ myworkref }} />
             <Workstyle {...{ blogref }} />
+            <JokePart />
             <Contact {...{ contactref }} />
         </main>
     );
