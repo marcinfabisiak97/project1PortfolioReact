@@ -18,16 +18,18 @@ const Homepage = () => {
     const contactref = useRef(null);
     const [scrolled] = useScroll(skillref)
     return (
-        <main className='page'>
+        <div className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
             {scrolled && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
-            <ExperienceAndAbout {...{ skillref }} />
-            <Tools {...{ myworkref }} />
-            <Myworks {...{ myworkref }} />
-            <Workstyle {...{ blogref }} />
-            <JokePart />
+            <main>
+                <ExperienceAndAbout {...{ skillref }} />
+                <Tools {...{ myworkref }} />
+                <Myworks {...{ myworkref }} />
+                <Workstyle {...{ blogref }} />
+                <JokePart />
+            </main>
             <Contact {...{ contactref }} />
-        </main>
+        </div>
     );
 };
 export default Homepage;
