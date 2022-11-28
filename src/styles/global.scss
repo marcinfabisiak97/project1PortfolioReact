@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 body {
   padding: 0;
@@ -57,15 +59,15 @@ select:focus {
 }
 @keyframes hopButton {
   0% {
-    left: 95%;;
+    left: 95%;
     top: 50px;
   }
   50% {
-    left: 95%;;
+    left: 95%;
     top: 40px;
   }
   100% {
-    left: 95%;;
+    left: 95%;
     top: 50px;
   }
 }

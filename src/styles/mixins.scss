@@ -8,7 +8,6 @@
 }
 @mixin myFlex() {
   $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
-
   @each $prefix in $prefixes {
     display: $prefix;
   }
