@@ -152,6 +152,9 @@
   }
 }
 @media only screen and (max-width: $break-high) {
+  .contact {
+    height: 620px;
+  }
   .form {
     &__submit {
       button {
@@ -212,7 +215,7 @@
   .contact {
     @include myFlex();
     background-color: $c-negroni;
-    height: 100vh;
+    height: 560px;
     background-image: url(../../../../assets/circle_03.png);
     background-repeat: no-repeat;
     background-position: 700px -200px;
@@ -247,7 +250,7 @@
   .contact {
     @include myFlex();
     background-color: $c-negroni;
-    max-height: 500px;
+    height: 490px;
     background-image: url(../../../../assets/circle_03.png);
     background-repeat: no-repeat;
     background-position: 700px -200px;
@@ -399,7 +402,7 @@
     @include myFlex();
     flex-direction: column;
     background-color: $c-negroni;
-    max-height: 440px;
+    height: 420px;
     background-image: url(../../../../assets/circle_03.png);
     background-repeat: no-repeat;
     background-position: 700px -200px;

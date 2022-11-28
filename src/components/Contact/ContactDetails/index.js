@@ -40,7 +40,7 @@ const ContactDetails = () => {
                         <img src={Images.devPhoto} alt="developer" />
                     </figure>
                     <p>author: Marcin Fabisiak</p>
-                    <p>description: Frontend Developer</p>
+                    <p>description: Front-End Developer</p>
                     <a target="_blank" href='https://github.com/marcinfabisiak97'>
                         <p>git: https://github.com/marcinfabisiak97</p>
                     </a>
