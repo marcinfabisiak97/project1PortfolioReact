@@ -128,12 +128,18 @@
 @media only screen and (max-width: $break-mid) {
   .header {
     margin-right: 100px;
-    &__wrapper {
-      @include myFlex();
-      justify-content: center;
-      background-size: cover;
-      width: 70%;
-      margin: $space-null;
+    &__burger {
+      cursor: pointer;
+      font-size: pxToRem(40);
+    }
+    &__nav {
+      width: 70vw;
+      font-size: pxToRem(18);
+      padding: $space-small;
+      margin-top: $space-small;
+      div {
+        min-width: 100px;
+      }
     }
   }
   .header > h3 {
@@ -145,21 +151,6 @@
     padding-top: $space-small;
     padding-bottom: $space-xx-small;
   }
-  .header {
-    &__burger {
-      cursor: pointer;
-      font-size: pxToRem(40);
-    }
-    &__nav {
-      width: 60vw;
-      font-size: pxToRem(18);
-      padding: $space-standard;
-      margin-top: $space-small;
-      div {
-        min-width: 100px;
-      }
-    }
-  }
 }
 @media only screen and (max-width: $break-mobile) {
   .header {
@@ -168,6 +159,10 @@
     padding-left: 0px;
     margin-right: 0px;
     box-sizing: border-box;
+
+    &__nav {
+      padding: $space-x-small;
+    }
   }
 
   .header > h3 {
