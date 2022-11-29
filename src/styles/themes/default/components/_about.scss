@@ -103,6 +103,7 @@
 }
 @media only screen and (max-width: $break-mid) {
   .downPart {
+    padding-top: $space-small;
     &__about {
       margin-left: $space-medium;
       margin-top: $space-medium;
