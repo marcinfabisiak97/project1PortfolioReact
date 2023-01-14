@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 
+// NETLIFY -> obsluga formularzy
+
 const Form = () => {
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -20,6 +22,7 @@ const Form = () => {
             toSend,
             'user_CZXASdETJkJ7zZ1G1Ouhg'
         )
+            // ALERTY 
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             })

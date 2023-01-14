@@ -1,23 +1,19 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
-import { copyEmail, email } from "../../Utils/Utils";
 
+import { copyEmail, email } from "../../Utils/Utils";
+import { useSelector } from "react-redux";
+import { useDispatch } from 'react-redux';
+import { showToggle } from "../../../state/action-creators";
 const ButtonsCopyAndDownload = () => {
+const state = useSelector((state) =>state.modal)
+const dispatch = useDispatch();
+
     return (
         <React.Fragment>
             <button onClick={() => copyEmail(email)}>
                 <strong>Copy e-mail</strong>
             </button>
-            <button onClick={() => {
-                const confirmBox = window.confirm(
-                    "Do you really want to dwonload my CV"
-                )
-                if (confirmBox === true) {
-                    window.location.href = cv;
-                }
-            }
-            }>
+            <button onClick={() => dispatch(showToggle())}>
                 <strong>Download CV</strong>
             </button>
 
@@ -25,3 +21,13 @@ const ButtonsCopyAndDownload = () => {
     );
 };
 export default ButtonsCopyAndDownload;
+
+// ;() => {
+                
+//     const confirmBox = window.confirm(
+//         "Do you really want to dwonload my CV"
+//     )
+//     if (confirmBox === true) {
+//         window.location.href = cv;
+//     }
+// }
