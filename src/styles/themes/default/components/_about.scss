@@ -8,7 +8,7 @@
   &__about {
     margin-left: $space-medium;
     margin-top: $space-medium;
-    flex-basis: 40vw;
+    max-width: 40vw;
     ul {
       padding-left: 5%;
       li {
@@ -34,10 +34,10 @@
     }
   }
   &__skills {
-    width: 50vw;
+    width: 45vw;
     @include boxShadow(5px 5px 5px 5px #888888);
     margin: $space-standard;
-    padding: $space-standard $space-medium $space-medium $space-medium;
+    padding: $space-null $space-medium $space-medium $space-medium;
     border-radius: 6px;
   }
 }
@@ -47,8 +47,7 @@
     &__about {
       margin-left: $space-medium;
       margin-top: $space-medium;
-      flex-basis: 40vw;
-
+      max-width: 40vw;
       h2 {
         font-size: pxToRem(40);
       }
@@ -78,9 +77,8 @@
       h2 {
         font-size: pxToRem(40);
       }
-
-      p {
-        font-size: pxToRem(20);
+      h3 {
+        font-size: pxToRem(30);
       }
     }
   }
@@ -96,8 +94,8 @@
       font-size: pxToRem(40);
     }
 
-    p {
-      font-size: pxToRem(20);
+    h3 {
+      font-size: pxToRem(30);
     }
   }
 }
@@ -105,9 +103,11 @@
   .downPart {
     padding-top: $space-small;
     &__about {
-      margin-left: $space-medium;
-      margin-top: $space-medium;
-      flex-basis: 40vw;
+      max-height: 350px;
+      min-height: 300px;
+      margin-left: $space-x-small;
+      margin-top: $space-null;
+      max-width: 40vw;
 
       h2 {
         font-size: pxToRem(30);
@@ -135,12 +135,13 @@
     &__skills {
       max-height: 350px;
       min-height: 300px;
+      padding-bottom: $space-null;
       h2 {
         font-size: pxToRem(30);
       }
 
-      p {
-        font-size: pxToRem(15);
+      h3 {
+        font-size: pxToRem(20);
       }
     }
   }
@@ -156,8 +157,8 @@
     &__about {
       margin-left: $space-medium;
       margin-top: $space-medium;
-      flex-basis: 40vw;
-
+      max-width: 40vw;
+      min-height: 150px;
       h2 {
         font-size: pxToRem(25);
       }
@@ -183,11 +184,10 @@
     }
     &__skills {
       h2 {
-        font-size: pxToRem(25);
+        font-size: pxToRem(20);
       }
-
-      p {
-        font-size: pxToRem(10);
+      h3 {
+        font-size: pxToRem(15);
       }
     }
   }
@@ -205,7 +205,7 @@
       margin-left: $space-small;
       margin-right: $space-small;
       margin-top: 10px;
-      flex-basis: 40vw;
+      max-width: 70vw;
 
       h2 {
         font-size: pxToRem(15);
@@ -233,13 +233,30 @@
     &__skills {
       max-width: 90vw;
       min-width: 60vw;
+      max-height: 350px;
+      min-height: 250px;
       h2 {
         font-size: pxToRem(15);
       }
 
-      p {
+      h3 {
         font-size: pxToRem(10);
       }
+    }
+  }
+}
+@media only screen and (max-width: $break-xss) {
+  .downPart {
+    &__about {
+      max-height: 200px;
+      min-height: 100px;
+      min-width: 60vw;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    &__skills {
+      max-height: 350px;
+      min-height: 250px;
     }
   }
 }

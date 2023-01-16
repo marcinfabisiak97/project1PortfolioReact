@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Bars from '../Bars';
-
+import { useInView } from 'react-intersection-observer';
 const About = ({ skillref }) => {
-    const dref = useRef(null);
+    const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
     return (
         <section ref={skillref} className="downPart">
             <section className="downPart__about">
@@ -21,10 +21,10 @@ const About = ({ skillref }) => {
                     <li>cycling</li>
                 </ul>
             </section>
-            <section className="downPart__skills" ref={dref}>
-                <h2 id="skills">&#47;&#47; Skills</h2>
-                <p>All beneath techs or languages are known by practical site.</p>
-                <Bars dref={dref} />
+            <section className="downPart__skills" >
+                <h2 id="skills" ref={ref}>&#47;&#47; Skills</h2>
+                <h3>Techs or languages known by practical side.</h3>
+                <Bars inView={inView} />
             </section>
         </section>
     );

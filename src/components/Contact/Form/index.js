@@ -38,7 +38,8 @@ const Form = () => {
                 <form onSubmit={onSubmit} className="form">
                     <fieldset className="form__input">
                         <input
-                            type='text'
+                            required
+                            type='email'
                             name='reply_to'
                             placeholder='Your email'
                             value={toSend.reply_to}
@@ -47,7 +48,9 @@ const Form = () => {
                     </fieldset>
                     <fieldset className="form__input">
                         <input
+                            required
                             type='text'
+                            pattern="[A-Za-z].{3,}"
                             name='from_name'
                             placeholder='Your name'
                             value={toSend.from_name}
@@ -56,6 +59,7 @@ const Form = () => {
                     </fieldset>
                     <fieldset className="form__textArea">
                         <textarea
+                            required
                             type='text'
                             name='message'
                             placeholder='How can I help you? &#13;Please,put here your meassage/reguest.'

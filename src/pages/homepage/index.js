@@ -9,7 +9,6 @@ import Workstyle from '../../components/Workstyle';
 import Contact from '../../components/Contact'
 import JokePart from '../../components/JokePart/JokePart';
 import { BsFillCaretUpFill } from "react-icons/bs";
-
 const Homepage = () => {
     const aboutref = useRef(null);
     const skillref = useRef(null);
@@ -23,7 +22,7 @@ const Homepage = () => {
             {scrolled && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
             <main>
                 <ExperienceAndAbout {...{ skillref }} />
-                <Tools {...{ myworkref }} />
+                <Tools />
                 <Myworks {...{ myworkref }} />
                 <Workstyle {...{ blogref }} />
                 <JokePart />

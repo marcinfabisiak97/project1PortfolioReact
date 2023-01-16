@@ -1,7 +1,6 @@
 @function pxToRem($pxsize, $rembase: 16) {
   @return ($pxsize / $rembase) + rem;
 }
-
 @mixin boxShadow($arg) {
   -webkit-box-shadow: $arg;
   box-shadow: $arg;
@@ -14,13 +13,12 @@
 }
 @mixin bar {
   @include myFlex();
-  transition: 1s width;
+  transition: width 1s;
   padding-left: $space-xx-small;
   align-items: center;
   background-color: $c-negroni;
   border: 1px solid $c-black;
   border-radius: 6px;
-  height: 28px;
   width: 20%;
 }
 @mixin myFlex() {

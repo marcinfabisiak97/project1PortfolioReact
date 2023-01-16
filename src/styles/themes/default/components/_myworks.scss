@@ -9,6 +9,11 @@
   justify-content: space-around;
   margin-left: $space-large;
   margin-right: $space-large;
+  &__projLinks {
+    img {
+      min-width: 30vw;
+    }
+  }
   &__view {
     border-radius: 4px;
     @include boxShadow(4px 4px 4px 4px $c-gray);
@@ -22,17 +27,23 @@
   }
   &__links {
     @include myFlex();
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    figcaption {
+      text-align: center;
+      font-size: pxToRem(25);
+    }
     a {
-      transition: 0.5s transform ease-in-out;
-      width: 15%;
       img {
-        width: 100%;
+        transition: 0.5s transform ease-in-out;
+        max-width: 40px;
+        margin: 5px;
       }
     }
   }
   &__links {
-    a:hover {
+    img:hover {
       transform: scale(1.2);
     }
   }
@@ -55,23 +66,53 @@
       font-size: pxToRem(25);
     }
   }
+  .portfolios {
+    &__links {
+      figcaption {
+        font-size: pxToRem(25);
+      }
+    }
+  }
+}
+@media only screen and (max-width: $break-laptop) {
+  .portfolios {
+    &__projLinks {
+      img {
+        min-width: 30vw;
+      }
+    }
+    &__links {
+      figcaption {
+        font-size: pxToRem(20);
+      }
+    }
+  }
 }
 @media only screen and (max-width: $break-mid) {
   .myWorks {
     margin-left: $space-xxx-large;
     margin-top: $space-medium;
     width: 90%;
-
     h2 {
       font-size: pxToRem(30);
     }
-
     h3 {
       font-size: pxToRem(20);
     }
-
     p {
       font-size: pxToRem(15);
+    }
+  }
+  .portfolios {
+    &__projLinks {
+      img {
+        min-width: 20vw;
+      }
+    }
+    &__links {
+      figcaption {
+        font-size: pxToRem(20);
+      }
     }
   }
 }
@@ -93,6 +134,23 @@
       font-size: pxToRem(15);
     }
   }
+  .portfolios {
+    &__projLinks {
+      img {
+        max-width: 50vw;
+      }
+    }
+    &__links {
+      figcaption {
+        font-size: pxToRem(20);
+      }
+      a {
+        img {
+          max-width: 30px;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: $break-xs) {
   .myWorks {
@@ -110,6 +168,13 @@
 
     p {
       font-size: pxToRem(10);
+    }
+  }
+  .portfolios {
+    &__links {
+      figcaption {
+        font-size: pxToRem(12);
+      }
     }
   }
   .portfolios_view {

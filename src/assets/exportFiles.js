@@ -13,6 +13,7 @@ import flexboxIcon from './devtech/css.png';
 import javaScript from './devtech/javascript.png';
 import noteBook from './noteBook.jpg';
 import noteBooks from './noteBooks.jpg';
+import bootstrap from './devtech/bootstrap.png';
 const Images = {
     contact,
     devPhoto,
@@ -28,6 +29,7 @@ const Images = {
     flexboxIcon,
     javaScript,
     noteBook,
-    noteBooks
+    noteBooks,
+    bootstrap
 }
 export default Images;

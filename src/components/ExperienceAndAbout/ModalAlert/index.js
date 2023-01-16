@@ -1,22 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { hideToggle } from "../../../state/action-creators";
 import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
+import { close } from "../../../state/slices/modalSlice/modalSlice";
+import axios from "axios";
 const Modal = () => {
-    const state = useSelector((state) => state.modal)
+    const state = useSelector((state) => state.modal.count)
     const dispatch = useDispatch();
-    console.log(state)
-    const handleDeleteAll = () => {
-        fetch(cv).then(response => {
-            response.blob().then(blob => {
-                const fileURL = window.URL.createObjectURL(blob);
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = "cv";
-                alink.click();
+    const downloadFile = async () => {
+        try {
+            const response = await axios({
+                url: cv,
+                method: 'GET',
+                responseType: 'blob',
             })
-        })
-    }
+            const url = await window.URL.createObjectURL(new Blob([response.data]));
+            const link = await document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'cv Marcin Fabisiak.pdf');
+            document.body.appendChild(link);
+            link.click();
+        } catch (error) {
+            console.log(error)
+        }
+    };
+
     useEffect(() => {
         if (state) {
             document.body.style.overflow = 'hidden'
@@ -27,12 +34,12 @@ const Modal = () => {
         <div className="modalBackground">
             <div className="modalContainer">
                 <div className="modalContainer__CloseBtn">
-                    <button onClick={() => dispatch(hideToggle())}>X</button>
+                    <button onClick={() => dispatch(close())}>X</button>
                 </div>
                 <p>Do you really want to dwonload my CV?</p>
                 <div className="modalContainer__ConfirmBtn">
-                    <button onClick={() => { dispatch(hideToggle()) }}>No</button>
-                    <button onClick={() => { handleDeleteAll(); dispatch(hideToggle()) }}>Yes</button>
+                    <button onClick={() => { dispatch(close()) }}>No</button>
+                    <button onClick={() => { downloadFile(); dispatch(close()) }}>Yes</button>
                 </div>
             </div>
         </div>

@@ -3,10 +3,10 @@ import ContactDetails from './ContactDetails';
 import Form from './Form';
 const Contact = ({ contactref }) => {
     return (
-        <footer className="contact" ref={contactref}>
+        <section className="contact" ref={contactref}>
             <Form />
             <ContactDetails />
-        </footer >
+        </section >
     )
 }
 export default Contact;
