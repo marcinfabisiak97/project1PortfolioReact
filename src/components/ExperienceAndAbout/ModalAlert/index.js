@@ -4,7 +4,7 @@ import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
 import { close } from "../../../state/slices/modalSlice/modalSlice";
 import axios from "axios";
 const Modal = () => {
-    const state = useSelector((state) => state.modal.count)
+    const state = useSelector((state) => state.modal.isOpen)
     const dispatch = useDispatch();
     const downloadFile = async () => {
         try {
