@@ -320,7 +320,11 @@
         @include myFlex();
         justify-content: flex-end;
         margin-top: $space-null;
-
+        a {
+          p {
+            width: 70px;
+          }
+        }
         img:first-of-type {
           width: 35px;
           height: 35px;
@@ -367,6 +371,10 @@
 }
 @media only screen and (max-width: $break-xxs) {
   .upperPart {
+    .experience {
+      width: 60vw;
+    }
+
     .freelanceDescr {
       div {
         button {

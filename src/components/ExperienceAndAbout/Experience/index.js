@@ -7,7 +7,7 @@ const Experience = () => {
         <React.Fragment>
             <section className="upperPart">
                 <article className="experience">
-                    <h2>&#47;&#47; Hi, My name is Martin Fabisiak</h2>
+                    <h2>&#47;&#47; Hi, My name is Martin</h2>
                     <Typewriter
                         className="experience__welcome"
                         onInit={(typewriter) => {
@@ -26,7 +26,7 @@ const Experience = () => {
                     />
                     <p>
                         Passionate about coding user-side applications
-                        with 1 year of experience within the field.
+                        with more than 1 year of experience within creating my own projects.
                     </p>
                     <figure className="experience__seework">
                         <a target="blank" href="https://github.com/marcinfabisiak97/one-page-portfolio-react/tree/dev">
