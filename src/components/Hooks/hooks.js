@@ -12,4 +12,16 @@ const useScroll = (skillref) => {
     });
     return [scrolled]
 }
-export default useScroll 
+
+const useChangeCopiedStateToDefaultAfter = (time) => {
+    const [copied, setCopied] = useState(false)
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            if (copied) setCopied(false)
+        }, time)
+        return () => clearTimeout(timeout)
+    }, [copied])
+    return [copied, setCopied]
+}
+export { useChangeCopiedStateToDefaultAfter, useScroll } 

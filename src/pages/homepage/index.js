@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import useScroll from '../../components/Hooks/hooks'
+import { useScroll } from '../../components/Hooks/hooks'
 import { scrollToRef } from '../../components/Utils/Utils';
 import Navigation from '../../components/Navigation';
 import ExperienceAndAbout from '../../components/ExperienceAndAbout';

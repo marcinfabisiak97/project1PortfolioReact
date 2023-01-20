@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import cv from "../../../assets/cv Marcin Fabisiak FE.pdf";
 import { close } from "../../../state/slices/modalSlice/modalSlice";
 import axios from "axios";
 const Modal = () => {
     const state = useSelector((state) => state.modal.isOpen)
+    const stateData = useSelector((state) => state.data)
     const dispatch = useDispatch();
     const downloadFile = async () => {
         try {
             const response = await axios({
-                url: cv,
+                url: stateData.cv,
                 method: 'GET',
                 responseType: 'blob',
             })
@@ -36,7 +36,7 @@ const Modal = () => {
                 <div className="modalContainer__CloseBtn">
                     <button onClick={() => dispatch(close())}>X</button>
                 </div>
-                <p>Do you really want to dwonload my CV?</p>
+                <p>Do you really want to download my CV?</p>
                 <div className="modalContainer__ConfirmBtn">
                     <button onClick={() => { dispatch(close()) }}>No</button>
                     <button onClick={() => { downloadFile(); dispatch(close()) }}>Yes</button>

@@ -34,7 +34,7 @@ const Form = () => {
         <React.Fragment>
             <section className="formPart">
                 <h2 >&#47;&#47; Contact me</h2>
-                <p>If you are willing to work with me, please send me a meassage.</p>
+                <p>If you are willing to work with me, please send me a message.</p>
                 <form onSubmit={onSubmit} className="form">
                     <fieldset className="form__input">
                         <input
@@ -62,7 +62,7 @@ const Form = () => {
                             required
                             type='text'
                             name='message'
-                            placeholder='How can I help you? &#13;Please,put here your meassage/reguest.'
+                            placeholder='How can I help you? &#13;Please,put here your message/request.'
                             value={toSend.message}
                             onChange={handleChange}
                         >

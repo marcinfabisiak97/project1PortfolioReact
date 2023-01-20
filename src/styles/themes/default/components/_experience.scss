@@ -71,9 +71,9 @@
   margin-top: $space-small;
   text-align: right;
   height: 20vh;
-  max-width: 30vw;
+  max-width: 35vw;
   div {
-    display: flex;
+    display: grid;
     animation-name: hop;
     animation-duration: 1s;
     position: relative;
@@ -82,7 +82,7 @@
 
   button {
     cursor: pointer;
-    width: 90%;
+    // width: 90%;
     padding: $space-x-small;
     margin: $space-small;
     background-color: $c-negroni;
@@ -100,6 +100,17 @@
   }
   button:hover {
     background-color: #7371ec;
+  }
+  .copyAndDownloadButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    button:first-child {
+      display: grid;
+      grid-template-columns: auto auto;
+      place-items: center;
+      gap: 10px;
+    }
   }
 }
 @media only screen and (max-width: $break-high) {
@@ -171,7 +182,7 @@
       margin-right: $space-large;
       text-align: right;
       height: 20vh;
-      max-width: 35vw;
+      max-width: 39vw;
       div {
         button {
           padding: 15px;
@@ -199,7 +210,7 @@
       margin-right: $space-large;
       text-align: right;
       height: 20vh;
-      max-width: 35vw;
+      max-width: 39vw;
       h1 {
         font-size: pxToRem(30);
       }
@@ -211,6 +222,11 @@
         button {
           font-size: pxToRem(18);
         }
+      }
+    }
+    .copyAndDownloadButton {
+      button {
+        min-height: 40px;
       }
     }
   }
@@ -281,6 +297,11 @@
         }
       }
     }
+    .copyAndDownloadButton {
+      button {
+        max-height: 25px;
+      }
+    }
   }
 }
 @media only screen and (max-width: $break-xs) {
@@ -344,7 +365,7 @@
       min-width: 50vw;
       height: 20vh;
       div {
-        display: flex;
+        display: grid;
         justify-content: center;
         button {
           font-size: pxToRem(12);
@@ -367,6 +388,11 @@
         padding: 0;
       }
     }
+    .copyAndDownloadButton {
+      button {
+        max-height: 20px;
+      }
+    }
   }
 }
 @media only screen and (max-width: $break-xxs) {
@@ -376,6 +402,7 @@
     }
 
     .freelanceDescr {
+      max-width: 70vw;
       div {
         button {
           font-size: pxToRem(10);

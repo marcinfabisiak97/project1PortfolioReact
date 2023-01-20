@@ -1,20 +1,12 @@
 import React from 'react';
 import Images from '../../../assets/exportFiles';
 import Clipboard from 'react-clipboard-animation'
-import { useState, useEffect } from "react"
 import { copyEmail } from '../../Utils/Utils';
 import { useSelector } from 'react-redux';
-
+import { useChangeCopiedStateToDefaultAfter } from '../../Hooks/hooks';
 const ContactDetails = () => {
     const state = useSelector((state) => state.data)
-    const [copied, setCopied] = useState(false)
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            if (copied) setCopied(false)
-        }, 1000)
-        return () => clearTimeout(timeout)
-    }, [copied])
-
+    const [copied, setCopied] = useChangeCopiedStateToDefaultAfter(1000)
     return (
         <section className='contactDetails'>
             <article className="phoneAndEmail">
