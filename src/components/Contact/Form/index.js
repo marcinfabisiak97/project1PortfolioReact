@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
-
+import { useDispatch } from 'react-redux';
+import { open } from "../../../state/slices/formModalSlice/formModalSlice";
 // NETLIFY -> obsluga formularzy
 
 const Form = () => {
+    const dispatch = useDispatch();
     const [toSend, setToSend] = useState({
         from_name: '',
         to_name: '',
@@ -13,22 +15,20 @@ const Form = () => {
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
-    {/*making function to send email to developer by external web */ }
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
-        send(
-            'service_angvk1e',
-            'template_7othq2o',
-            toSend,
-            'user_CZXASdETJkJ7zZ1G1Ouhg'
-        )
-            // ALERTY 
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            })
-            .catch((err) => {
-                console.log('FAILED...', err);
-            });
+        try {
+            const response = await send(
+                'service_angvk1e',
+                'template_7othq2o',
+                toSend,
+                'user_CZXASdETJkJ7zZ1G1Ouhg'
+            );
+            console.log('SUCCESS!', response.status, response.text);
+            dispatch(open())
+        } catch (err) {
+            console.log('FAILED...', err);
+        }
     };
     return (
         <React.Fragment>
