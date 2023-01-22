@@ -24,8 +24,14 @@ const Form = () => {
                 toSend,
                 'user_CZXASdETJkJ7zZ1G1Ouhg'
             );
-            console.log('SUCCESS!', response.status, response.text);
-            dispatch(open())
+            await console.log('SUCCESS!', response.status, response.text);
+            await dispatch(open())
+            await setToSend({
+                from_name: '',
+                to_name: '',
+                message: '',
+                reply_to: '',
+            })
         } catch (err) {
             console.log('FAILED...', err);
         }
