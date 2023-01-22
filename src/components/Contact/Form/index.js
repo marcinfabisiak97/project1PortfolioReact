@@ -68,7 +68,7 @@ const Form = () => {
                             required
                             type='text'
                             name='message'
-                            placeholder='How can I help you? &#13;Please,put here your message/request.'
+                            placeholder='How can I help you? &#13;Please, put here your message/request.'
                             value={toSend.message}
                             onChange={handleChange}
                         >
