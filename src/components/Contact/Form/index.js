@@ -50,7 +50,7 @@ const Form = () => {
                         <input
                             required
                             type='text'
-                            pattern="[A-Za-z].{3,}"
+                            pattern="[A-Za-z].{1,}"
                             name='from_name'
                             placeholder='Your name'
                             value={toSend.from_name}
