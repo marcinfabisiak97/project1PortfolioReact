@@ -148,11 +148,9 @@
     padding-left: 0px;
     padding-right: 10px;
     h2 {
-      padding-left: 10px;
       font-size: pxToRem(15);
     }
     h3 {
-      padding-left: 10px;
       font-size: pxToRem(10);
     }
     .tollsIcon {
@@ -171,9 +169,5 @@
 @media only screen and (max-width: $break-xss) {
   .wrapperTools {
     min-height: 450px;
-    h2,
-    h3 {
-      margin-left: 20px;
-    }
   }
 }
