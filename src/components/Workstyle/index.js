@@ -15,7 +15,7 @@ const Workstyle = ({ blogref }) => {
                         <h2>//Searching on my own</h2>
                         <h3>Using my own experience</h3>
                         <p>
-                            I always start work by overthinking the problem.
+                            I always start work by breaking down the problem.
                             I need to know what effect I want to achieve and then I can
                             start developing the solution.
                         </p>
