@@ -26,7 +26,7 @@ const Portfolios = () => {
                     <a target='blank' href='https://github.com/marcinfabisiak97/cv-projekt3-rem-Typescript'>
                         <img src={Images.gitHub} alt="github" />
                     </a>
-                    <figcaption>Typescript projet</figcaption>
+                    <figcaption>Typescript project</figcaption>
                 </figure>
             </article>
         </section >
