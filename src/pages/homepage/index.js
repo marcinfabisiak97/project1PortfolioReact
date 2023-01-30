@@ -18,7 +18,6 @@ const Homepage = () => {
     const contactref = useRef(null);
     const [scrolled] = useScroll(skillref)
     const isKeyboardOpen = useDetectKeyboardOpen();
-    console.log(!isKeyboardOpen)
     return (
         <div className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
