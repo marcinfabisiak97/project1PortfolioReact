@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 import { useDispatch } from 'react-redux';
 import { open } from "../../../state/slices/formModalSlice/formModalSlice";
-// NETLIFY -> obsluga formularzy
 
 const Form = () => {
     const dispatch = useDispatch();

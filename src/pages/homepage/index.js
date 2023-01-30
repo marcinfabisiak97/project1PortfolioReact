@@ -9,6 +9,7 @@ import Workstyle from '../../components/Workstyle';
 import Contact from '../../components/Contact'
 import JokePart from '../../components/JokePart/JokePart';
 import { BsFillCaretUpFill } from "react-icons/bs";
+import useDetectKeyboardOpen from "use-detect-keyboard-open";
 const Homepage = () => {
     const aboutref = useRef(null);
     const skillref = useRef(null);
@@ -16,10 +17,12 @@ const Homepage = () => {
     const blogref = useRef(null);
     const contactref = useRef(null);
     const [scrolled] = useScroll(skillref)
+    const isKeyboardOpen = useDetectKeyboardOpen();
+    console.log(!isKeyboardOpen)
     return (
         <div className='page'>
             <Navigation {...{ aboutref, skillref, myworkref, blogref, contactref }} />
-            {scrolled && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
+            {(scrolled && !isKeyboardOpen) && <div className='page__upper' onClick={() => scrollToRef(aboutref)}><BsFillCaretUpFill className='icons' /></div>}
             <main>
                 <ExperienceAndAbout {...{ skillref }} />
                 <Tools />
